@@ -49,7 +49,7 @@ substring2 = str2[7:18]  # "Programming"
 
 # Live-coding преподавателя: Индексация и срезы строк
 str1 = "Hello, World!"
-first_char = str1[0]
+fistrrst_char = 1[0]
 last_char = str1[-1]
 substring = str1[7:]
 
