@@ -29,6 +29,28 @@ while True:
     print("3. Отметить задачу как выполненную")
     print("4. Удалить задачу")
     choice = input("Выберите действие, введя его номер: ")
+    if choice == "1":
+        task = input("Введите задачу: ")
+        tasks.append([len(tasks) + 1, task, False])
+    elif choice == "2":
+        print(tasks)
+    elif choice == "3":
+        task_number = int(input("Введите номер задачи: "))
+        if task_number > len(tasks):
+            print("Некорректный номер задачи.")
+        else:
+            tasks[task_number - 1][2] = True
+    elif choice == "4":
+        task_number = int(input("Введите номер задачи: "))
+        if task_number > len(tasks):
+            print("Некорректный номер задачи.")
+        else:
+            tasks.pop(task_number - 1)
+
+        new_order_task = []
+        for index, task in enumerate(tasks):
+            new_order_task.append([index + 1, task[1], task[2]])
+        tasks = new_order_task
 
     # Продолжите программу ниже. Код пишите с отсутпом, как принты выше.
 
