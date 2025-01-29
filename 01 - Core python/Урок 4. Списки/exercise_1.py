@@ -3,18 +3,47 @@
 # Измените элемент "milk" на "almond milk".
 # Создайте срез, содержащий первые два элемента списка.
 # Создайте вложенный список, где каждый элемент списка покупок будет содержать его цену.
-
 # Выведите список покупок, срез и вложенный список.
 # print(shopping_list)  # Ожидаемый результат: ["bread", "almond milk", "eggs"]
 # print(slice_shopping_list)  # Ожидаемый результат: ["bread", "almond milk"]
 # print(detailed_shopping_list)  # Ожидаемый результат: [["bread", 1.5], ["almond milk", 3.0], ["eggs", 2.0]]
-
+schop_list = ["bread","milk", "eggs"]
+schop_list[1] = "almond milk"
+sclice_schop_list = schop_list[0:2]
+detail_schop_list = [
+    ["bread",
+        ["21"],
+     "milk",
+        ["33"],
+     "eggs",
+        ["43"],
+    ]]
+print(schop_list)
+print(detail_schop_list)
+print(sclice_schop_list)
 
 # Упражнение 2: Управление списком студентов и их оценок
 # Создайте список студентов, содержащий элементы "Alice", "Bob", "Charlie", "David".
 # Измените имя второго студента на "Eve".
 # Создайте срез, содержащий студентов: "Bob", "Charlie".
 # Создайте вложенный список, где каждый студент имеет список своих оценок.
+students_list = ["Alice", "Bob", "Charlie", "David"]
+students_list[1] = "Eve"
+slice_students_list = students_list[1:4]
+detail_students_list = [
+    "Alice",
+        ["5,5,3,5"],
+    "Bob",
+        ["4,4,4,4"],
+    "Charlie",
+        ["2,2,2,2"],
+    "David",
+        ["5,5,3,4,5"]
+    ]
+detail_students_list[2] = "Eve"
+print(students_list)
+print(slice_students_list)
+print(detail_students_list)
 
 # Выведите список студентов, срез и вложенный список.
 # print(students)  # Ожидаемый результат: ["Alice", "Eve", "Charlie", "David"]
