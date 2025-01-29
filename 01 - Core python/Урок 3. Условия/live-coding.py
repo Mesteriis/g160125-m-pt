@@ -8,9 +8,42 @@
 # Продемонстрируйте и объясните работу:
 # - Вложенных условий
 # - Конструкции if-elif-else
+
+a = 100
+
+if a > 100:
+    print('a > 100')
+elif a == 100:
+    print('a == 100')
+else:
+    print('a < 100')
+
+if a > 100:
+    print('a > 100')
+else:
+    if a == 100:
+        print('a == 100')
+    else:
+        print('a < 100')
+
+if a > 100:
+    print('a > 100')
+
+if a == 100:
+    print('a == 100')
+
+if a < 100:
+    print('a < 100')
+
 # - Тернарного условного оператора
 
+result = True if a > 100 else False
 
+result = None
+if a > 100:
+    result = True
+else:
+    result = False
 
 
 
