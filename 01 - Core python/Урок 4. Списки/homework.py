@@ -1,10 +1,26 @@
 # Тема: Список, срезы списков.
+from random import choice
 
 # Упражнение 1: Управление списком покупок
 # Создайте список покупок, содержащий элементы "bread", "milk", "eggs".
 # Измените элемент "milk" на "almond milk".
 # Создайте срез, содержащий первые два элемента списка.
 # Создайте вложенный список, где каждый элемент списка покупок будет содержать его цену.
+
+schop_list = ["bread","milk", "eggs"]
+schop_list[1] = "almond milk"
+sclice_schop_list = schop_list[0:2]
+detail_schop_list = [
+    ["bread",
+        ["21"],
+     "milk",
+        ["33"],
+     "eggs",
+        ["43"],
+    ]]
+print(schop_list)
+print(detail_schop_list)
+print(sclice_schop_list)
 
 # Выведите список покупок, срез и вложенный список.
 # print(shopping_list)  # Ожидаемый результат: ["bread", "almond milk", "eggs"]
@@ -24,6 +40,23 @@
 # print(student_grades)  # Ожидаемый результат:
 # [["Alice", [90, 85, 88]], ["Eve", [75, 80, 82]], ["Charlie", [95, 92, 93]], ["David", [78, 85, 84]]]
 
+students_list = ["Alice", "Bob", "Charlie", "David"]
+slice_students_list = students_list[1:3]
+students_list[1] = "Eve"
+detail_students_list = [
+    "Alice",
+        ["5,5,3,5"],
+    "Bob",
+        ["4,4,4,4"],
+    "Charlie",
+        ["2,2,2,2"],
+    "David",
+        ["5,5,3,4,5"]
+    ]
+detail_students_list[2] = "Eve"
+print(students_list)
+print(slice_students_list)
+print(detail_students_list)
 
 # Упражнение 3: Управление списком задач
 # Создайте список задач, содержащий элементы "task1", "task2", "task3", "task4.
@@ -37,6 +70,13 @@
 # print(detailed_tasks)  # Ожидаемый результат:
 # [["task1", True], ["task2 updated", False], ["task3", True], ["task4", False]]
 
+tasks = ["task1", "task2", "task3", "task4"]
+tasks[2] = "Updated task3"
+slice_tasks = tasks[2:3]
+detail_tasks = [["task1", True], ["task2 updated", False], ["task3", True], ["task4", False]]
+print(tasks)
+print(slice_tasks)
+print(detail_tasks)
 
 # Тема: Методы списков
 
@@ -54,6 +94,17 @@
 # print(movie_details)  # Ожидаемый результат: [["Movie", 2002, 7.7], ["Movie1", 2010, 8.1], ["Updated Movie2", 2015, 7.5],
 # ["Movie3", 2020, 8.6], ["Movie4", 2021, 7.9], ["Movie5", 2013, 8.5], ["Movie6", 2018, 8.6], ["Movie7", 2023, 7.0]]
 
+movie_list = ["Movie1", "Movie2", "Movie3"]
+if "movie4" not in movie_list:
+    movie_list.append("movie4")
+if len(movie_list) > 2:
+    movie_list[1] = "Updated Movie2"
+elif len(movie_list) < 5:
+    movie_list.extend(["Movie5", "Movie6", "Movie7"])
+detail_movie_list = [["Movie1", 2010, 8.1], ["Updated Movie2", 2015, 7.5], ["Movie3", 2020, 8.6], ["Movie4", 2021, 7.9],["Movie5", 2013, 8.5], ["Movie6", 2018, 8.6], ["Movie7", 2023, 7.0]]
+detail_movie_list.insert(0,["Updated Movie2", 2015, 7.5])
+print(movie_list)
+print(detail_movie_list)
 
 # Упражнение 2: Анализ списка курсов и их продолжительности
 # 2.1 Создайте список курсов, содержащий элементы "Python", "Java", "JavaScript".
@@ -69,7 +120,19 @@
 # - срез, # Ожидаемый результат: ['Python', 'Kotlin', 'JavaScript']
 # - вложенный список, # Ожидаемый результат: [['Python', 40], ['Kotlin', 30], ['JavaScript', 35], ['C++', 50]]
 # - общую продолжительность всех курсов. # Ожидаемый результат: 155
-
+kurs_list = ["Python", "Java", "JavaScript"]
+kurs_list.append("C++")
+kurs_list[1] = "Kotlin"
+slice_kurs_list = kurs_list[:3]
+if slice_kurs_list == ["Python", "Kotlin", "JavaScript"] :
+    kurs_list = slice_kurs_list
+print(kurs_list)
+kurs_list.sort()
+print(kurs_list)
+detail_kurs_list = [["Python", 40], ["Kotlin", 30], ["JavaScript", 35], ["C++", 50]]
+finish = detail_kurs_list[0][1] + detail_kurs_list[1][1] + detail_kurs_list[2][1] + detail_kurs_list[3][1]
+print(finish)
+print(detail_kurs_list)
 
 # Мини-проект: Система управления задачами (To-Do List)
 
@@ -90,18 +153,36 @@
 
 # 4. Пользователь должен иметь возможность удалить задачу. Чтобы удалить задачу, запросите ее номер.
 # Если номер корректный, то удалите ее.
-
-# tasks = []
-#
-# while True:
+tasks = []
+while True:
 #     # В решении используется цикл, чтобы программа работала пока вы ее принудительно не завершите через Ctr-C.
 #     # Циклы вы еще не проходили и для решения задачи эти знания не нужны. Просто пишите код с отступом, продолжая программу.
-#     print("\nСистема управления задачами")
-#     print("1. Добавить задачу")
-#     print("2. Показать задачи")
-#     print("3. Отметить задачу как выполненную")
-#     print("4. Удалить задачу")
-#     choice = input("Выберите действие, введя его номер: ")
-#
-#     # Продолжите программу ниже. Код пишите с отсутпом, как принты выше.
+    print("\nСистема управления задачами")
+    print("1. Добавить задачу")
+    print("2. Показать задачи")
+    print("3. Отметить задачу как выполненную")
+    print("4. Удалить задачу")
+    choice = input("Выберите действие, введя его номер: ")
+    if choice == "1":
+        task = input("Введите задачу: ")
+        tasks.append([len(tasks) + 1, task, False])
+    elif choice == "2":
+        print(tasks)
+    elif choice == "3":
+        task_number = int(input("Введите номер задачи: "))
+        if task_number > len(tasks):
+            print("Некорректный номер задачи.")
+        else:
+            tasks[task_number - 1][2] = True
+    elif choice == "4":
+        task_number = int(input("Введите номер задачи: "))
+        if task_number > len(tasks):
+            print("Некорректный номер задачи.")
+        else:
+            tasks.pop(task_number - 1)
+
+        new_order_task = []
+        for index, task in enumerate(tasks):
+            new_order_task.append([index + 1, task[1], task[2]])
+        tasks = new_order_task
 
