@@ -8,6 +8,22 @@
 # программа должна вывести сообщение "Вы ввели большее число" и продолжать запрашивать числа.
 # Если пользователь угадал, то программа должна вывести "Вы угадали число" и завершиться.
 
+# num = 64
+# num2 = 0
+# while num2 != num:
+#     num2 = int(input("ввефите число: "))
+#     if num2 < num:
+#         print("смч")
+#     elif num2 > num:
+#         print("сбч")
+#     elif num2 == num:
+#         print("yes")
+
+
+
+
+
+
 
 # Упражнение 2: Проверка пароля
 #
@@ -17,7 +33,22 @@
 # Если введен правильный пароль, программа должна выводить сообщение "Доступ разрешен" и завершаться.
 # Если после трех неправильных попыток пароль не введен правильно, программа должна выводить сообщение
 # "Превышено количество попыток" и завершаться.
+MAX_ATTEMPTS = 3
+attempts = 0
+password =  "python123"
+npassword = ""
 
+# while attempts < MAX_ATTEMPTS:
+#
+#     npassword = input("input password ")
+#     if npassword != password:
+#         print("pass incorrect")
+#     elif npassword == password:
+#         print("pass cor")
+#     attempts += 1
+#     print("wrong pass, you have more", MAX_ATTEMPTS - attempts, "possibilities" )
+# else:
+#     print("no more possibilities")
 
 # Упражнение 3: Работа со списком покупок
 #
@@ -28,22 +59,56 @@
 # "Формирование списка завершено" и завершаться. Если количество покупок ставится больше 6,
 # то программа должна вывести: “Превышен лимит покупок.” и завершиться.
 # Перед завершением программа должна выводить итоговый список покупок и общее количество элементов в нем.
-
+# shopping_list = []
+# while len(shopping_list) < 6:
+#     item = input("input item, or stop for stop:")
+#
+#     if item.lower() == "stop":
+#         print("that's all")
+#         break
+#
+#     if item in shopping_list:
+#         print("item already in shopping_list")
+#         continue
+#
+#     if item not in shopping_list:
+#         shopping_list.append(item)
+#
+#     if len(shopping_list) > 6:
+#         print("maximum items")
+# print("shopping_list:", shopping_list)
+# print("items numpers: "len(shopping_list))
 
 # Тема: Цикл for
 
 # Упражнение 1: Подсчет гласных в строке
 #
-# Напишите программу, которая принимает строку от пользователя и подсчитывать количество гласных букв (a, e, i, o, u)
+# Напишите программу, которая принимает строку от пользователя
+# и подсчитывать количество гласных букв (a, e, i, o, u)
 # в этой строке.Используйте цикл for и условие if.
-
+# str1 = input("input str1 ")
+# counter = 0
+# for i in str1:
+#     if i.lower() in ["a", "e", "i", "o", "u"]:
+#         counter+= 1
+#
+# print(counter)
 
 # Упражнение 2: Генерация и вывод последовательности чисел
 #
 # Напишите программу, которая генерит и выводит последовательность чисел от 1 до 20,
 # но выводит "Fizz" вместо чисел, кратных 3, "Buzz" вместо чисел, кратных 5, и "FizzBuzz"
 # вместо чисел, кратных как 3, так и 5. Используйте цикл for и функцию range.
-
+# i = 1
+# for i in range (0, 21,):
+#     if i%3 == 0 and i%5 == 0:
+#         print("FizzBuzz")
+#     elif i%3 == 0:
+#         print("fizz")
+#     elif i%5 == 0:
+#         print ("Buzz")
+#     else:
+#         print(i)
 
 # Проект 1: Управление библиотекой
 #
@@ -57,22 +122,73 @@
 #            ["Преступление и наказание", "Достоевский", "выдана"],
 #            ["Мастер и Маргарита", "Булгаков", "в наличии"]]
 #
-# while True:
-#     print("\nМеню")
-#     print("1. Показать список всех книг")
-#     print("2. Добавить книгу")
-#     print("3. Удалить книгу")
-#     print("4. Поменять статус книги")
-#     print("5. Показать книги определенного автора")
-#     print("6. Показать книги с определенным статусом")
-#     choice = input("Выберите действие, введя его номер: ")
-#
-#     # Продолжите программу ниже.
+while True:
+    print("\nМеню")
+    print("1. Показать список всех книг")
+    print("2. Добавить книгу")
+    print("3. Удалить книгу")
+    print("4. Поменять статус книги")
+    print("5. Показать книги определенного автора")
+    print("6. Показать книги с определенным статусом")
+    choice = input("Выберите действие, введя его номер: ")
+    print()
+
+    # Продолжите программу ниже.
+
+    match choice:
+        case "1":
+            for book in library:
+                print(f"{book[0]} - {book[1]} - {book[2]}")
+        case "2":
+            name = input("Введите название книги: ")
+            author = input("Введите автора книги: ")
+            library.append([name, author, IN])
+        case "3":
+            name = input("Введите название книги: ")
+            target_book = None
+            for book in library:
+                if book[0] == name:
+                    target_book = book
+
+            if target_book:
+                answer = input("Вы уверены, что хотите удалить книгу? (да/нет): ")
+                if answer == "да":
+                    library.remove(target_book)
+            else:
+                print("Книга не найдена.")
+        case "4":
+            name = input("Введите название книги: ")
+            target_book = None
+            for book in library:
+                if book[0] == name:
+                    target_book = book
+
+            if target_book:
+                if target_book[2] == IN:
+                    target_book[2] = OUT
+                else:
+                    target_book[2] = IN
+            else:
+                print("Книга не найдена.")
+        case "5":
+            author = input("Введите автора книги: ")
+            for book in library:
+                if book[1].lower() == author.lower():
+                    print(f"{book[0]} - {book[1]} - {book[2]}")
+        case "6":
+            status = input(f"Введите статус книги ({IN}/{OUT}): ")
+
+            for book in library:
+                if book[2] == status:
+                    print(f"{book[0]} - {book[1]} - {book[2]}")
+        case _:
+            print("Некорректный ввод. Попробуйте еще раз.")
 
 
 # Проект 2: Анализ посещаемости на сайте
 #
-# Разработайте программу для анализа посещаемости на сайте. Программа должна позволять вводить количество посещений
+# Разработайте программу для анализа посещаемости на сайте.
+# Программа должна позволять вводить количество посещений
 # за каждый день недели, определять дни с наибольшей и наименьшей посещаемостью, рассчитывать среднюю посещаемость
 # за неделю и выводить дни с посещаемостью выше среднего.
 #
