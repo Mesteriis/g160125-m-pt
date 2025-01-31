@@ -1,4 +1,5 @@
 # Тема: Цикл while. Операторы break, continue, else.
+from random import choice
 
 # Упражнение 1: Поиск числа
 #
@@ -7,7 +8,16 @@
 # выводить сообщение "Слишком маленькое число" и продолжать запрашивать числа. Если число больше num,
 # программа должна вывести сообщение "Вы ввели большее число" и продолжать запрашивать числа.
 # Если пользователь угадал, то программа должна вывести "Вы угадали число" и завершиться.
-
+#num = 11
+#num2 = 0
+#while num2 != num:
+#    num2 = int(input("Введите число"))
+ #   if num2 < num:
+#        print("Слишком маленькое число")
+#    elif num2 > num:
+ #       print("Вы ввели большее число")
+#    else:
+ #       print("Вы угадали число")
 
 # Упражнение 2: Проверка пароля
 #
@@ -17,7 +27,24 @@
 # Если введен правильный пароль, программа должна выводить сообщение "Доступ разрешен" и завершаться.
 # Если после трех неправильных попыток пароль не введен правильно, программа должна выводить сообщение
 # "Превышено количество попыток" и завершаться.
-
+# MAX_ATTEMPTS = 3
+# CORRECT_PASSWORD = "python123"
+#
+# attempts = 0
+#
+# while attempts < MAX_ATTEMPTS:
+#     password = input("Введите пароль:")
+#     if " " in password:
+#         print("Пароль не должен содержать пробелов")
+#     elif password == CORRECT_PASSWORD:
+#         print("Доступ разрешен")
+#         break
+#     else:
+#         print("Неверный пароль")
+#         attempts += 1
+# if attempts == MAX_ATTEMPTS:
+#     print("Превышено количество попыток")
+#
 
 # Упражнение 3: Работа со списком покупок
 #
@@ -28,7 +55,40 @@
 # "Формирование списка завершено" и завершаться. Если количество покупок ставится больше 6,
 # то программа должна вывести: “Превышен лимит покупок.” и завершиться.
 # Перед завершением программа должна выводить итоговый список покупок и общее количество элементов в нем.
-
+# sale_list = []
+# punkt = 0
+# max_punkt = 6
+#
+# while True:
+#     print("\n Твоя корзина:")
+#     print("1. Добавить покупку")
+#     print("2. Список покупок")
+#     print("3. Выйти")
+#
+#     choice = input("Выбери действие, введя его число: ")
+#
+#     match choice:
+#         case "1":
+#             if punkt < max_punkt:
+#                 name = input("Что покупаем? ")
+#                 sale_list.append(name)
+#                 punkt += 1
+#                 print(f" {name} добавлен в корзину ({punkt}/{max_punkt})")
+#             else:
+#                 print(" Превышен лимит покупок!")
+#
+#         case "2":
+#             if sale_list:
+#                 print(" Список покупок:", ", ".join(sale_list))
+#             else:
+#                 print(" Корзина пуста.")
+#
+#         case "3":
+#             print("Выход из программы.")
+#             break
+#
+#         case _:
+#             print(" Ошибка: выбери 1, 2 или 3.")
 
 # Тема: Цикл for
 
@@ -37,12 +97,33 @@
 # Напишите программу, которая принимает строку от пользователя и подсчитывать количество гласных букв (a, e, i, o, u)
 # в этой строке.Используйте цикл for и условие if.
 
+# user_input = input("Введите строку: ").lower()
+
+# vowels = "aeiou"
+#
+# vowel_count = 0
+#
+# for char in user_input:
+#     if char in vowels:
+#         vowel_count += 1
+#
+# print(f"Количество гласных букв: {vowel_count}")
+
 
 # Упражнение 2: Генерация и вывод последовательности чисел
 #
 # Напишите программу, которая генерит и выводит последовательность чисел от 1 до 20,
 # но выводит "Fizz" вместо чисел, кратных 3, "Buzz" вместо чисел, кратных 5, и "FizzBuzz"
 # вместо чисел, кратных как 3, так и 5. Используйте цикл for и функцию range.
+# for number in range(1, 21):
+#     if number % 3 == 0 and number % 5 == 0:
+#         print("FizzBuzz")
+#     elif number % 3 == 0:
+#         print("Fizz")
+#     elif number % 5 == 0:
+#         print("Buzz")
+#     else:
+#         print(number)
 
 
 # Проект 1: Управление библиотекой
@@ -68,7 +149,54 @@
 #     choice = input("Выберите действие, введя его номер: ")
 #
 #     # Продолжите программу ниже.
-
+# OUT = "выдана"
+# IN = "в наличии"
+#
+#
+# library = [
+#     ["Война и мир", "Толстой", IN],
+#     ["Преступление и наказание", "Достоевский", OUT],
+#     ["Мастер и Маргарита", "Булгаков", IN]
+# ]
+#
+# while True:
+#     print("\nМеню")
+#     print("1. Показать список всех книг")
+#     print("2. Добавить книгу")
+#     print("3. Удалить книгу")
+#     print("4. Поменять статус книги")
+#     print("5. Показать книги определенного автора")
+#     print("6. Показать книги с определенным статусом")
+#     choice = input("Выберите действие, введя его номер: ")
+#     print()
+#
+#     match choice:
+#         case "1":
+#             for book in library:
+#                 print(f"{book[0]} - {book[1]} - {book[2]}")
+#         case "2":
+#             name = input("Введите название книги: ")
+#             author = input("Введите автора книги: ")
+#             library.append([name, author, IN])
+#         case "3":
+#             name = input("Введите название книги: ")
+#             target_book = None
+#             for book in library:
+#                 if book[0] == name:
+#                     target_book = book
+#
+#             if target_book:
+#                 answer = input("Вы уверены, что хотите удалить книгу? (да/нет): ")
+#                 if answer == "да":
+#                     library.remove(target_book)
+#             else:
+#                 print("Книга не найдена.")
+#         case "4":
+#             name = input("Введите название книги: ")
+#             target_book = None
+#             for book in library:
+#                 if book[0] == name:
+#                     target_book = book
 
 # Проект 2: Анализ посещаемости на сайте
 #
@@ -77,4 +205,36 @@
 # за неделю и выводить дни с посещаемостью выше среднего.
 #
 # days = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"]
+#
 # visits = []
+#
+# for day in days:
+#     while True:
+#         try:
+#             visit_count = int(input(f"Введите количество посещений за {day}: "))
+#             if visit_count < 0:
+#                 print(" Число не может быть отрицательным! Попробуйте снова.")
+#                 continue
+#             visits.append(visit_count)
+#             break
+#         except ValueError:
+#             print("⚠ Ошибка: введите целое число!")
+#
+# max_visits = max(visits)
+# min_visits = min(visits)
+# avg_visits = sum(visits) / len(visits)
+#
+# max_days = [days[i] for i, v in enumerate(visits) if v == max_visits]
+# min_days = [days[i] for i, v in enumerate(visits) if v == min_visits]
+#
+# above_avg_days = [days[i] for i, v in enumerate(visits) if v > avg_visits]
+#
+# print("\n Результаты анализа посещаемости:")
+# print(f" Максимальная посещаемость ({max_visits}) была в дни: {', '.join(max_days)}")
+# print(f" Минимальная посещаемость ({min_visits}) была в дни: {', '.join(min_days)}")
+# print(f" Средняя посещаемость за неделю: {avg_visits:.2f}")
+#
+# if above_avg_days:
+#     print(f" Дни с посещаемостью выше среднего: {', '.join(above_avg_days)}")
+# else:
+#     print(" Нет дней с посещаемостью выше среднего.")
