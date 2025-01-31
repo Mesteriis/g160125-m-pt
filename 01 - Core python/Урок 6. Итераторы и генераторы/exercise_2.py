@@ -12,3 +12,10 @@
 # - Выведите исходные матрицы и результат их произведения.
 
 
+
+matrix1 = [[row + cell * 3 + 1 for row in range(3)] for cell in range(3)]
+print(matrix1)
+matrix2 = [[9 - (row + cell * 3) for row in range(3)] for cell in range(3)]
+print(matrix2)
+product = [[sum(matrix1[row][k] * matrix2[k][col] for k in range(3)) for col in range(3)] for row in range(3)]
+print(product)

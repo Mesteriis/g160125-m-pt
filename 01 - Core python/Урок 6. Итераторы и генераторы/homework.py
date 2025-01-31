@@ -28,27 +28,37 @@
 #  8 |   8  16  24  32  40  48  56  64  72  80
 #  9 |   9  18  27  36  45  54  63  72  81  90
 # 10 |  10  20  30  40  50  60  70  80  90 100
-
+# size = 10
+#
+# for i in range(1, size + 1):
+#     for j in range(1, size + 1):
+#         print(f"{i * j:4}", end='')
+#     print()
 
 # Тема: Генераторы списков
 
 # Упражнение 1: Напишите программу с помощью генераторов списков,
 # которая находит все числа от 1 до 1000, которые делятся на 7.
-
+# numbers = [num for num in range(1,1001) if num % 7 == 0]
+# print(numbers)
 
 # Упражнение 2: Напишите программу с помощь генераторов списков,
 # которая найдите все числа от 1 до 1000, в которых есть цифра 3.
-
+# numbers_with_3 = [num for num in range(1,1001) if "3" in str(num)]
+# print(numbers_with_3)
 
 # Упражнение 3: Напишите программу с помощь генераторов списков,
 # которая посчитает количество пробелов в строке
-# some_string = 'the slow solid squid swam sumptuously through the slimy swamp'.
-
+# some_string = 'the slow solid squid swam sumptuously through the slimy swamp'
+# string_with_space = sum(1 for space in some_string if space == " ")
+# print(string_with_space)
 
 # Упражнение 4: Напишите программу с помощь генераторов списков,
 # которая создаст список всех гласных букв в строке
 # some_string = 'the quick brown fox jumps over the lazy dog'.
-
+# vocals = "a,i,e,u,o"
+# letter_count = sum(1 for letter in some_string if letter in vocals)
+# print(letter_count)
 
 # Упражнение 5: Сумма элементов в каждом ряду матрицы
 # С помощью генераторов списков создайте матрицу 3x3 из чисел от 20 до 28
@@ -56,10 +66,12 @@
 # [20, 21, 22]
 # [23, 24, 25]
 # [26, 27, 28]
-
 # Напишите код для вычисления суммы элементов в каждом ряду (в каждом вложенном списке).
 # Выведите получившиеся значения в консоль.
-
+#matrix1 = [[(i*3) + j + 20 for j in range(3)]for i in range(3)]
+# print(matrix1)
+# row_sums = [sum(row) for row in matrix1]
+# print(row_sums)
 
 # Упражнение 6: Подсчет количества четных и нечетных чисел в матрице
 # Дана матрица
@@ -74,7 +86,22 @@
 # Выведите значения в констоль:
 # print(f"Количество четных чисел: ")
 # print(f"Количество нечетных чисел: ")
-
+# matrix = [
+#     [2, 5, 8, 11],
+#     [14, 17, 20, 23],
+#     [26, 29, 32, 35],
+#     [38, 41, 44, 47]
+# ]
+# for row in matrix:
+#     even_count = 0
+#     odd_count = 0
+#     for num in row:
+#         if num % 2 == 0:
+#             even_count += 1
+#         else:
+#             odd_count += 1
+#     print(f"В строке {row} количество четных чисел: {even_count}")
+#     print(f"В строке {row} количество нечетных чисел: {odd_count}")
 
 # Упражнение 7: Поиск минимального и максимального значения в матрице
 # Дана матрица
@@ -85,8 +112,15 @@
 # ]
 
 # Напишите программу для вывода минимального и максимального значений в каждом ряду (вложенном списке) матрицы.
-
-
+# matrix = [
+#     [34, 23, 18],
+#     [14, 55, 27],
+#     [19, 42, 31]
+# ]
+# for row in matrix:
+#     min_value = min(row)
+#     max_value = max(row)
+#     print(f"Для строки {row} минимальное значение: {min_value}, максимальное значение: {max_value}")
 # Упражнение 8: Перемножение матриц
 #
 # - Создайте с помощью генераторов списков две матрицы размером 3x3 со значениями от 1 до 9 и от 9 до 1.
@@ -97,3 +131,10 @@
 #     product = [[30, 24, 18], [84, 69, 54], [138, 114, 90]]
 #
 # - Выведите исходные матрицы и результат их произведения.
+
+# matrix1 = [[row + cell * 3 + 1 for row in range(3)] for cell in range(3)]
+# print(matrix1)
+# matrix2 = [[9 - (row + cell * 3) for row in range(3)] for cell in range(3)]
+# print(matrix2)
+# product = [[sum(matrix1[row][k] * matrix2[k][col] for k in range(3)) for col in range(3)] for row in range(3)]
+# print(product)
