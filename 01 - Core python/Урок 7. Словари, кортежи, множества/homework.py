@@ -1,4 +1,5 @@
 # Тема: словари
+from operator import length_hint
 
 # Задача 1: Анализ данных о сотрудниках
 # У вас есть словарь, содержащий информацию о сотрудниках компании.
@@ -18,6 +19,33 @@
 #     "Bob": {"age": 25, "department": "IT", "salary": 6000},
 #     "Charlie": {"age": 35, "department": "Finance", "salary": 7000}
 # }
+# for employee in employees:                                                      #1
+#     names = employee
+#     print(f"{names}")
+#
+# salary_total = sum(employee["salary"] for employee in employees.values())       #2
+# print(f"Общая сумма зп в компании: {salary_total}")
+#
+# name = "David"
+# age = 28                                 #3
+# department = "IT"
+# salary = 6500
+#
+# employees[name] = {"age": age, "department": department, "salary": salary}
+# print(employees)
+
+# employees["Alice"]["salary"] = 6500                                             #4
+# print(employees)
+
+# del employees["Charlie"]                                                        #5
+# print(f"Сотрудник удалён!")
+
+# for employee in employees:
+#     name = employee
+#     age = employees[employee]["age"]
+#     department = employees[employee]["department"]                              #6
+#     salary = employees[employee]["salary"]
+#     print(f"{name} - {age} - {department} - {salary}")
 
 
 # Задача 2: Управление запасами товаров
@@ -36,8 +64,30 @@
 #     "Apples": {"quantity": 50, "price": 2},
 #     "Bananas": {"quantity": 30, "price": 1},
 #     "Cherries": {"quantity": 20, "price": 3},
-# }
 
+
+# for item in inventory:                                                #1
+#     name = item
+#     print(name)
+
+# inventory["Bananas"]["quantity"] = 40                                   #2
+# print(inventory)
+
+# inventory["Bananas"]["price"] = 1.5                                       #3
+# print(inventory)
+
+# del inventory["Cherries"]                                                   #4
+# print(inventory)
+
+# item = "Dates"
+# quantity = 15                                                                #5
+# price = 4
+#
+# inventory[item] = {"quantity": 15, "price": 4}
+# print(inventory)
+
+# total_price = sum(item["price"] for item in inventory.values())                #6
+# print(f"Общая стоимость товаров: {total_price}")
 
 # Тема: кортежи и множества.
 
@@ -68,6 +118,22 @@
 #
 # products = [("Apple", 2), ("Banana", 1), ("Cherry", 3)]
 
+# for prod in products:
+#     name = prod                                                             #1
+#     print(name)
+
+# price = products[0][1], products[1][1], products[2][1]                    #2
+# total_price = sum(price)
+# print(f"Общая стоимость товаров: {total_price}")
+
+# products.append(("Date", 4))                                              #3
+# print(products)
+
+# products[0] = (("Apple", 2.5))                                            #4
+# print(products)
+
+# (products.sort(key=lambda x: x[1]))                                         #5
+# print(products)
 
 # Задача 3: Управление группами пользователей
 # У вас есть множество пользователей, и вам необходимо выполнить различные операции с этими данными.
@@ -79,7 +145,23 @@
 # 4. Проверьте, есть ли пользователь "Alice" в множестве.
 # 5. Выведите количество пользователей.
 #
-# users = {"Alice", "Bob", "Charlie"}
+users = {"Alice", "Bob", "Charlie"}
+
+# print(users)                                    #1
+
+# users.add("David")                                #2
+# print(users)
+
+# users.remove("Bob")                               #3
+# print(users)
+
+# if "Alice" in users:
+#   print("Пользователь в наличии")                   #4
+# else:
+#   print("Пользователь отсуствует!")
+
+# quantity_users = len(users)
+# print(f"Всего в базе: {quantity_users} пользователя") #5
 
 
 # Задача 4: Управление наборами данных
