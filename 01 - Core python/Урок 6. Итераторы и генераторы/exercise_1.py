@@ -20,3 +20,11 @@
 #  8 |   8  16  24  32  40  48  56  64  72  80
 #  9 |   9  18  27  36  45  54  63  72  81  90
 # 10 |  10  20  30  40  50  60  70  80  90 100
+
+numbers = range(1,11)
+
+for row in numbers:
+    for cell in numbers:
+        print(f'{row*cell:4}', end=' ')
+    print()
+
