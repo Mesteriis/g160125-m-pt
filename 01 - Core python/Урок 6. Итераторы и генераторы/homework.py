@@ -6,7 +6,13 @@
 # Используйте вложенный цикл for для перебора чисел в указанном диапазоне.
 # Внутри вложенного цикла while используйте для проверки, является ли число простым.
 # Число является простым, если оно делится только на 1 и на само себя.
-# Для каждого числа в диапазоне от 2 до 50, проверьте, делится ли оно на любое число меньше него (кроме 1).
+# Для каждого числа в диапазоне от 2 до 50, проверьте, делится ли оно на любое число
+# меньше него (кроме 1).
+
+# for i in range(2, 51):
+#     if i % range(2,i) == 0:
+#         print(i)
+# Непонятно как сделать.
 
 # Упражнение 2: Таблица умножения
 
@@ -29,26 +35,48 @@
 #  9 |   9  18  27  36  45  54  63  72  81  90
 # 10 |  10  20  30  40  50  60  70  80  90 100
 
+# for row in range (1,11):
+#
+#     for cell in range (1,11):
+#         print(f"{row*cell:4}", end=" ")
+#     print()
 
 # Тема: Генераторы списков
 
 # Упражнение 1: Напишите программу с помощью генераторов списков,
 # которая находит все числа от 1 до 1000, которые делятся на 7.
-
+# for i in range (1, 1001):
+#     if i%7 == 0:
+#         print(i)
 
 # Упражнение 2: Напишите программу с помощь генераторов списков,
 # которая найдите все числа от 1 до 1000, в которых есть цифра 3.
 
+# for i in range (1, 1001):
+#     if "3" in str(i):
+#         print(i)
 
 # Упражнение 3: Напишите программу с помощь генераторов списков,
 # которая посчитает количество пробелов в строке
 # some_string = 'the slow solid squid swam sumptuously through the slimy swamp'.
 
 
+
+# count = 0
+# some_string = 'the slow solid squid swam sumptuously through the slimy swamp'
+# for i in some_string:
+#     if i == " ":
+#         count+= 1
+# print(count)
+
+
 # Упражнение 4: Напишите программу с помощь генераторов списков,
 # которая создаст список всех гласных букв в строке
-# some_string = 'the quick brown fox jumps over the lazy dog'.
-
+#
+# some_string = 'the quick brown fox jumps over the lazy dog'
+# str_sym = " "
+# count = sum(1 if char in str_sym else 0 for char in some_string)
+# print(count)
 
 # Упражнение 5: Сумма элементов в каждом ряду матрицы
 # С помощью генераторов списков создайте матрицу 3x3 из чисел от 20 до 28
@@ -56,10 +84,10 @@
 # [20, 21, 22]
 # [23, 24, 25]
 # [26, 27, 28]
-
 # Напишите код для вычисления суммы элементов в каждом ряду (в каждом вложенном списке).
 # Выведите получившиеся значения в консоль.
-
+matrix = [[20 + row*3 + cell for cell in range(3)] for row in range(3)]
+print(matrix)
 
 # Упражнение 6: Подсчет количества четных и нечетных чисел в матрице
 # Дана матрица
@@ -68,13 +96,42 @@
 #     [14, 17, 20, 23],
 #     [26, 29, 32, 35],
 #     [38, 41, 44, 47]
-# ]
+# Var 1
+# result = []
+# even_nums = []
+# odd_nums = []
+# for row in matrix: # я ввел переменную для индексации списка в списке
+#     result.extend(row)
+#     print(row)
+# print(result)
+# for cell in result: # я ввел переменную для индексации символа в списке!
+#     if cell%2 == 0:
+#         even_nums.append(cell)
+#     else:
+#         odd_nums.append(cell)
+# print(even_nums)
+# print("четных чисел: ", len(even_nums))
+# print(odd_nums)
+# print("нечетных чисел", len(odd_nums))
+
+# упрощенный код, индексирует каждый список, в каждом вложенном списке.
+# Var 2
+# even_nums = 0
+# odd_nums = 0
+# for row in matrix:
+#     for cell in row:
+#         if cell%2==0:
+#             even_nums += 1
+#         else:
+#             odd_nums += 1
+# print("even nums: ", even_nums)
+# print("odd nums: ", odd_nums)
 #
-# Напишите программу для посчета четных и нечетных чисел в каждом вложенном списке (строке матрицы).
-# Выведите значения в констоль:
+# Напишите программу для подсчета четных и нечетных
+# чисел в каждом вложенном списке (строке матрицы).
+# Выведите значения в консоль:
 # print(f"Количество четных чисел: ")
 # print(f"Количество нечетных чисел: ")
-
 
 # Упражнение 7: Поиск минимального и максимального значения в матрице
 # Дана матрица
@@ -85,13 +142,34 @@
 # ]
 
 # Напишите программу для вывода минимального и максимального значений в каждом ряду (вложенном списке) матрицы.
-
+# # Var 1
+# all_in_one = []
+# for row in matrix:
+#     for cell in row:
+#         all_in_one.append(cell)
+# print("Проверка индекса", all_in_one)
+# print ("Минимальное число:", min(all_in_one))
+# print ("Максимальное число:", max(all_in_one))
+#
+# # Var 2
+#
+# min_value = min(cell for row in matrix for cell in row)
+# max_value = max(cell for row in matrix for cell in row)
+# print(f'Min Value: {min_value}')
+# print(f'Max Value: {max_value}')
+# min_value_detailed = [min(row) for row in matrix]
+# print(min_value_detailed)
+# max_value_detailed = [max(row) for row in matrix]
+# print(max_value_detailed)
 
 # Упражнение 8: Перемножение матриц
 #
 # - Создайте с помощью генераторов списков две матрицы размером 3x3 со значениями от 1 до 9 и от 9 до 1.
 #     matrix1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 #     matrix2 = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+# matrix = [[(row*3) + cell for cell in range(3)] for row in range(3)]
+# print(matrix)
+
 #
 # - Используйте генераторы списков для вычисления произведения этих матриц.
 #     product = [[30, 24, 18], [84, 69, 54], [138, 114, 90]]
