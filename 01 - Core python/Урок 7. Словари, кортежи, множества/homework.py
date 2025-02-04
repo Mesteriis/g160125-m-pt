@@ -18,7 +18,32 @@
 #     "Bob": {"age": 25, "department": "IT", "salary": 6000},
 #     "Charlie": {"age": 35, "department": "Finance", "salary": 7000}
 # }
-
+# employees = {
+#     "Alice": {"age": 30, "department": "HR", "salary": 5000},
+#     "Bob": {"age": 25, "department": "IT", "salary": 6000},
+#     "Charlie": {"age": 35, "department": "Finance", "salary": 7000}
+# }
+#
+# print("Имена сотрудников:")
+# for name in employees.keys():
+#     print(name)
+#
+# total_salary = sum(emp["salary"] for emp in employees.values())
+# print(f"\nОбщая сумма зарплат: {total_salary}")
+#
+# employees["David"] = {"age": 28, "department": "IT", "salary": 6500}
+# print("\nДобавлен новый сотрудник: David")
+#
+# employees["Alice"]["salary"] = 5500
+# print("\nЗарплата Alice обновлена до 5500")
+#
+# employees.pop("Charlie", None)
+# print("\nСотрудник Charlie удален")
+#
+# print("\nДанные о сотрудниках:")
+# for name, info in employees.items():
+#     print(f"Имя: {name}, Возраст: {info['age']}, Отдел: {info['department']}, Зарплата: {info['salary']}")
+#
 
 # Задача 2: Управление запасами товаров
 # У вас есть словарь, содержащий информацию о запасах товаров в магазине.
@@ -37,7 +62,25 @@
 #     "Bananas": {"quantity": 30, "price": 1},
 #     "Cherries": {"quantity": 20, "price": 3},
 # }
-
+#
+# inventory = {
+#     "Apples": {"quantity": 50, "price": 2},
+#     "Bananas": {"quantity": 30, "price": 1},
+#     "Cherries": {"quantity": 20, "price": 3},
+# }
+# print("Названия товаров:")
+# for product in inventory.keys():
+#     print(product)
+# inventory["Apples"]["quantity"] += 10
+# print("\nКоличество Apples увеличено на 10.")
+# inventory["Bananas"]["price"] = 1.5
+# print("\nЦена Bananas изменена на 1.5.")
+# inventory.pop("Cherries", None)
+# print("\nТовар Cherries удален.")
+# inventory["Dates"] = {"quantity": 15, "price": 4}
+# print("\nДобавлен новый товар: Dates.")
+# total_value = sum(item["quantity"] * item["price"] for item in inventory.values())
+# print(f"\nОбщая стоимость всех товаров: {total_value}")
 
 # Тема: кортежи и множества.
 
@@ -54,6 +97,23 @@
 #
 # coordinates = [(10, 20), (30, 40), (50, 60)]
 
+# coordinates = [(10, 20), (30, 40), (50, 60)]
+# print("Координаты:")
+# for coord in coordinates:
+#     print(coord)
+# sum_x = sum(coord[0] for coord in coordinates)
+# sum_y = sum(coord[1] for coord in coordinates)
+# print(f"\nСумма координат по оси x: {sum_x}")
+# print(f"Сумма координат по оси y: {sum_y}")
+# coordinates.append((70, 80))
+# print("\nДобавлена новая координата (70, 80).")
+# coordinates[0] = (15, 25)
+# print("\nПервая координата заменена на (15, 25).")
+# sorted_coordinates = sorted(coordinates, key=lambda coord: coord[0])
+# print("\nОтсортированные координаты по оси x:")
+# for coord in sorted_coordinates:
+#     print(coord)
+
 
 # Задача 2: Обработка данных о продуктах
 # У вас есть список продуктов, каждый из которых представлен кортежем (название, цена).
@@ -67,6 +127,20 @@
 # 5. Выведите все продукты, отсортированные по цене.
 #
 # products = [("Apple", 2), ("Banana", 1), ("Cherry", 3)]
+# products = [("Apple", 2), ("Banana", 1), ("Cherry", 3)]
+# print("Список продуктов:")
+# for product in products:
+#     print(product)
+# total_price = sum(product[1] for product in products)
+# print(f"\nСуммарная стоимость всех продуктов: {total_price}")
+# products.append(("Date", 4))
+# print("\nДобавлен новый продукт: Date")
+# products = [(name, 2.5) if name == "Apple" else (name, price) for name, price in products]
+# print("\nЦена Apple обновлена до 2.5")
+# sorted_products = sorted(products, key=lambda product: product[1])
+# print("\nПродукты, отсортированные по цене:")
+# for product in sorted_products:
+#     print(product)
 
 
 # Задача 3: Управление группами пользователей
@@ -80,6 +154,18 @@
 # 5. Выведите количество пользователей.
 #
 # users = {"Alice", "Bob", "Charlie"}
+#
+# users = {"Alice", "Bob", "Charlie"}
+# print("Список пользователей:")
+# for user in users:
+#     print(user)
+# users.add("David")
+# print("\nДобавлен новый пользователь: David")
+# users.discard("Bob")
+# print("\nПользователь Bob удален")
+# is_alice_present = "Alice" in users
+# print(f"\nПользователь Alice {'присутствует' if is_alice_present else 'отсутствует'} в множестве")
+# print(f"\nОбщее количество пользователей: {len(users)}")
 
 
 # Задача 4: Управление наборами данных
@@ -95,6 +181,22 @@
 #
 # set1 = {1, 2, 3, 4, 5}
 # set2 = {4, 5, 6, 7, 8}
+# set1 = {1, 2, 3, 4, 5}
+# set2 = {4, 5, 6, 7, 8}
+#
+# print("Элементы множества set1:")
+# print(set1)
+#
+# print("\nЭлементы множества set2:")
+# print(set2)
+# union_set = set1 | set2
+# print(f"\nОбъединение множеств: {union_set}")
+# intersection_set = set1 & set2
+# print(f"\nПересечение множеств: {intersection_set}")
+# difference_set = set1 - set2
+# print(f"\nРазность множеств (set1 - set2): {difference_set}")
+# is_subset = set2.issubset(set1)
+# print(f"\nМножество set2 {'является' if is_subset else 'не является'} подмножеством set1")
 
 
 # Проект: Управление инвентарем в интернет-магазине
