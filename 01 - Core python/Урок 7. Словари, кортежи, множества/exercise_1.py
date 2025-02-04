@@ -11,11 +11,17 @@
 # 6. Выведите данные о каждом сотруднике в формате:
 # "Имя: {name}, Возраст: {age}, Отдел: {department}, Зарплата: {salary}"
 #
-# employees = {
-#     "Alice": {"age": 30, "department": "HR", "salary": 5000},
-#     "Bob": {"age": 25, "department": "IT", "salary": 6000},
-#     "Charlie": {"age": 35, "department": "Finance", "salary": 7000}
-# }
+employees = {
+    "Alice": {"age": 30, "department": "HR", "salary": 5000},
+    "Bob": {"age": 25, "department": "IT", "salary": 6000},
+    "Charlie": {"age": 35, "department": "Finance", "salary": 7000}
+}
+for employee in employees:
+    name = employee
+    age = employees[employee]["age"]
+    department = employees[employee]["department"]
+    salary = employees[employee]["salary"]
+    print(f"Имя: {name}, Возраст: {age}, Отдел: {department}, Зарплата: {salary}")
 
 
 # Задача 2: Управление запасами товаров
