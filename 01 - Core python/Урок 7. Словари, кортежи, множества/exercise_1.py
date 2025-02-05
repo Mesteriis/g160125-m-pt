@@ -16,13 +16,20 @@ employees = {
     "Bob": {"age": 25, "department": "IT", "salary": 6000},
     "Charlie": {"age": 35, "department": "Finance", "salary": 7000}
 }
-for employee in employees:
-    name = employee
-    age = employees[employee]["age"]
-    department = employees[employee]["department"]
-    salary = employees[employee]["salary"]
-    print(f"Имя: {name}, Возраст: {age}, Отдел: {department}, Зарплата: {salary}")
+print(employees.keys())
 
+salary = sum([employees[employee]["salary"] for employee in employees])
+print(salary)
+employees["David"] = {"age": 28, "departament": "IT", "salary": 6500}
+print(employees)
+employees["Alice"]["salary"] = 6500
+print(employees)
+
+del employees["Charlie"]
+print(employees)
+
+for employee in employees:
+    print(employee, employees[employee])
 
 # Задача 2: Управление запасами товаров
 # У вас есть словарь, содержащий информацию о запасах товаров в магазине.
