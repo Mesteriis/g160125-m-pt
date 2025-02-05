@@ -5,6 +5,19 @@
 # numbers = [1, 2, 3, 4, 5, 6]
 # Вывод функции: (21, 3.5, 3)
 
+#def analyze_numbers(numbers):
+#    if not numbers:
+#        return (0, 0, 0)
+
+#    total_sum = sum(numbers)
+#    average = total_sum / len(numbers)
+#    even_count = sum(1 for num in numbers if num % 2 == 0)
+
+#    return (total_sum, average, even_count)
+
+#numbers = [1, 2, 3, 4, 5, 6]
+#result = analyze_numbers(numbers)
+#print(result)
 
 # Задача 2: Работа со строками
 # Напишите функцию `analyze_strings(strings)`, которая принимает список строк
@@ -13,6 +26,18 @@
 # strings = ["apple", "banana", "cherry", "date"]
 # Вывод функции: ('banana', 'date', 3)
 
+#def analyze_strings(strings):
+#    if not strings:
+#        return None, None, 0
+
+#    longest = max(strings, key=len)
+#    shortest = min(strings, key=len)
+#    count_with_a = sum(1 for s in strings if 'a' in s)
+
+#    return longest, shortest, count_with_a
+
+#strings = ["apple", "banana", "cherry", "date"]
+#print(analyze_strings(strings))
 
 # Задача 3: Обработка словаря сотрудников
 # Напишите функцию `analyze_salaries(employees)`, которая принимает словарь сотрудников и
@@ -21,6 +46,19 @@
 # employees = {"Alice": 5000, "Bob": 7000, "Charlie": 6000}
 # Вывод функции: (6000.0, 7000, 'Bob')
 
+#def analyze_salaries(employees):
+#    if not employees:
+#        return (0, 0, None)  # Возвращаем значения по умолчанию для пустого словаря
+
+#    total_salary = sum(employees.values())
+#    avg_salary = total_salary / len(employees)
+#    max_salary = max(employees.values())
+#    max_salary_employee = max(employees, key=employees.get)
+
+#    return (avg_salary, max_salary, max_salary_employee)
+
+#employees = {"Alice": 5000, "Bob": 7000, "Charlie": 6000}
+#print(analyze_salaries(employees))
 
 # Задача 4: Фильтрация списка
 # Напишите функцию `filter_numbers(numbers)`, которая принимает список чисел и
@@ -29,6 +67,14 @@
 # numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # Вывод функции: ([2, 4, 6, 8, 10], [1, 3, 5, 7, 9])
 
+#def filter_numbers(numbers):
+#    even_numbers = [num for num in numbers if num % 2 == 0]
+#    odd_numbers = [num for num in numbers if num % 2 != 0]
+#    return even_numbers, odd_numbers
+
+#numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#result = filter_numbers(numbers)
+#print(result)
 
 # Задача 5: Генерация словаря
 # Напишите функцию `create_dict(keys, values)`, которая принимает два списка: ключи и значения,
@@ -38,6 +84,13 @@
 # values = ["Alice", 30, "New York"]
 # Вывод функции: {'name': 'Alice', 'age': 30, 'city': 'New York'}
 
+#def create_dict(keys, values):
+#    return dict(zip(keys, values))
+
+#keys = ["name", "age", "city"]
+#values = ["Alice", 30, "New York"]
+#result = create_dict(keys, values)
+#print(result)
 
 # Задача 6: Подсчет символов в строке
 # Напишите функцию `count_characters(string)`, которая принимает строку и
@@ -46,6 +99,15 @@
 # string = "hello world"
 # Вывод функции: {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1}
 
+#def count_characters(string):
+#    char_count = {}
+#    for char in string:
+#        char_count[char] = char_count.get(char, 0) + 1
+#    return char_count
+
+#string = "hello world"
+#result = count_characters(string)
+#print(result)
 
 # Задача 7: Обработка произвольного числа аргументов
 # Напишите функцию `sum_positive_negative(*args)`, которая принимает произвольное число числовых аргументов
@@ -54,6 +116,13 @@
 # sum_positive_negative(1, -2, 3, -4, 5)
 # Вывод функции: (9, -6)
 
+#def sum_positive_negative(*args):
+#    positive_sum = sum(x for x in args if x > 0)
+#    negative_sum = sum(x for x in args if x < 0)
+#    return positive_sum, negative_sum
+
+#result = sum_positive_negative(1, -2, 3, -4, 5)
+#print(result)
 
 # Задача 8: Генерация строки из именованных аргументов
 # Напишите функцию `generate_string(**kwargs)`, которая принимает произвольное число именованных аргументов и возвращает строку, состоящую из ключей и значений в формате "key=value".
@@ -61,6 +130,11 @@
 # generate_string(name="Alice", age=30, city="New York")
 # Вывод функции: name=Alice, age=30, city=New York
 
+#def generate_string(**kwargs):
+#    return ', '.join(f"{key}={value}" for key, value in kwargs.items())
+
+#result = generate_string(name="Alice", age=30, city="New York")
+#print(result)
 
 # Проект: Перепишите проект из урока 7 в функциональном стиле.
 # Управление инвентарем в интернет-магазине
@@ -85,5 +159,6 @@
 #     {'product': "Keyboard", 'price': 30, 'count': 33},
 #     {'product': "Monitor", 'price': 20, 'count': 10}
 # ]
+
 
 
