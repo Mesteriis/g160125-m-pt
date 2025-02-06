@@ -166,3 +166,23 @@
 #     product = [[30, 24, 18], [84, 69, 54], [138, 114, 90]]
 #
 # - Выведите исходные матрицы и результат их произведения.
+
+# Создание матриц с помощью генераторов списков
+matrix1 = [[i + j * 3 + 1 for i in range(3)] for j in range(3)]
+matrix2 = [[9 - (i + j * 3) for i in range(3)] for j in range(3)]
+
+# Перемножение матриц
+product = [[sum(matrix1[i][k] * matrix2[k][j] for k in range(3)) for j in range(3)] for i in range(3)]
+
+# Вывод матриц
+print("Matrix 1:")
+for row in matrix1:
+    print(row)
+
+print("\nMatrix 2:")
+for row in matrix2:
+    print(row)
+
+print("\nProduct:")
+for row in product:
+    print(row)
