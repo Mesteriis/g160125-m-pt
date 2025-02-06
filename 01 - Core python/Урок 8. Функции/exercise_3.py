@@ -22,4 +22,87 @@ inventory = [
     {'product': "Monitor", 'price': 20, 'count': 10}
 ]
 
+def show_inventory(inventory):
+    for product in inventory:
+        print_product(product)
 
+def add_product(inventory):
+    product = input("Enter product name: ")
+    price = int(input("Enter product price: "))
+    count = int(input("Enter product count: "))
+    inventory.append({'product': product.title(), 'price': price, 'count': count})
+    return inventory
+
+def remove_product(inventory):
+    product = input("Enter product name: ")
+    for item in inventory:
+        if item['product'].lower() == product.lower():
+            inventory.remove(item)
+    return inventory
+
+def edit_product(inventory):
+    product = input("Enter product name: ")
+    for item in inventory:
+        if item['product'].lower() == product.lower():
+            new_product = input(f"Enter new product name or {item['product']}: ")
+            if new_product:
+                item['product'] = new_product.title()
+            new_price = input(f"Enter new product price or {item['price']}: ")
+            if new_price:
+                item['price'] = int(new_price) * 0.1
+            new_count = input(f"Enter new product count or {item['count']}: ")
+            if new_count:
+                item['count'] = int(new_count)
+    return inventory
+
+def find_product(inventory):
+    product = input("Enter product name: ")
+    for item in inventory:
+        if item['product'].lower() == product.lower():
+            print_product(item)
+
+def find_product_min_cost(inventory):
+    price = int(input("Enter price: "))
+    for item in inventory:
+        if item['price'] <= price:
+            print_product(item)
+
+def print_product(product):
+    print(f"Product: {product['product']}\nPrice: {product['price']}\nCount: {product['count']}")
+
+def find_product_min_count(inventory):
+    count = int(input("Enter count: "))
+    for item in inventory:
+        if item['count'] <= count:
+            print_product(item)
+
+while True:
+    user_input = input(
+        "1. Показать список товаров.\n"
+        "2. Добавить товар.\n"
+        "3. Удалить товар.\n"
+        "4. Обновить название товара, стоимость или количество.\n"
+        "5. Найти товар по названию.\n"
+        "6. Вывести список товаров меньше определнной стоимости.\n"
+        "7. Вывести список товаров меньше определенного количества.\n"
+        "8. Выйти.\n"
+    )
+    match user_input:
+        case "1":
+            show_inventory(inventory)
+        case "2":
+            inventory = add_product(inventory)
+        case "3":
+            inventory = remove_product(inventory)
+        case "4":
+            inventory = edit_product(inventory)
+        case "5":
+            find_product(inventory)
+        case "6":
+            find_product_min_cost(inventory)
+        case "7":
+            find_product_min_count(inventory)
+        case "8":
+            break
+        case _:
+            print("Invalid input")
