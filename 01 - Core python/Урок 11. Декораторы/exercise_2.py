@@ -1,26 +1,47 @@
 # Дополнительная практика
 
 
-# 1. Создайте декоратор requires_auth, который проверяет наличие определенного флага authenticated и выполняет
-# функцию только если этот флаг установлен в True.
-#
-# authenticated = False
-#
+# # 1. Создайте декоратор requires_auth, который проверяет
+# # наличие определенного флага authenticated и выполняет
+# # функцию только если этот флаг установлен в True.
+# #
+# authenticated = True
+# def requires_auth(func):
+#     def wrapper(*args, **kwargs):
+#         global authenticated
+#         if authenticated:
+#             return func(*args,**kwargs)
+#         else:
+#             print("Доступ запрещен: пользователь не аутентифицирован")
+#     return wrapper
 # @requires_auth
 # def secret_function():
 #     print("Секретная информация")
 #
 # secret_function()
-# Вывод: Доступ запрещен: пользователь не аутентифицирован
-#
-# authenticated = True
+# # Вывод: Доступ запрещен: пользователь не аутентифицирован
+# authenticated = False
 # secret_function()
-# Вывод: Секретная информация
 
 
-# 2. Создайте декоратор call_counter, который отслеживает количество вызовов декорируемой функции и
+
+
+# 2. Создайте декоратор call_counter, который
+# отслеживает количество вызовов декорируемой функции и
 # выводит это количество при каждом вызове.
+# #
+# func_name = {}
+# def call_counter(func):
+#     count = 0
+#     global func_name
+#     if func.__name__ not in func_name:
+#         func_name[func.__name__] = 0
+#     def wrapper(*args, **kwargs):
+#         func_name[func.__name__] += 1
+#         print(f"Функция {func.__name__} вызвана {func_name[func.__name__]} раз(а)")
+#         return func(*args, **kwargs)
 #
+#     return wrapper
 # @call_counter
 # def greet(name):
 #     print(f"Привет, {name}!")
