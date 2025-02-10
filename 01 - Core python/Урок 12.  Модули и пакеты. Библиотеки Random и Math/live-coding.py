@@ -15,9 +15,19 @@
 
 # Покажите в режиме live-coding и объясните:
 # - Работу с модулей math
+import math
+
+print(math.pi)
+
 # - Работу с модулей random
+import random
 
+ran_number = random.randint(1, 10)
+print(ran_number)
 
+from datetime import datetime
+
+print(datetime.now().timestamp())
 
 
 
