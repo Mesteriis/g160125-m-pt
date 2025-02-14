@@ -28,3 +28,11 @@ for row in numbers:
         print(f'{row*cell:4}', end=' ')
     print()
 
+
+numbers = range(1,11)
+
+for row in numbers:
+    for cell in numbers:
+        print(f'{row*cell:4}', end=' ')
+    print()
+
