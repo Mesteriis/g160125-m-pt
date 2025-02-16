@@ -9,14 +9,22 @@
 # 4. Замените первую координату на (15, 25).
 # 5. Выведите все координаты, отсортированные по оси x.
 #
-coordinates = [(10, 20), (30, 40), (50, 60)]
-total_x=0
-total_y=0
-for x, y in coordinates:
+coordinates = [(10, 20), (5, 40), (50, 60)]
+total_x = 0
+total_y = 0
+for x ,y in coordinates:
     total_x+=x
     total_y+=y
-print(f'Total x: {total_x}, Total y: {total_y}')
+
+print(total_x , total_y)
+coordinates.append((70, 80))
+print(coordinates)
+coordinates[0]=(15,25)
+print(coordinates)
 print(sorted(coordinates, key=lambda x: x[0]))
+
+
+
 
 # Задача 2: Обработка данных о продуктах
 # У вас есть список продуктов, каждый из которых представлен кортежем (название, цена).
