@@ -6,7 +6,11 @@
 #
 # numbers = [1, 2, 3, 4, 5]
 # Ожидаемый результат: [1, 4, 9, 16, 25]
-
+def square(x):
+    return x * x
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = map(square, numbers)
+print(list(squared_numbers))
 
 # Задача 2: Применение функции filter для отбора четных чисел
 # Напишите функцию `is_even`, которая принимает число и возвращает `True`, если число четное,
@@ -16,6 +20,12 @@
 # numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # Ожидаемый результат: [2, 4, 6, 8, 10]
 
+def is_even(x):
+    return x % 2 == 0
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers = filter(is_even, numbers)
+print(list(even_numbers))
 
 # Задача 3: Применение функции zip для объединения списков
 # У вас есть два списка: `names = ["Alice", "Bob", "Charlie"]` и `ages = [25, 30, 35]`.
@@ -26,6 +36,10 @@
 # ages = [25, 30, 35]
 # Ожидаемый результат: [("Alice", 25), ("Bob", 30), ("Charlie", 35)]
 
+names = ["Alice", "Bob", "Charlie"]
+ages = [25, 30, 35]
+combined_list = zip(names, ages)
+print(list(combined_list))
 
 # Задача 4: Применение функции map для преобразования строк в числа
 # Напишите функцию `to_int`, которая принимает строку и возвращает ее преобразование в целое число.
@@ -35,6 +49,11 @@
 # str_numbers = ["1", "2", "3", "4", "5"]
 # Ожидаемый результат: [1, 2, 3, 4, 5]
 
+def to_int(x):
+    return int(x)
+str_numbers = ["1", "2", "3", "4", "5"]
+numbers = map(to_int, str_numbers)
+print(list(numbers))
 
 # Задача 5: Применение функции filter для отбора слов длиннее 3 символов
 # Напишите функцию `longer_than_three`, которая принимает строку и возвращает `True`,
@@ -44,6 +63,12 @@
 # words = ["apple", "kiwi", "banana", "pear"]
 # Ожидаемый результат: ["apple", "banana", "pear"]
 
+def longer_than_three(x):
+    return len(x) > 4
+
+words = ["apple", "kiwi", "banana", "pear"]
+filtered_word = filter(longer_than_three, words)
+print(list(filtered_word))
 
 # Тема: map, filter, zip для итераторов, генераторов и файлов с лямбда функциями
 
@@ -52,19 +77,36 @@
 # Используйте функцию `filter` с лямбда функцией для отбора четных чисел и выведите результат.
 # Ожидаемый результат: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
+def gen_nums():
+    for i in range(21):
+        yield i
+even_numbers = filter(lambda x: x%2 == 0, gen_nums())
+print(list(even_numbers))
 
 # Задача 2: Использование zip с итераторами и лямбда функцией
-# Создайте два итератора: один для чисел от 1 до 5, другой для их квадратов. Используйте функцию `zip`,
-# чтобы объединить эти итераторы в список кортежей, и примените лямбда функцию для их вывода
+# Создайте два итератора: один для чисел от 1 до 5, другой для их квадратов.
+# Используйте функцию `zip`,
+# чтобы объединить эти итераторы в список кортежей,
+# и примените лямбда функцию для их вывода
 # в формате строки "число: квадрат".
 # Ожидаемый результат: ['1: 1', '2: 4', '3: 9', '4: 16', '5: 25']
 
+zipped = zip(range (1,6), map(lambda x: x**2, range(1,6)))
+print(list(zipped))
 
 # Задача 3: Использование map и filter с файлом и лямбда функцией
 # Напишите генератор, который читает строки из файла `example.txt`.
 # Используйте функцию `filter` с лямбда функцией, чтобы отобрать строки, содержащие слово "Python",
 # и затем примените функцию `map` с лямбда функцией для преобразования этих строк в верхний регистр.
 
+def file_reader(file_path):
+    with open(file_path, 'r') as file:
+        for line in file:
+            yield line.strip()
+
+lines = file_reader('./text_files/example.txt')
+filtered_lines = filter(lambda line: 'Python' in line, lines)
+print(list(filtered_lines))
 
 # Тема: Дополнительная практика
 
@@ -73,29 +115,56 @@
 # Используйте функцию `map` с лямбда функцией для конвертации этих температур в Фаренгейты и выведите результат.
 # Ожидаемый результат: [14.0, 15.8, 17.6, 19.4, 21.2, 23.0, 24.8, 26.6, 28.4, 30.2,
 # 32.0, 33.8, 35.6, 37.4, 39.2, 41.0, 42.8, 44.6, 46.4, 48.2, 50.0]
-
+def celsium():
+    for x in range (-11,11):
+        yield x
+farengeht = map(lambda x: (x*9/5)+32, celsium())
+print(list(farengeht))
 
 # Задача 2: Использование filter с итератором и лямбда функцией для фильтрации строк по длине
 # Создайте итератор для списка строк `["hello", "world", "python", "is", "awesome"]`.
 # Используйте функцию `filter` с лямбда функцией для отбора строк длиной более 5 символов и выведите результат.
 # Ожидаемый результат: ['python', 'awesome']
-
+strings = ["hello", "world", "python", "is", "awesome"]
+string_5_words = filter(lambda x: len(x) > 5, strings)
+print(list(string_5_words))
 
 # Задача 3: Использование zip и map для объединения и форматирования данных из двух генераторов
 # Напишите два генератора: один для чисел от 1 до 3, другой для их кубов. Используйте функцию `zip`,
 # чтобы объединить эти генераторы в список кортежей, и примените функцию `map` с лямбда функцией
 # для вывода данных в формате строки "число: куб".
 # Ожидаемый результат: ['1: 1', '2: 8', '3: 27']
-
+zipped = zip(range(1, 4), map(lambda x: x**3, range(1,6)))
+print(list(zipped))
 
 # Задача 4: Использование filter и map с файлом для преобразования данных
 # Напишите генератор, который читает строки из файла `data.txt`.
 # Используйте функцию `filter` с лямбда функцией для отбора строк, содержащих числа.
 # Затем примените функцию `map` с лямбда функцией для преобразования этих строк в целые числа и выведите результат.
 
+def file_reader(file_path):
+    with open(file_path, 'r') as file:
+        for line in file:
+            yield line.strip()
+
+lines = file_reader('./text_files/data.txt')
+filtered_lines = filter(lambda x: x.isnumeric(), lines)
+# intereged_nums = map(int, filtered_lines)
+intereged_nums2 = map(lambda x: int(x), filtered_lines)
+# print(list(filtered_lines))
+print(list(intereged_nums2))
 
 # Задача 5: Использование zip с итераторами для обработки данных из двух файлов
 # Создайте два генератора, которые читают строки из файлов `file1.txt` и `file2.txt`.
 # Используйте функцию `zip`, чтобы объединить данные из этих файлов, и примените лямбда функцию
 # для вывода данных в формате "file1_line - file2_line".
+def file_reader(file_path):
+    with open(file_path, 'r') as file:
+        for line in file:
+            yield line.strip()
+
+lines1 = file_reader("./text_files/file1.txt")
+lines2 = file_reader("./text_files/file2.txt")
+zipped = zip(lines1, lines2)
+print(list(map(lambda x: f"{x[0]} - {x[1]}", zipped)))
 

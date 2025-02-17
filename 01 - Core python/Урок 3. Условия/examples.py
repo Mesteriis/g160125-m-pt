@@ -9,7 +9,6 @@ print("apple" != "banana")  # True
 # Лексикографическое сравнение
 print("apple" < "banana")   # True (поскольку 'a' < 'b')
 print("apple" > "banana")   # False
-
 # Сравнение с учетом длины строк
 print("app" < "apple")      # True (поскольку "app" короче "apple")
 
