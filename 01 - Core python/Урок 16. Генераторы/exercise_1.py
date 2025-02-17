@@ -12,3 +12,15 @@
 # Обработайте исключение StopIteration
 
 
+def one_word(sentence):
+    for word in sentence.split():
+        yield word
+
+sentence = "Hello, world!"
+word = one_word(sentence)
+while True:
+    try:
+        print(next(word))
+    except StopIteration:
+        print("End of sentence")
+        break
