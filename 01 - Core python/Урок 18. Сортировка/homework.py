@@ -6,31 +6,44 @@
 # Ожидаемый результат: [1, 3, 4, 7, 9, 10]
 # 2. Отсортируйте список по убыванию с помощью функции `sorted`.
 # Ожидаемый результат: [10, 9, 7, 4, 3, 1]
+numbers = [10, 3, 7, 1, 9, 4]
+numbers.sort()
+print(numbers)
 
+sorted_numbers = sorted(numbers, reverse=True)
+print(sorted_numbers)
 
 # Задача 2: Сортировка списка строк по длине
 # Дан список строк `["house", "cat", "elephant", "car", "building"]`.
 # Отсортируйте список по длине строк с помощью функции `sorted`.
 # Ожидаемый результат: ['cat', 'car', 'house', 'building', 'elephant']
-
+strings = ["house", "cat", "elephant", "car", "building"]
+sorted_strings = sorted(strings, key=len)
+print(sorted_strings)
 
 # Задача 3: Сортировка списка кортежей по второму элементу
 # Дан список кортежей `[(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]`.
 # Отсортируйте список по второму элементу кортежей с помощью метода `sort`.
 # Ожидаемый результат: [(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]
-
+tuples = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
+tuples.sort(key=lambda x: x[1])
+print(tuples)
 
 # Задача 4: Сортировка списка словарей по значению ключа
 # Дан список словарей `[{ "name": "Alice", "age": 25 }, { "name": "Bob", "age": 20 }, { "name": "Charlie", "age": 23 }]`.
 # Отсортируйте список по значению ключа `age` с помощью функции `sorted`.
 # Ожидаемый результат: [{'name': 'Bob', 'age': 20}, {'name': 'Charlie', 'age': 23}, {'name': 'Alice', 'age': 25}]
-
+people = [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 20}, {"name": "Charlie", "age": 23}]
+sorted_people = sorted(people, key=lambda x: x["age"])
+print(sorted_people)
 
 # Задача 5: Сортировка списка кортежей по сумме элементов
 # Дан список кортежей `[(3, 5), (1, 7), (4, 2), (6, 3)]`.
 # Отсортируйте кортежи по сумме их элементов с помощью метода `sort`.
 # Ожидаемый результат: [(4, 2), (3, 5), (6, 3), (1, 7)]
-
+tuples_list = [(3, 5), (1, 7), (4, 2), (6, 3)]
+tuples_list.sort(key=lambda x: sum(x))
+print(tuples_list)
 
 # Тема: Cортировка с all, any, isinstance
 
@@ -38,7 +51,9 @@
 # Дан список `["tree", 3, "mountain", 1, "river", 2]`.
 # Отсортируйте только строки в списке по алфавиту с помощью функции `sorted`,
 # Ожидаемый результат: ['mountain', 'river', 'tree']
-
+mixed_list = ["tree", 3, "mountain", 1, "river", 2]
+filtered_strings = sorted([s for s in mixed_list if isinstance(s, str)])
+print(filtered_strings)
 
 # Задача 2: Сортировка списка словарей по значению ключа с проверкой типов
 # Дан список словарей
@@ -46,14 +61,20 @@
 # Отсортируйте словари по значению ключа `price`, предварительно проверив, что значение является числом,
 # с помощью функции `isinstance`.
 # Ожидаемый результат: [{'title': 'Book C', 'price': 9.99}, {'title': 'Book A', 'price': 15.99}]
-
+books = [{"title": "Book A", "price": 15.99}, {"title": "Book B", "price": "free"}, {"title": "Book C", "price": 9.99}]
+filtered_books = [book for book in books if isinstance(book["price"], (int, float))]
+sorted_books = sorted(filtered_books, key=lambda x: x["price"])
+print(sorted_books)
 
 # Задача 3: Сортировка списка кортежей по количеству слов с использованием all
 # Дан список кортежей `[(3, "high"), (1, "low"), (4, "medium"), (6, "very high")]`.
 # Отсортируйте кортежи по количеству слов во втором элементе, предварительно проверив,
 # что все строки содержат только алфавитные символы, с помощью функции `all`.
 # Ожидаемый результат: [(1, 'low'), (3, 'high'), (4, 'medium'), (6, 'very high')]
-
+tuples_words = [(3, "high"), (1, "low"), (4, "medium"), (6, "very high")]
+filtered_tuples = [t for t in tuples_words if all(word.isalpha() for word in t[1].split())]
+sorted_tuples = sorted(filtered_tuples, key=lambda x: len(x[1].split()))
+print(sorted_tuples)
 
 # Задача 4: Сортировка списка словарей по длине значений с использованием any
 # Дан список словарей
@@ -62,7 +83,12 @@
 # Отсортируйте словари по длине значений ключа `capital`, предварительно проверив,
 # что хотя бы одна длина значения ключа `capital` больше 6, с помощью функции `any`.
 # Ожидаемый результат: [{'country': 'UK', 'capital': 'London'}, {'country': 'Australia', 'capital': 'Canberra'}, {'country': 'USA', 'capital': 'Washington'}]
-
+countries = [{"country": "USA", "capital": "Washington"}, {"country": "UK", "capital": "London"}, {"country": "Australia", "capital": "Canberra"}]
+if any(len(entry["capital"]) > 6 for entry in countries):
+    sorted_countries = sorted(countries, key=lambda x: len(x["capital"]))
+    print(sorted_countries)  # [{'country': 'UK', 'capital': 'London'}, {'country': 'Australia', 'capital': 'Canberra'}, {'country': 'USA', 'capital': 'Washington'}]
+else:
+    print("No capital names longer than 6 characters.")
 
 # Тема: Дополнительная практика
 
