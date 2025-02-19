@@ -20,6 +20,10 @@
 # что все строки содержат только алфавитные символы, с помощью функции `all`.
 # Ожидаемый результат: [(1, 'low'), (3, 'high'), (4, 'medium'), (6, 'very high')]
 
+my_list = [(3, "high"), (1, "low"), (4, "medium"), (6, "very high")]
+my_list = list(filter(lambda x: all(char.isalpha() or char.isspace() for char in x[1]), my_list))
+my_list.sort(key=lambda x: len(x[1].split()))
+print(my_list)  # [(1, 'low'), (3, 'high'), (4, 'medium'), (6, 'very high')]
 
 # Задача 4: Сортировка списка словарей по длине значений с использованием any
 # Дан список словарей
@@ -29,5 +33,11 @@
 # что хотя бы одна длина значения ключа `capital` больше 6, с помощью функции `any`.
 # Ожидаемый результат: [{'country': 'UK', 'capital': 'London'}, {'country': 'Australia', 'capital': 'Canberra'}, {'country': 'USA', 'capital': 'Washington'}]
 
-
+country = [
+    {"country": "USA", "capital": "Washington"},
+    {"country": "UK", "capital": "London"},
+    {"country": "Australia", "capital": "Canberra"}
+]
+if any(len(x["capital"]) > 6 for x in country):
+    country.sort(key=lambda x: len(x["capital"]))
 
