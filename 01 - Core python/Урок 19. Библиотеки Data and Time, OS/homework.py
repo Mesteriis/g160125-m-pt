@@ -1,49 +1,112 @@
 # Тема: Модуль datetime
-
+from datetime import datetime
+import os
 # Задача 1: Определение текущей даты и времени
 # Напишите программу, которая выводит текущие дату и время в формате "YYYY-MM-DD HH:MM:SS".
 # Пример: 2024-06-11 14:35:45
-
+# current_time = datetime.now()
+# formatted_time = current_time.strftime("%Y-%m-%d %H:%M:%S")
+# print("Текущая дата и время:", formatted_time)
 
 # Задача 2: Вычисление возраста
 # Напишите программу, которая принимает дату рождения пользователя в формате "YYYY-MM-DD" и вычисляет его возраст.
-
+# bt = input("Enter your birth date in format 'YYYY-MM-DD': ")
+# bt = datetime.strptime(bt, "%Y-%m-%d")
+# now = datetime.now()
+# age = now.year - bt.year
+# if now.month < bt.month or (now.month == bt.month and now.day < bt.day):
+#     age -= 1
+# print(f"Your age is {age}")
 
 # Задача 3: Расчет дней до следующего мероприятия
 # Напишите программу, которая принимает дату следующего мероприятия в формате "YYYY-MM-DD" и выводит количество дней,
 # оставшихся до этой даты.
-
+# event_date = input("Введите дату мероприятия (YYYY-MM-DD): ")
+# event = datetime.strptime(event_date, "%Y-%m-%d")
+# today = datetime.today()
+# delta = (event - today).days
+# if delta > 0:
+#     print(f"До мероприятия осталось {delta} дней.")
+# elif delta == 0:
+#     print("Мероприятие сегодня!")
+# else:
+#     print("Мероприятие уже прошло.")
 
 # Задача 4: Определение дня недели
 # Напишите программу, которая принимает дату в формате "YYYY-MM-DD" и выводит день недели для этой даты.
-
+# date = input("Enter date in format 'YYYY-MM-DD': ")
+# date = datetime.strptime(date, "%Y-%m-%d")
+# print(date.strftime("%A"))
 
 # Задача 5: Сравнение двух дат
 # Напишите программу, которая принимает две даты в формате "YYYY-MM-DD" и определяет, какая из них позже.
 
+
+# def compare_dates(date1, date2):
+#     format_str = "%Y-%m-%d"
+#     d1 = datetime.strptime(date1, format_str)
+#     d2 = datetime.strptime(date2, format_str)
+#
+#     if d1 > d2:
+#         print(f"Дата {date1} позже, чем {date2}.")
+#     elif d1 < d2:
+#         print(f"Дата {date2} позже, чем {date1}.")
+#     else:
+#         print("Обе даты одинаковые.")
+# date1 = input("Введите первую дату (YYYY-MM-DD): ")
+# date2 = input("Введите вторую дату (YYYY-MM-DD): ")
+#
+# compare_dates(date1, date2)
 
 # Тема: Модуль os
 
 # Задача 1: Создание и удаление директории
 # Напишите программу, которая создает новую директорию с именем "test_directory", выводит список всех директорий
 # в текущем каталоге, а затем удаляет созданную директорию.
-
+# os.mkdir('test_directory')
+# current_directory = os.getcwd()
+# print(current_directory)
+# print(os.listdir(current_directory))
+# os.rmdir("test_directory")
 
 # Задача 2: Переименование файла
 # Напишите программу, которая создает файл с именем "temp_file.txt", записывает в него строку "Temporary content",
 # затем переименовывает файл в "renamed_file.txt" и выводит список всех файлов в текущем каталоге.
-
+# with open("temp_file.txt", "w") as file:
+#     file.write("Temporary content")
+# # os.rename("temp_file.txt", "renamed_file.txt")
+# print(os.listdir("."))
 
 # Задача 3: Проверка существования файла
 # Напишите программу, которая проверяет существование файла с именем "example.txt" в текущем каталоге.
 # Если файл существует, программа должна вывести его размер в байтах. Если файл не существует,
 # программа должна вывести сообщение "Файл не найден".
-
+# with open("example.txt", "w") as file:
+#     file.write("Hello, World")
+# exists = os.path.exists('example.txt')
+# print(exists)
+# if exists == True:
+#     info = os.stat('example.txt')
+#     print(info)
+# else:
+#     print("Файл не найден")
 
 # Задача 4: Сравнение размеров файлов
 # Напишите программу, которая принимает два имени файлов в текущем каталоге, сравнивает их размеры и выводит,
 # какой из файлов больше. Если размеры файлов равны, программа должна вывести сообщение "Файлы имеют одинаковый размер".
-
+# def file_sizes(file1, file2):
+#     size1 = os.path.getsize(file1)
+#     size2 = os.path.getsize(file2)
+#
+#     if size1 > size2:
+#         print(f"Файл '{file1}' больше ({size1} байт) чем '{file2}' ({size2} байт).")
+#     elif size2 > size1:
+#         print(f"Файл '{file2}' больше ({size2} байт) чем '{file1}' ({size1} байт).")
+#     else:
+#         print("Файлы имеют одинаковый размер.")
+#
+# file1 = "example.txt"
+# file2 = "renamed_file.txt"
 
 # Тема: Интеграционная практика.
 
@@ -78,6 +141,196 @@
 # 6. Вывести список товаров меньше определнной стоимости.
 # 7. Вывести список товаров меньше определенного количества.
 
+# import json
+# import os
+
+#
+#
+#
+# import time
+# from datetime import datetime
+# from json import JSONDecodeError
+# map_count_call = {}
+# DB = 'inventory.json'
+# DB_COPY = 'inventory_copy.json'
+# def retry_on_error(func):
+#     global map_count_call
+#     if func.__name__ not in map_count_call:
+#         map_count_call[func.__name__] = 0
+#     def wrapper(*args, **kwargs):
+#         try:
+#             return func(*args, **kwargs)
+#         except (FileNotFoundError, IOError, JSONDecodeError) as e:
+#             time.sleep(10)
+#         except Exception as e:
+#             print(f"Ошибка: {e}")
+#             map_count_call[func.__name__] += 1
+#             if map_count_call[func.__name__] == 3:
+#                 print(f"Превышено количество попыток вызова функции {func.__name__}")
+#                 exit(1)
+#             return wrapper(*args, **kwargs)
+#         else:
+#             map_count_call[func.__name__] = 0
+#     return wrapper
+#
+# def log_it(func):
+#     def wrapper(*args, **kwargs):
+#         result = func(*args, **kwargs)
+#         with open('log.txt', 'a') as file:
+#             file.write(f"{datetime.now()} Вызвана функция {func.__name__}. Результат: {result}\n")
+#         return result
+#     return wrapper
+#
+# @retry_on_error
+# def save_inventory(inventory):
+#     with open(DB, 'w') as file:
+#         for el in inventory:
+#             if 'created_at' in el:
+#                 el['created_at'] = el['created_at'].isoformat()
+#             else:
+#                 el['created_at'] = datetime.now().isoformat()
+#         json.dump(inventory, file)
+#
+# @retry_on_error
+# def load_inventory():
+#     # try:1
+#     with open(DB) as file:
+#         data = json.load(file)
+#         for el in data:
+#             if 'created_at' in el:
+#                 el['created_at'] = datetime.fromisoformat(el['created_at'])
+#             else:
+#                 el['created_at'] = datetime.now()
+#         return data
+#     # except (FileNotFoundError, IOError, JSONDecodeError) as e:
+#     #     print(f"Ошибка: {e}")
+#     #     return []
+#
+#
+# def show_inventory(inventory):
+#     for product in inventory:
+#         print_product(product)
+# @log_it
+# def add_product(inventory):
+#     product = input("Enter product name: ")
+#     try:
+#         price = int(input("Enter product price: "))
+#         count = int(input("Enter product count: "))
+#     except ValueError as e:
+#         print(f"Ошибка: {e}")
+#         return add_product(inventory)
+#     inventory.append({'product': product.title(), 'price': price, 'count': count, "created_at": datetime.now()})
+#     return inventory
+# @log_it
+# def remove_product(inventory):
+#     product = input("Enter product name: ")
+#     for item in inventory:
+#         if item['product'].lower() == product.lower():
+#             inventory.remove(item)
+#     return inventory
+# @log_it
+# def edit_product(inventory):
+#     product = input("Enter product name: ")
+#     for item in inventory:
+#         if item['product'].lower() == product.lower():
+#             try:
+#                 new_product = input(f"Enter new product name or {item['product']}: ")
+#                 if new_product:
+#                     item['product'] = new_product.title()
+#                 new_price = input(f"Enter new product price or {item['price']}: ")
+#                 if new_price:
+#                     item['price'] = int(new_price) * 0.1
+#                 new_count = input(f"Enter new product count or {item['count']}: ")
+#                 if new_count:
+#                     item['count'] = int(new_count)
+#             except ValueError as e:
+#                 print(f"Ошибка: {e}")
+#                 return edit_product(inventory)
+#     return inventory
+#
+# def find_product(inventory):
+#     product = input("Enter product name: ")
+#     for item in inventory:
+#         if item['product'].lower() == product.lower():
+#             print_product(item)
+#
+# def find_product_min_cost(inventory):
+#     try:
+#         price = int(input("Enter price: "))
+#     except ValueError as e:
+#         print(f"Ошибка: {e}")
+#         return find_product_min_cost(inventory)
+#     for item in inventory:
+#         if item['price'] <= price:
+#             print_product(item)
+#
+# def print_product(product):
+#     print(f"Product: {product['product']} Price: {product['price']} Count: {product['count']} Created at: {product['created_at']}")
+#
+# def find_product_min_count(inventory):
+#     try:
+#         count = int(input("Enter count: "))
+#     except ValueError as e:
+#         print(f"Ошибка: {e}")
+#         return find_product_min_count(inventory)
+#     for item in inventory:
+#         if item['count'] <= count:
+#             print_product(item)
+#
+# def copy_file(origin_path, new_path):
+#     def read_file_by_cunck(file, size=1024):
+#         while True:
+#             data = file.read(size)
+#             if not data:
+#                 break
+#             yield data
+#     def write_file_by_cunck(file, data):
+#         for chunk in data:
+#             file.write(chunk)
+#     for el in read_file_by_cunck(open(origin_path, 'rb')):
+#         with open(new_path, 'wb') as file:
+#             write_file_by_cunck(file, el)
+#
+#
+# while True:
+#     inventory = load_inventory()
+#     user_input = input(
+#         "1. Показать список товаров.\n"
+#         "2. Добавить товар.\n"
+#         "3. Удалить товар.\n"
+#         "4. Обновить название товара, стоимость или количество.\n"
+#         "5. Найти товар по названию.\n"
+#         "6. Вывести список товаров меньше определнной стоимости.\n"
+#         "7. Вывести список товаров меньше определенного количества.\n"
+#         "8. Выйти.\n"
+#     )
+#     match user_input:
+#         case "1":
+#             show_inventory(inventory)
+#         case "2":
+#             inventory = add_product(inventory)
+#             save_inventory(inventory)
+#         case "3":
+#             inventory = remove_product(inventory)
+#             save_inventory(inventory)
+#         case "4":
+#             inventory = edit_product(inventory)
+#             save_inventory(inventory)
+#         case "5":
+#             find_product(inventory)
+#         case "6":
+#             find_product_min_cost(inventory)
+#         case "7":
+#             find_product_min_count(inventory)
+#         case "8":
+#             if os.path.exists(DB_COPY):
+#                 os.unlink(DB_COPY)
+#             with open(DB, 'r') as file:
+#                 with open(DB_COPY, 'w') as file_copy:
+#                     file_copy.write(file.read())
+#             break
+#         case _:
+#             print("Invalid input")
 
 
 
