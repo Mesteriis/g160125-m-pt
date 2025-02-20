@@ -1,0 +1,13 @@
+This is a test file.
+It contains multiple lines.
+Some lines have the X word.
+Other lines do not.
+Make sure to find all X lines.
+This line contain the keyword.
+X lines should be processed.
+This is the 8 line.
+The next line has the number 9.
+Another line without a number.
+This line contains the number 42.
+No numbers here.
+Number 7 is present in this line.
