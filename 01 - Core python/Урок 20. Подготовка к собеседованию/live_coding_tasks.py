@@ -300,7 +300,6 @@
 #         return text[:length]
 #     return trimmer
 #
-#
 # trim_to_3 = make_trimmer(3)
 # print(trim_to_3("Hello"))  # Вывод: Hel
 # print(trim_to_3("World"))  # Вывод: Wor
