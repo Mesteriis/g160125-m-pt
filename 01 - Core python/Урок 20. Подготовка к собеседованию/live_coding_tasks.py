@@ -3,21 +3,25 @@
 
 # Задача 1: Напишите программу с помощью генераторов списков,
 # которая находит все числа от 1 до 1000, которые делятся на 7.
-
-
-# Задача 2: Напишите программу с помощь генераторов списков,
-# которая найдите все числа от 1 до 1000, в которых есть цифра 3.
-
-
+# numbers_divisible_by_7 = [num for num in range(1, 1001) if num % 7 == 0]
+# print(numbers_divisible_by_7)
+# # Задача 2: Напишите программу с помощь генераторов списков,
+# # которая найдите все числа от 1 до 1000, в которых есть цифра 3.
+#
+# numbers_with_3 = [num for num in range(1,1001) if "3" in str(num)]
+# print(numbers_with_3)
 # Задача 3: Напишите программу с помощь генераторов списков,
 # которая посчитает количество пробелов в строке
-# some_string = 'the slow solid squid swam sumptuously through the slimy swamp'.
-
-
+# some_string = 'the slow solid squid swam sumptuously through the slimy swamp'
+# spaces = [x for x in some_string if x == " "]
+# spaces_count = len(spaces)
+# print("Spaces Value:", spaces_count)
 # Задача 4: Напишите программу с помощь генераторов списков,
 # которая создаст список всех гласных букв в строке
-# some_string = 'the quick brown fox jumps over the lazy dog'.
-
+# words = "a,e,u,i,o,"
+# some_string = 'the quick brown fox jumps over the lazy dog'
+# words_count = sum(1 for x in some_string if x in words)
+# print(words_count)
 
 # Задача 5: Сумма элементов в каждом ряду матрицы
 # С помощью генераторов списков создайте матрицу 3x3 из чисел от 20 до 28
@@ -28,21 +32,45 @@
 #
 # Напишите код для вычисления суммы элементов в каждом ряду (в каждом вложенном списке).
 # Выведите получившиеся значения в консоль.
+# Создание матрицы 3x3 с числами от 20 до 28 с помощью генераторов списков
+# Функция для создания матрицы 3x3 с числами от 20 до 28
+# def create_matrix():
+#     matrix = []
+#     for x in range(20, 29, 3):
+#         row = [num for num in range(x, x + 3)]
+#         matrix.append(row)
+#     return matrix
+# def print_row_sums(matrix):
+#     for row in matrix:
+#         print("Сумма ряда:", sum(row))
+# matrix = create_matrix()
+# print("Матрица:")
+# for row in matrix:
+#     print(row)
+# print("\nСуммы элементов в каждом ряду:")
+# print_row_sums(matrix)
 
 
 # Задача 6: Подсчет количества четных и нечетных чисел в матрице
 # Дана матрица
-# matrix = [
-#     [2, 5, 8, 11],
-#     [14, 17, 20, 23],
-#     [26, 29, 32, 35],
-#     [38, 41, 44, 47]
-# ]
+matrix = [
+    [2, 5, 8, 11],
+    [14, 17, 20, 23],
+    [26, 29, 32, 35],
+    [38, 41, 44, 47]
+]
 #
 # Напишите программу для посчета четных и нечетных чисел в каждом вложенном списке (строке матрицы).
 # Выведите значения в констоль:
 # print(f"Количество четных чисел: ")
 # print(f"Количество нечетных чисел: ")
+# def count_nums(matrix):
+#     for row in matrix:
+#         even_count = sum(1 for num in row if num % 2 == 0)
+#         even_count2 = sum(1 for num in row if num % 2 != 0)
+#         even_count3 = even_count + even_count2
+#         print(even_count, even_count2)
+# count_nums(matrix)
 
 
 # Задача 7: Поиск минимального и максимального значения в матрице
@@ -69,8 +97,16 @@
 # counter = outer()
 # print(counter())  # Вывод: 1
 # print(counter())  # Вывод: 2
-
-
+# def outer():
+#     count = 0
+#     def inner():
+#         nonlocal count
+#         count += 1
+#         print(count)
+#     return inner
+# counter = outer()
+# print(counter())  # Вывод: 1
+# print(counter())
 # Задача 10. Напишите функцию make_multiplier, которая принимает аргумент factor. Внутри этой функции создайте и
 # верните функцию multiplier, которая умножает свой аргумент на factor.
 # mult_by_2 = make_multiplier(2)
