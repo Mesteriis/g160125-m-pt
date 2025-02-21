@@ -1,21 +1,3 @@
-# Игра "Скорость печати" (print_speed.py)
-#
-# Программа запрашивает имя и фамилию пользователя. Затем производит обратный отсчет в консоле: 3, 2, 1, “поехали”.
-# Далее выводит задание: Напечатай фрагмент текста из 180 символов: “какое-то предложение”.
-# Пользователь печатает в консоль фрагмент текста и нажимает enter.
-# Программа проверяет, есть ли во вводе ошибки и замеряет скорость печати.
-# Выводит результат:
-# - имя, фамилию;
-# - фрагмент текста, который нужно было записать;
-# - ввод пользователя;
-# - есть ошибки или нет (то есть полностью ли совпадает ввод пользователя и фрагмент текста);
-# - время, потраченное пользователем на ввод.
-#
-# Эта же информация, плюс дата и время начала и окончания игры должна записываться в лог-файл.
-# Фрагменты текста для печати берутся в рандомном порядке из файла. То есть для каждой попытки из файла
-# выбирается какой-то участок текста на 180 символов (включая пробелы) и выдается пользователю.
-#
-# Добавьте обработку ошибок с использованием `try/except`, где это необходимо.
 import random
 import time
 import logging
@@ -24,6 +6,7 @@ from datetime import datetime
 logging.basicConfig(filename="print_speed_log.txt", level=logging.INFO, format="%(asctime)s - %(message)s")
 
 TEXT_FILE = "text_fragments.txt"
+
 
 def load_text_fragments():
     try:
@@ -34,8 +17,21 @@ def load_text_fragments():
         logging.error("Ошибка загрузки фрагментов текста: %s", e)
         return []
 
-def check_for_errors(user_input, target_text):
-    return user_input == target_text
+
+def count_errors(user_input, target_text):
+    user_input = user_input.strip()
+    target_text = target_text.strip()
+
+    errors = 0
+    min_length = min(len(user_input), len(target_text))
+
+    for i in range(min_length):
+        if user_input[i] != target_text[i]:
+            errors += 1
+
+    errors += abs(len(user_input) - len(target_text))
+    return errors
+
 
 def play_print_speed_game():
     fragments = load_text_fragments()
@@ -61,7 +57,7 @@ def play_print_speed_game():
     user_input = input("Введите текст: ").strip()
     end_time = time.time()
 
-    is_correct = check_for_errors(user_input, target_text)
+    errors = count_errors(user_input, target_text)
     time_taken = end_time - start_time
 
     print("\nРезультаты:")
@@ -69,7 +65,7 @@ def play_print_speed_game():
     print(f"Фамилия: {last_name}")
     print(f"Заданный фрагмент текста:\n{target_text}")
     print(f"Ваш ввод:\n{user_input}")
-    print(f"Ошибки: {'Нет' if is_correct else 'Есть'}")
+    print(f"Количество ошибок: {errors}")
     print(f"Время на ввод: {time_taken:.2f} секунд")
 
     game_result = {
@@ -77,7 +73,7 @@ def play_print_speed_game():
         "фамилия": last_name,
         "заданный фрагмент текста": target_text,
         "ваш ввод": user_input,
-        "ошибки": "Нет" if is_correct else "Есть",
+        "количество ошибок": errors,
         "время": f"{time_taken:.2f} секунд",
         "начало": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "конец": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -85,6 +81,6 @@ def play_print_speed_game():
 
     logging.info(f"Результат игры: {game_result}")
 
+
 if __name__ == "__main__":
     play_print_speed_game()
-
