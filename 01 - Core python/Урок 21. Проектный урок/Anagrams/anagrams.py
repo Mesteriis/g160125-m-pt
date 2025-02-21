@@ -27,11 +27,13 @@ def is_valid_anagram(word, anagram):
             return False
     return True
 
+
 def play_anagrams():
     words = load_words()
     if not words:
         print("Ошибка: список слов не загружен.")
         return
+
 
     word = random.choice(words)
     print(f"Ваше слово: {word}")
@@ -60,6 +62,7 @@ def play_anagrams():
     valid_words = []
     invalid_words = []
     seen_words = set()
+
 
     for w in user_words:
         if w == word:
