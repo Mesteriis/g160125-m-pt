@@ -21,6 +21,11 @@
 # Статические методы не имеют доступа ни к атрибутам экземпляра (self), ни к атрибутам класса (cls).
 # Они функционируют как обычные функции, но принадлежат классу. Обозначаются декоратором @staticmethod.
 
+from icecream import ic as print
+
+
+def is_motorized():
+    return True
 class Car:
     wheels = 4
 
@@ -29,7 +34,7 @@ class Car:
         self.year = year
 
     def display_info(self):
-        print(f"Model: {self.model}, Year: {self.year}")
+        print(f"Model: {self.model}, Year: {self.year}, {self.wheels}")
 
     @classmethod
     def change_wheels(cls, new_wheels):
@@ -38,6 +43,8 @@ class Car:
     @staticmethod
     def is_motorized():
         return True
+
+
 
 
 def main():
@@ -51,9 +58,13 @@ def main():
     print('\nClass methods')
     Car.change_wheels(6)
     print(Car.wheels)  # Output: 6
+    print('Instance methods')
+    car1.display_info()
+    car2.display_info()
 
     print('\nStatic methods')
     print(Car.is_motorized())  # Output: True
+    print(is_motorized())  # Output: True
 
 
 if __name__ == "__main__":
