@@ -13,7 +13,7 @@ class Car:
 
     @model.setter
     def model(self, model):
-        if isinstance(model, str):
+        if isinstance(model, str) and model in ['Toyota', 'Tesla']:
             self.__model = model
         else:
             raise ValueError("Model must be a string")
@@ -43,4 +43,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # main()
+    car = Car(model="Toyota", year=2019)
+    print(car.model)
+    car.model = "Tesla"
+    print(car.model)

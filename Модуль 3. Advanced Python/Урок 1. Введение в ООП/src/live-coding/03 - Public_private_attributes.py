@@ -62,7 +62,7 @@ def main():
     # Приватные атрибуты
     # print(car.__model)  # Ошибка: AttributeError
     print(f'Доступ к приватному атрибуту car.__private_model: {car.get_private_model()}')  # Правильный доступ через метод
-
+    # print(car._Car__private_model)  # Неправильный доступ к приватному атрибуту
     # Установка приватного атрибута
     print('Установка приватного атрибута car.__private_model = "BMW"')
     car.set_private_model("BMW")

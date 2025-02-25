@@ -5,7 +5,7 @@
 # Атрибуты объектов — это переменные, которые принадлежат конкретному экземпляру класса.
 # Они определяются внутри методов, обычно внутри метода __init__,
 # который является конструктором класса.
-
+from icecream import ic as print
 class Car:
     wheels = 4  # атрибут класса
 
@@ -26,7 +26,14 @@ def main():
 
     # Доступ к атрибуту класса
     print(f'Доступ к атрибуту класса Сar.wheels: {Car.wheels}') # Output: 4
-
+    print(car1.wheels)
+    print(car2.wheels)
+    Car.wheels = 6
+    print(car1.wheels)
+    print(car2.wheels)
+    car1.color = 'black'
+    print(car1.color)
+    print(car2.color)
 
 if __name__ == '__main__':
     main()
