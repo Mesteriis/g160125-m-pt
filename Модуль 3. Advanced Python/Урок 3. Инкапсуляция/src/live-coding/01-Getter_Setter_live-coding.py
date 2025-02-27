@@ -2,6 +2,7 @@ class Car:
     def __init__(self, model, year):
         self.__model = model  # Приватный атрибут
         self.__year = year    # Приватный атрибут
+        self._protected_var = 0  # Защищенный атрибут
 
     def get_model(self):
         return self.__model
@@ -16,8 +17,6 @@ class Car:
         return self.__year
 
     def set_year(self, year):
-        if self.__year:
-            raise ValueError("Year has already been set")
         if isinstance(year, int) and year > 1885:  # Первый автомобиль был создан в 1886 году
             self.__year = year
         else:
@@ -31,7 +30,10 @@ def main():
     print(car.get_year())  # Output: 2021
     car.set_year(2022)
     print(car.get_year())  # Output: 2021
-
+    car._protected_var = 10
+    print(car._protected_var)  # Output: 10
+    print(car._Car__model)
+    car.__model = "BMW"
 
 if __name__ == "__main__":
     main()
