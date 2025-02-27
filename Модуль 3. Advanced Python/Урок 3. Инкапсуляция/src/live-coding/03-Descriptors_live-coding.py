@@ -13,6 +13,12 @@ class PositiveNumber:
 
 class BankAccount:
     balance = PositiveNumber()
+    balance1 = PositiveNumber()
+    balance2 = PositiveNumber()
+    balance3 = PositiveNumber()
+    balance4 = PositiveNumber()
+    balance5 = PositiveNumber()
+    balance6 = PositiveNumber()
 
     def __init__(self, balance):
         self.balance = balance
