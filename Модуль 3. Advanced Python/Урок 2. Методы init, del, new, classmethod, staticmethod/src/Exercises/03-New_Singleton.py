@@ -10,7 +10,24 @@
 # Реализуйте метод connect, который будет выводить сообщение о подключении к базе данных.
 # Продемонстрируйте, что при создании нескольких объектов класса DatabaseConnection все они ссылаются на
 # один и тот же экземпляр.
-#
+class Singleton:
+    _instance = None
+
+    def __new__(cls, *args, **kwargs):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+        return cls._instance
+
+    def connect(self):
+        print(f"Подключение к базе данных установлено ")
+
+db1 = Singleton()
+db1.connect()
+
+db2 = Singleton()
+db2.connect()
+
+print(db1 is db2)
 # Задание 2: Реализация Singleton для логгера.
 #
 # Создайте класс Logger для ведения логов, который будет реализовывать паттерн Singleton.
