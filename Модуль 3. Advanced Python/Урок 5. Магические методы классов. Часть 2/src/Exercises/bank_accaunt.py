@@ -12,6 +12,7 @@ class BankAccount:
         self.__account_name = account_name
         self.__balance = balance
 
+
     def get_account_name(self):
         return self.__account_name
 
