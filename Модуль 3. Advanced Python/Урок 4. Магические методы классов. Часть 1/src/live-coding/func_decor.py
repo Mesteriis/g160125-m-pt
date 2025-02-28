@@ -16,30 +16,24 @@ class Multiplier:
 
 
 class Logger:
-    val = 10
-    some_var = 20
     def __init__(self, func):
         self.func = func
 
     def __call__(self, *args, **kwargs):
-        self.val += 1
         print(f"Function {self.func.__name__} called with args: {args}, kwargs: {kwargs}")
         result = self.func(*args, **kwargs)
         print(f"Function {self.func.__name__} returned: {result}")
         return result
 
 def logit(func):
-    val = 10
     def wrapper(*args, **kwargs):
-        nonlocal val
-        val += 1
         print(f"Function {func.__name__} called with args: {args}, kwargs: {kwargs}")
         result = func(*args, **kwargs)
         print(f"Function {func.__name__} returned: {result}")
         return result
     return wrapper
 
-@logit
+
 def main():
     # Тестирование класса
     counter = Counter()
