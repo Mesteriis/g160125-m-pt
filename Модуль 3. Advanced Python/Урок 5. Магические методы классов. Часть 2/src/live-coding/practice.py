@@ -1,3 +1,4 @@
+from icecream import ic as print
 class Vector:
     def __init__(self, x, y):
         self.x = x
