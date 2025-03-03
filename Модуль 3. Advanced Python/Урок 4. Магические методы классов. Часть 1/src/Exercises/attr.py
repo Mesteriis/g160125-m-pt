@@ -17,3 +17,30 @@
 # Добавьте список log в качестве атрибута класса для хранения логов операций.
 # Реализуйте методы __setattr__, __getattribute__, __getattr__ и __delattr__ с логированием операций.
 # Тестируйте класс, создавая экземпляр и выполняя различные операции с атрибутами.
+
+class LoggedAttributes:
+    def __init__(self):
+        super().__setattr__('log',[])
+
+    def __setattr__(self, name,value):
+        self.log.append(f"Set attribute {name} {value}")
+        super().__setattr__(name,value)
+
+    def __getattribute__(self,name):
+        if name == 'log':
+            log = super().__getattribute__('log')
+            log.append(f"Get attribute {name}")
+        return super().__getattribute__(name)
+
+    def __getattr__(self, name):
+        self.log.append(f"Get missing attribute")
+        return 'default  value'
+
+    def __delattr__(self, name):
+        self.log.append(f"Delete attribute")
+        super().__delattr__(name)
+
+tnt = LoggedAttributes()
+tnt.a = 10
+print(tnt.a)
+print(tnt.log)

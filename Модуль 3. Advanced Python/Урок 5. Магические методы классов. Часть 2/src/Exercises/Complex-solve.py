@@ -2,12 +2,15 @@
 # Перегрузите различные магические методы для выполнения арифметических операций, сравнения и для
 # управления атрибутами воспользуйтесь методами установки атрибутов.
 # Добавьте логирование времени исполнения операций хеширования с помощью класс декоратора TimeLogger
-
+import functools
 
 # Классы-декораторы
 class TimeLogger:
     def __init__(self, func):
         self.func = func
+
+    def __get__(self, instance, owner):
+        return functools.partial(self.__call__, instance)
 
     def __call__(self, *args, **kwargs):
         import time
