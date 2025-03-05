@@ -27,6 +27,12 @@ def main():
     del cd['a']  # Удаление значения
     print(cd)  # Output: {'b': 20}
 
+    cd[0]= 1
+    print(cd)
+
+    cd[1]= 2
+    print(cd)
+
 
 if __name__ == '__main__':
     main()
