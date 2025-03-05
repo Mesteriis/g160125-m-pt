@@ -10,3 +10,50 @@
 # Переопределите методы __setitem__ и __delitem__, чтобы увеличивать счетчик изменений и проверять его значение.
 # Напишите методы для получения значений private и protected атрибутов.
 # Проверьте, является ли TrackedDict подклассом dict с помощью функции issubclass().
+
+class TrackedDict(dict):
+    def __init__(self, max_changed):
+        super().__init__()
+        self.__change_count = 0
+        self.max_changed = max_changed
+
+    def __setitem__(self, key, value):
+        if self.__change_count>=self.max_changed:
+            print("dict is full")
+        else:
+            super().__setitem__(key,value)
+            self.__change_count += 1
+
+    def __delitem__(self, key):
+        if self.__change_count>=self.max_changed:
+            print("dict is full")
+        else:
+            super().__delitem__(key)
+            self.__change_count += 1
+
+    def get_change_count(self):
+        return self.__change_count
+
+    def get_max_changes(self):
+        return self.max_changed
+
+
+def main():
+    tracked_dict = TrackedDict[3]
+
+    print(issubclass(TrackedDict,dict))
+
+    tracked_dict['a'] = 1
+    tracked_dict['b'] = 2
+    tracked_dict['c'] = 3
+    tracked_dict['d'] = 4  # Output: Cannot add/change item: maximum number of changes reached
+
+    del tracked_dict['a']
+    print(tracked_dict)  # Output: {'b': 2, 'c': 3}
+
+    print(tracked_dict.get_change_count())  # Output: 3
+    print(tracked_dict.get_max_changes())  # Output: 3
+
+
+if __name__ == "__main__":
+    main()
