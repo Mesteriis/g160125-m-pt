@@ -13,9 +13,9 @@ class Dog(Animal):
 
 
 class Cat(Animal):
-    pass
-    # def speak(self):
-    #     return "Meow!"
+
+    def speak(self):
+        return "Meow!"
 
 
 def main():
