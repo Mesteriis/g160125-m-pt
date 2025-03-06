@@ -19,3 +19,19 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+
+import time
+
+class TimeLogger:
+    def __init__(self, func):
+        self.func = func
+
+    def __call__(self, *args, **kwargs):
+        start_time = time.time()  # Засекаем время начала выполнения функции
+        result = self.func(*args, **kwargs)  # Выполняем функцию
+        end_time = time.time()  # Засекаем время окончания выполнения функции
+        execution_time = end_time - start_time  # Вычисляем время выполнения
+        print(f"Функция '{self.func.__name__}' выполнена за {execution_time:.6f} секунд.")
+        return result

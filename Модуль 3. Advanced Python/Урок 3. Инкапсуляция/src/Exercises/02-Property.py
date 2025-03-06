@@ -10,6 +10,32 @@
 # Свойства name и grade с геттерами и сеттерами.
 # В сеттере для grade реализуйте проверку, что оценка должна быть в диапазоне от 0 до 100.
 #
+class Student:
+    min_grade = 0
+    max_grade = 100
+    def __init__(self, name, grade):
+        self.__name = name
+        self.__grade = grade
+
+    @property
+    def name(self):
+        return self.__name
+
+    @name.setter
+    def name(self, name):
+        self.__name = name
+
+    @property
+    def grade(self):
+        return self.__grade
+
+    @grade.setter
+    def grade(self, grade):
+        if self.min_grade <= grade <= self.max_grade:
+            self.__grade = grade
+        else:
+            print("what the Fuck?!")
+
 # Задача 2: Создание класса BankAccount с использованием декоратора property
 # Описание:
 #
@@ -22,5 +48,30 @@
 # Свойства account_number и balance с геттерами и сеттерами.
 # В сеттере для balance реализуйте проверку, что баланс не может быть отрицательным.
 #
+class BankAccount:
+
+    def __init__(self, account_number, balance):
+        self.__account_number = account_number
+        self.__balance = balance
+
+    @property
+    def account_number(self):
+        return self.__account_number
+
+    @account_number.setter
+    def account_number(self,account_number):
+        self.__account_number = account_number
+
+    @property
+    def balance(self):
+        return self.__balance
+
+    @balance.setter
+    def balance(self, balance):
+        if balance >= 0:
+            self.__balance = balance
+        else:
+            print("баланс не может быть отрицательным")
+
 # TODO: Добавить более сложный пример работы с @property, например отсюда
 #  https://proproprogs.ru/python_oop/primer-ispolzovaniya-obektov-property
