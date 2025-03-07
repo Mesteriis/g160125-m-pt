@@ -2,14 +2,21 @@
 
 # Упражнение 1: Управление списком покупок
 # Создайте список покупок, содержащий элементы "bread", "milk", "eggs".
+#shopping_list = ["bread", "milk", "eggs"]
 # Измените элемент "milk" на "almond milk".
+#shopping_list[1] = ["almond_milk"]
 # Создайте срез, содержащий первые два элемента списка.
-# Создайте вложенный список, где каждый элемент списка покупок будет содержать его цену.
-
+#first_two_items = shopping_list[:2]
+#shopping_list_prise = [
+#     ["bread", 1.5],
+#     ["almond milk", 3.0],
+#     ["eggs", 2.5]
+# ]
 # Выведите список покупок, срез и вложенный список.
-# print(shopping_list)  # Ожидаемый результат: ["bread", "almond milk", "eggs"]
-# print(slice_shopping_list)  # Ожидаемый результат: ["bread", "almond milk"]
-# print(detailed_shopping_list)  # Ожидаемый результат: [["bread", 1.5], ["almond milk", 3.0], ["eggs", 2.0]]
+#print("список покупок", shopping_list)  # Ожидаемый результат: ["bread", "almond milk", "eggs"]
+#print("срез", first_two_items)  # Ожидаемый результат: ["bread", "almond milk"]
+#print("вложенный список", shopping_list_prise)  # Ожидаемый результат: [["bread", 1.5], ["almond milk", 3.0], ["eggs", 2.0]]
+
 
 
 # Упражнение 2: Управление списком студентов и их оценок
@@ -24,6 +31,20 @@
 # print(student_grades)  # Ожидаемый результат:
 # [["Alice", [90, 85, 88]], ["Eve", [75, 80, 82]], ["Charlie", [95, 92, 93]], ["David", [78, 85, 84]]]
 
+students = ["Alice", "Bob", "Charlie", "David"]
+students[1] = "Eve"
+top_students = students[2:3]
+students_grades = [
+    ["Alice", [90, 85, 88]],
+    ["Eve", [78, 82, 80]],
+    ["Charlie", [92, 91, 95]],
+    ["David", [76, 79, 85]]
+]
+print("список студентов", students)
+print("лучшие студенты", top_students)
+print("Оценки студентов:")
+for student in students_grades:
+    print(f"{student[0]}: {student[1]}")
 
 # Упражнение 3: Управление списком задач
 # Создайте список задач, содержащий элементы "task1", "task2", "task3", "task4.
