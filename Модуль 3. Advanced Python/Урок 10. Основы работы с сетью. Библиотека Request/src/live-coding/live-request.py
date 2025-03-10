@@ -11,11 +11,11 @@ def show_full_response():
 
 
 def show_get_with_params():
-    params = {'q': 'python', 'sort': 'stars'}
+    url = 'https://api.github.com/search/repositories?q=python&sort=stars'
+    params = {'q': 'python', 'sort': 'stars', 'page': 2}
     response = requests.get('https://api.github.com/search/repositories', params=params)
-
     print(response.url)  # Output: https://api.github.com/search/repositories?q=python&sort=stars
-    # print(response.json())  # Output: JSON данные в виде словаря Python
+    print(response.json())  # Output: JSON данные в виде словаря Python
 
 
 def search_request(search_query: str):
@@ -49,12 +49,12 @@ def search_request(search_query: str):
 
 
 def main():
-    print('Show full response as json')
-    show_full_response()
-    print('\n\n', '* ' * 15, '\nShow get with params')
-    show_get_with_params()
-
-    print('\n\n', '* ' * 15, '\nSearch results')
+    # print('Show full response as json')
+    # show_full_response()
+    # print('\n\n', '* ' * 15, '\nShow get with params')
+    # show_get_with_params()
+    #
+    # print('\n\n', '* ' * 15, '\nSearch results')
     search_request('python')
 
 

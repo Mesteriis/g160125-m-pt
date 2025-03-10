@@ -1,17 +1,11 @@
 import requests
-import yaml
 
-
-def load_config():
-    with open('weather.key', 'r') as file:
-        config = yaml.safe_load(file)
-    return config
 
 
 def main():
     url = 'http://api.weatherapi.com/v1/current.json'
 
-    key = load_config()['key']
+    key = "1b6cb79e8dfe4a76aa9151908242907"
 
     params = {
         'key': key,
