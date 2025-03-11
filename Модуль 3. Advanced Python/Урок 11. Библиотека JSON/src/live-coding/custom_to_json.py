@@ -1,5 +1,5 @@
 import json
-
+from icecream import ic as print
 
 class myclass:
 
@@ -17,6 +17,10 @@ class myclass:
     def __dict__(self):
         return {"name": self.name, "age": self.age, "score": self.score}
 
+    @classmethod
+    def from_json(cls, json_string):
+        data = json.loads(json_string)
+        return cls(data['name'], data['age'], data['score'])
 
 def main():
     obj = myclass("John", 30, 100)
