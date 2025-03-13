@@ -2,7 +2,7 @@ from fastapi import APIRouter, Path
 
 from model import Todo, TodoItem
 
-todo_router = APIRouter()
+todo_router = APIRouter(tags=["Todo"])
 
 todo_list = []
 
