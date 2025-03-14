@@ -1,49 +1,56 @@
 # Игра: Угадай число
 #
-# Используя модуль `random`, напишите программу,
-# которая случайным образом выбирает число от 0 до 100.
-# У пользователя есть 6 попыток, чтобы угадать это число.
-# Если пользователь угадывает число,
-# выводится сообщение об успехе:
-# "Отлично! Вы угадали число … с … попытки!".
-# Если не угадывает за 6 попыток,
-# выводится сообщение о неудаче:
-# “К сожалению, вы не угадали число. Загаданное число было: …”.
+# За основу возьмите свой код, разработанный в предыдущем проектном уроке, посвященном Game Hub (урок 13).
+# Если в тот раз вы не реализовали весь функционал, то сначала реализуйте полностью игру, а затем переходите
+# к рефакторингу на основе заданий из этого урока.
 #
-# В конце программы должны выводиться
-# все попытки пользователя и загаданное число.
-#
-# По ходу игры после каждой попытки
-# пользователя компьютер выводит сообщение,
-# было ли число пользователя
-# больше или меньше загаданного числа:
-# "Загаданное число больше.", "Загаданное число меньше."
-# соответственно.
+# Рефакторинг
+# - Добавить логирование действий (попыток пользователя) с использованием модуля `datetime`.
+# В файл записывается время начало игры, время и значение каждой попытки, время окончания игры и результат.
+# - Добавить обработку ошибок с использованием `try/except`, где это необходимо.
+
 import random
+import datetime
+
+
+def log_attempt(log_file, message):
+    with open(log_file, "a") as file:
+        file.write(f"{datetime.datetime.now()} - {message}\n")
+
+
 def guess_number():
-    secret_number = random.randint(1,100)
-    attempts = 6
-    user_atempts = []
-    print("Начинаем игру Угадай число с шести попыток")
-    print("я придумаю число от 1 до 100, а твоя задача его угадать")
-    input("Готов? Нажми любую Enter ")
+    log_file = "guess_number.log"
+    secret_number = random.randint(1, 100)
+    attempts = 0
+    log_attempt(log_file, "Game started")
+
+    print("Угадайте число от 1 до 100")
+
+    while True:
+        try:
+            guess = input("Введите ваш вариант: ")
+            if guess.lower() == 'exit':
+                log_attempt(log_file, "Game aborted by user")
+                print("Вы вышли из игры.")
+                break
+            guess = int(guess)
+            attempts += 1
+            log_attempt(log_file, f"Attempt {attempts}: {guess}")
+
+            if guess < secret_number:
+                print("Загаданное число больше.")
+            elif guess > secret_number:
+                print("Загаданное число меньше.")
+            else:
+                print(f"Поздравляю! Вы угадали число {secret_number} за {attempts} попыток.")
+                log_attempt(log_file, f"Game won in {attempts} attempts")
+                break
+        except ValueError:
+            print("Ошибка: Введите целое число!")
+            log_attempt(log_file, "Invalid input (not an integer)")
+
+    log_attempt(log_file, "Game ended")
 
 
-    for atempt in range (1, 7):
-        print(f'Попытка: {atempt}')
-        guess = (int(input("введите целое число от 1 до 100: ")))
-        user_atempts.append(guess)
-        if guess == secret_number:
-            print(f"Верно, это действительно {secret_number}")
-            print(f"вы угадали с {guess} попытки")
-            print(f"я в шоке от твоей интуиции")
-        elif guess < secret_number:
-            print( f"задуманное число больше чем {guess}")
-        elif guess > secret_number:
-            print(f"задуманное число меньше чем {guess}")
-    else:
-        print(f"Среди чисел: {user_atempts} нет числа: {secret_number}")
-
-
-
-guess_number()
+if __name__ == "__main__":
+    guess_number()
