@@ -1,133 +1,107 @@
 # Игра: Сапёр
 #
-# Цель игры: открыть все клетки, не содержащие мин.
+# За основу возьмите свой код, разработанный в предыдущем проектном уроке, посвященном Game Hub (урок 13).
+# Если в тот раз вы не реализовали весь функционал, то сначала реализуйте полностью игру, а затем переходите
+# к рефакторингу на основе заданий из этого урока.
 #
-# Правила игры:
-#
-# 1. Игровое поле состоит из клеток размером 5x5.
-# 2. На поле случайным образом размещены 5 мин.
-# 3. Игрок вводит координаты клетки (например, "2 3" для второй строки и третьего столбца), чтобы проверить ее.
-# 4. Если игрок открывает клетку с миной, он проигрывает.
-# 5. Если игрок открывает клетку без мины, на этой клетке отображается число, указывающее, сколько мин находится в соседних клетках (по горизонтали, вертикали и диагоналям).
-# 6. Игрок побеждает, если открывает все клетки, не содержащие мин.
-#
-# Пример игрового процесса:
-#
-# 1. Игроку показывается пустое поле:
-# - - - - -
-# - - - - -
-# - - - - -
-# - - - - -
-# - - - - -
-#
-# 2. Игрок вводит координаты клетки:
-# Введите координаты клетки (строка столбец): 2 3
-#
-# 3. Если в этой клетке нет мины, открывается число:
-# - - - - -
-# - - 1 - -
-# - - - - -
-# - - - - -
-# - - - - -
-#
-# 4. Игрок продолжает вводить координаты, пока не откроет все безопасные клетки или не попадет на мину.
-# 5. Если игрок открывает клетку с миной, игра заканчивается:
-# - - - - -
-# - - * - -
-# - - - - -
-# - - - - -
-# - - - - -
-# Вы проиграли! Вы попали на мину.
-#
-# 6. Если игрок открывает все клетки без мин, игра заканчивается победой:
-# - 1 1 1 -
-# - 1 * 1 -
-# - 2 2 2 -
-# - 1 * 1 -
-# - 1 1 1 -
-# Поздравляем! Вы открыли все безопасные клетки.
+# Рефакторинг
+# - Добавить логирование начала и окончания игры и всех ходов игрока с временными метками (дата и время).
+# - Добавить обработку ошибок с использованием `try/except`, где это необходимо.
+# - Добавить сохранение и загрузку состояния игры с использованием файлов в формате JSON.
+# Если программа была прервана по ходу игры, то пользователь при старте программы начинает с того же места.
+
+
+import json
+import logging
+import os
 import random
+import time
+
+# Настройка логирования
+logging.basicConfig(
+    filename="minesweeper.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 
-def create_board(size: int, mines: int) -> tuple[list[list[str]], set[tuple[int, int]]]:
-    """
-    Создание игрового поля и случайное размещение мин.
-
-    :param size: Размер поля (size x size).
-    :param mines: Количество мин для размещения на поле.
-
-    :returns tuple: Кортеж, содержащий игровое поле (список списков) и набор позиций мин (набор кортежей).
-    """
-
-    board: list[list[str]] = [['-' for _ in range(size)] for _ in range(size)]
-    mine_positions: set[tuple[int, int]] = set()
-    while len(mine_positions) < mines:
-        row: int = random.randint(0, size - 1)
-        col: int = random.randint(0, size - 1)
-        mine_positions.add((row, col))
-    return board, mine_positions
+def save_game(state, filename="minesweeper_save.json"):
+    """Сохраняет текущее состояние игры в JSON-файл."""
+    with open(filename, "w") as f:
+        json.dump(state, f)
 
 
-def count_adjacent_mines(row: int, col: int, mine_positions: set[tuple[int, int]], size: int) -> int:
-    """
-    Подсчет количества мин, соседствующих с данной клеткой.
-
-    :param row: Индекс строки клетки.
-    :param col: Индекс столбца клетки.
-    :param mine_positions: Набор позиций мин.
-    :param size: Размер поля.
-
-    :returns int: Количество соседних мин.
-    """
-
-    count: int = 0
-    for r in range(row - 1, row + 2):
-        for c in range(col - 1, col + 2):
-            if (r, c) in mine_positions and 0 <= r < size and 0 <= c < size:
-                count += 1
-    return count
+def load_game(filename="minesweeper_save.json"):
+    """Загружает сохраненное состояние игры из JSON-файла."""
+    if os.path.exists(filename):
+        with open(filename, "r") as f:
+            return json.load(f)
+    return None
 
 
-def display_board(board: list[list[str]]) -> None:
-    """
-    Отображение текущего состояния игрового поля.
+def generate_board(size, mines):
+    """Создает игровое поле."""
+    board = [[0 for _ in range(size)] for _ in range(size)]
+    mine_positions = random.sample(range(size * size), mines)
 
-    :param board: Игровое поле.
-    """
+    for pos in mine_positions:
+        row, col = divmod(pos, size)
+        board[row][col] = "X"
 
-    for row in board:
-        print(' '.join(row))
+    return board
 
 
-def play_game(size: int = 5, mines: int = 5) -> None:
-    """
-    Игра в Сапёра.
+def display_board(board, revealed):
+    """Отображает игровое поле."""
+    size = len(board)
+    print("  " + " ".join(str(i) for i in range(size)))
+    for i in range(size):
+        row = [str(board[i][j]) if revealed[i][j] else "-" for j in range(size)]
+        print(f"{i} {' '.join(row)}")
 
-    :param size: Размер поля (по умолчанию 5).
-    :param mines: Количество мин (по умолчанию 5).
-    """
 
-    board, mine_positions = create_board(size, mines)
-    revealed: set[tuple[int, int]] = set()
+def play_game(size=5, mines=5):
+    """Основная функция игры."""
+    state = load_game()
 
-    while len(revealed) < size * size - mines:
-        display_board(board)
-        row, col = map(int, input("Введите координаты клетки (строка столбец): ").split())
-        row -= 1
-        col -= 1
-        if not (0 <= row < size and 0 <= col < size):
-            print("Некорректные координаты. Попробуйте снова.")
+    if state:
+        logging.info("Загружено предыдущее состояние игры.")
+        board = state["board"]
+        revealed = state["revealed"]
+        moves = state["moves"]
+    else:
+        board = generate_board(size, mines)
+        revealed = [[False] * size for _ in range(size)]
+        moves = []
+        logging.info("Начало новой игры.")
+
+    while True:
+        display_board(board, revealed)
+        try:
+            row, col = map(int, input("Введите координаты (строка, столбец): ").split())
+            if not (0 <= row < size and 0 <= col < size):
+                raise ValueError("Координаты вне диапазона!")
+        except ValueError as e:
+            print(f"Ошибка ввода: {e}")
             continue
-        if (row, col) in mine_positions:
-            print("Вы проиграли! Вы попали на мину.")
-            return
-        if (row, col) not in revealed:
-            revealed.add((row, col))
-            board[row][col] = str(count_adjacent_mines(row, col, mine_positions, size))
 
+        logging.info(f"Игрок выбрал клетку ({row}, {col}).")
+        moves.append((row, col, time.strftime("%Y-%m-%d %H:%M:%S")))
 
-    print("Поздравляем! Вы открыли все безопасные клетки.")
-    display_board(board)
+        if board[row][col] == "X":
+            print("Вы подорвались на мине! Игра окончена.")
+            logging.info("Игрок проиграл.")
+            os.remove("minesweeper_save.json")  # Удаляем сохранение, так как игра окончена
+            break
+        else:
+            revealed[row][col] = True
+            save_game({"board": board, "revealed": revealed, "moves": moves})
+
+        if all(revealed[row][col] or board[row][col] == "X" for row in range(size) for col in range(size)):
+            print("Поздравляем! Вы выиграли!")
+            logging.info("Игрок победил.")
+            os.remove("minesweeper_save.json")
+            break
 
 
 if __name__ == "__main__":
