@@ -17,7 +17,42 @@ def main():
         text = file.read()
     print(text, '\n')
 
+    print('Найдите все хэштеги в тексте:')
+    match = re.findall(r'#[^\d](?=\w*[A-Za-z])\w+\b', text, re.MULTILINE)
+    for n, m in enumerate(match):
+        print(f'{n}: {m}')
 
+    print('\nНайдите все все IPv4-адреса в тексте:')
+    match = re.findall(r'\b\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}\b', text, re.MULTILINE)
+    for i, m in enumerate(match):
+        res = []
+        for n in m.split('.'):
+            if int(n) > 255:
+                break
+            else:
+                res.append(n)
+        if len(res) == 4:
+            print(str(i) + ': ' + '.'.join(res))
+
+    print('\nЗамените несколько пробелов и табуляций на один пробел:')
+    for line in text.split('\n'):
+        if re.findall(r'\s{2,}', line):
+            print(re.sub(r'\s{2,}', ' ', line))
+
+    # Alternative solution with generator:
+    print('\nAlternative solution:')
+    [print(re.sub(r'\s{2,}', ' ', line)) for line in text.split('\n') if re.findall(r'\s{2,}', line)]
+
+    # Проверьте возраст пользователей и для пользователей младше 18 лет выведите предупреждение. Считаем что в тексте
+    # обязательно сначала встречается имя потом ip адрес и затем дата рождения. Имя может состоять из имени и фамилии,
+    # а может только из имени.
+    # 1. Ищем имя - одно или два слова с заглавной буквы не являющиеся началом строки
+    pattern = r'(?<!^)\b[A-Z][a-z]*(?:\s+[A-Z][a-z]*)?\b'
+    # 2. Ищем ip адрес - это мы уже умеем
+    # 3. Ищем дату - это мы уже умеем
+    # 4. Вычисляем возраст - это просто
+    # 5. Проверяем по положению в строке взаимное расположение имени, ip-адреса и даты
+    # 6. Проверяем окончание одного шаблона и начала следующего
 
 
 if __name__ == '__main__':
