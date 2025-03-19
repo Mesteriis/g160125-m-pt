@@ -15,9 +15,7 @@
 # if __name__ == '__main__':
 #     main()
 
-
 import logging
-import sys
 
 
 def setup_logger():
@@ -26,7 +24,7 @@ def setup_logger():
     logger.setLevel(logging.DEBUG)
 
     # Создаем обработчик для вывода в stdout
-    stdout_handler = logging.StreamHandler(sys.stdout)
+    stdout_handler = logging.StreamHandler()
     stdout_handler.setLevel(logging.INFO)
     stdout_formatter = logging.Formatter("[%(levelname)s] %(message)s")
     stdout_handler.setFormatter(stdout_formatter)
