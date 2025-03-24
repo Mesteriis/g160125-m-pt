@@ -16,3 +16,21 @@
 # Класс Animal должен иметь метод __init__, инициализирующий атрибуты name и age.
 # Класс Dog должен наследовать от Animal и иметь свой метод __init__, который вызывает конструктор базового класса
 # и инициализирует атрибут breed.
+
+class Book(object):
+    def __init__(self, title, author, year):
+        self.title = title
+        self.author = author
+        self.year = year
+
+    def som_foon(self):
+        print(f'Book: {self.title}, Author: {self.author}, Year: {self.year}')
+
+    @classmethod
+    def from_string(cls, book_string):
+        title, author, year = book_string.split(',')
+        return cls(title.strip(), author.strip(), int(year.strip()))
+
+    @staticmethod
+    def is_valid_year(year):
+        return isinstance(year, int) and year > 0
