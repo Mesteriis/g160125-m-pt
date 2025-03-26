@@ -196,3 +196,6 @@
 # 2. Создание папки `static` в приложении `news` и подключение статики в шаблоне `base.html`.
 # 3. Изучение и использование фильтров `length`, `truncatechars`, `join` в шаблоне `article_preview.html`.
 # 4. Добавление цикла для вывода тегов новости в шаблоне `article_preview.html`.
+
+
+https://github.com/Assachi/new_start
