@@ -1,0 +1,73 @@
+{
+    "start_time": {
+    "start_time": "2025-02-21 10:50:56",
+    "end_time": "2025-02-21 10:51:30",
+    "original_word": "день",
+    "valid_words": [],
+    "invalid_words": [
+        "ень"
+    ]
+}
+{
+    "start_time": "2025-02-21 10:51:54",
+    "end_time": "2025-02-21 10:52:13",
+    "original_word": "существование",
+    "valid_words": [],
+    "invalid_words": [
+        "существование"
+    ]
+}
+{
+    "start_time": "2025-02-21 10:52:23",
+    "end_time": "2025-02-21 10:53:05",
+    "original_word": "игра",
+    "valid_words": [],
+    "invalid_words": [
+        "ра"
+    ]
+}
+{
+    "start_time": "2025-02-21 10:53:14",
+    "end_time": "2025-02-21 10:53:31",
+    "original_word": "день",
+    "valid_words": [],
+    "invalid_words": [
+        "ддень",
+        "день"
+    ]
+}
+{
+    "start_time": "2025-02-21 10:53:45",
+    "end_time": "2025-02-21 10:53:55",
+    "original_word": "игра",
+    "valid_words": [],
+    "invalid_words": [
+        "игрок"
+    ]
+}
+{
+    "start_time": "2025-02-21 10:55:55",
+    "end_time": "2025-02-21 10:56:25",
+    "original_word": "существование",
+    "valid_words": [],
+    "invalid_words": [
+        "сущ",
+        "существо"
+    ]
+}
+{
+    "target_word": "пример",
+    "valid_words": [],
+    "invalid_words": [],
+    "start_time": "2025-02-21 10:58:52",
+    "end_time": "2025-02-21 10:59:52"
+}
+{
+    "target_word": "реакция",
+    "valid_words": [
+        "яицкаер"
+    ],
+    "invalid_words": [],
+    "start_time": "2025-02-21 10:59:26",
+    "end_time": "2025-02-21 11:00:26"
+}

@@ -1,66 +1,81 @@
 # Игра: Камень, ножницы, бумага
 #
-# Создайте игру "Камень, ножницы, бумага", где пользователь играет против компьютера.
-# Компьютер случайным образом выбирает одно из трех значений: камень, ножницы или бумагу.
-# Пользователь вводит свой выбор, и программа определяет победителя. Если выборы одинаковы, игра объявляет ничью.
-# Игра продолжается до тех пор, пока один из игроков (пользователь или компьютер)
-# не одержит на три победы больше, чем соперник. В конце показывается итоговый счет и объясляется победитель.
+# За основу возьмите свой код, разработанный в предыдущем проектном уроке, посвященном Game Hub (урок 13).
+# Если в тот раз вы не реализовали весь функционал, то сначала реализуйте полностью игру, а затем переходите
+# к рефакторингу на основе заданий из этого урока.
+#
+# Рефакторинг
+# - Добавить логирование действий пользователя с использованием модуля `datetime`.
+# В файл записывается время начало игры, время и значения ходов компьютера и пользователя,
+# время окончания игры и результат.
+# - Добавить обработку ошибок с использованием `try/except`, где это необходимо.
+# - Использовать генераторы для создания последовательности ходов компьютера.
+
+
+
+# АЛЕКСАНДР!!! Я - РАЗГИЛЬДЯЙ И ЛЕНТЯЙ!
+
+
 
 import random
+import datetime
 
 
-def get_computer_choice() -> str:
-    return random.choice(["камень", "ножницы", "бумага"])
+def computer_moves():
+    """Генератор ходов компьютера."""
+    choices = ['камень', 'ножницы', 'бумага']
+    while True:
+        yield random.choice(choices)
 
 
-def determine_winner(user_choice: str, computer_choice: str) -> int:
-    """Определяет победителя раунда.
-    Возвращает 1, если пользователь выиграл, -1 если компьютер, 0 если ничья."""
-    winning_cases = {
-        "камень": "ножницы",
-        "ножницы": "бумага",
-        "бумага": "камень"
-    }
-    if user_choice == computer_choice:
-        return 0
-    elif winning_cases[user_choice] == computer_choice:
-        return 1
+def log_game(data):
+    """Запись данных игры в лог-файл."""
+    with open("game_log.txt", "a", encoding="utf-8") as file:
+        file.write(data + "\n")
+
+
+def determine_winner(user, computer):
+    """Определение победителя."""
+    if user == computer:
+        return "Ничья"
+    elif (user == 'камень' and computer == 'ножницы') or \
+            (user == 'ножницы' and computer == 'бумага') or \
+            (user == 'бумага' and computer == 'камень'):
+        return "Пользователь победил"
     else:
-        return -1
+        return "Компьютер победил"
 
 
-def play_game():
-    user_score = 0
-    computer_score = 0
-    win_margin = 3
-    item = ["камень", "ножницы", "бумага"]
-    while abs(user_score - computer_score) < win_margin:
-        user_choice = int(input("Введите ваш выбор (1 -камень, 2-ножницы, 3-бумага): ").strip().lower())
-        if user_choice not in [1,2,3]:
-            print("Некорректный ввод. Попробуйте снова.")
-            continue
+def main():
+    print("Добро пожаловать в игру 'Камень, ножницы, бумага'!")
+    log_game(f"Начало игры: {datetime.datetime.now()}")
 
-        user_choice = item[user_choice - 1]
-        computer_choice = get_computer_choice()
+    computer_move_gen = computer_moves()
 
-        result = determine_winner(user_choice, computer_choice)
-        if result == 1:
-            user_score += 1
-            print("Вы выиграли раунд!")
-        elif result == -1:
-            computer_score += 1
-            print("Компьютер выиграл раунд!")
-        else:
-            print("Ничья!")
+    while True:
+        try:
+            user_move = input("Введите камень, ножницы или бумага (или 'выход' для завершения): ").lower()
+            if user_move == 'выход':
+                break
+            if user_move not in ['камень', 'ножницы', 'бумага']:
+                raise ValueError("Некорректный ввод. Попробуйте снова.")
 
-        print(f"Счет: Вы {user_score} - {computer_score} Компьютер\n")
+            computer_move = next(computer_move_gen)
+            log_game(f"{datetime.datetime.now()} - Пользователь: {user_move}, Компьютер: {computer_move}")
 
-    if user_score > computer_score:
-        print("Поздравляем! Вы выиграли игру!")
-    else:
-        print("Компьютер победил в этой игре. Удачи в следующий раз!")
+            result = determine_winner(user_move, computer_move)
+            print(f"Компьютер выбрал: {computer_move}")
+            print(f"Результат: {result}")
+            log_game(f"{datetime.datetime.now()} - {result}")
+
+        except ValueError as e:
+            print(e)
+        except Exception as e:
+            print(f"Произошла ошибка: {e}")
+
+    log_game(f"Конец игры: {datetime.datetime.now()}\n")
+    print("Спасибо за игру!")
 
 
 if __name__ == "__main__":
-    play_game()
-
+    main()
