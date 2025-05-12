@@ -1,38 +1,267 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae7fcdd5-6903-4050-9630-cef89166932d" name="Changes" comment="" />
+    <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены новые файлы для приложения users, включая представления, формы и маршруты для аутентификации и регистрации">
+      <change beforePath="$PROJECT_DIR$/.idea/GitlabLint.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GitlabLint.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GitLabMergeRequestsSettings"><![CDATA[{
-  "editorReviewEnabled": false
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Mesteriis&quot;
+  }
+}</component>
+  <component name="GitLabMergeRequestsSettings">{
+  &quot;editorReviewEnabled&quot;: false
+}</component>
+  <component name="GiteeMajeraCodeReviewSettings">
+    <option name="popularEmojiShortcuts">
+      <list />
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Mesteriis/g160125-m-pt.git&quot;,
+    &quot;accountId&quot;: &quot;ef65d00c-ea2f-4772-880c-c98ff38ed88f&quot;
+  }
+}</component>
   <component name="GitlabMajeraCodeReviewSettings">
     <option name="popularEmojiShortcuts">
       <list />
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
-  <component name="ProjectId" id="2wUXRBFGWIiuTORJuGuJOsd8lTz" />
+  <component name="JiraServerManager">
+    <selected>-1</selected>
+    <servers />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2tZQRoP4zBiNq9XF3TWjHJMy6SB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.01-Getter_Setter_live-coding.executor": "Run",
+    "Python.02-Property_live-coding.executor": "Run",
+    "Python.Abstract_class_method.executor": "Run",
+    "Python.Check-inheritance.executor": "Run",
+    "Python.Complex-solve.executor": "Run",
+    "Python.Extended-dict-solve.executor": "Run",
+    "Python.Extended-dict.executor": "Run",
+    "Python.Extended-list-solve.executor": "Run",
+    "Python.List-inheritance.executor": "Run",
+    "Python.Multi-inheritance.executor": "Run",
+    "Python.Private-protected.executor": "Debug",
+    "Python.Slots_collection.executor": "Run",
+    "Python.attr.executor": "Run",
+    "Python.comparision.executor": "Run",
+    "Python.count-down.executor": "Run",
+    "Python.crud_requests_1.executor": "Run",
+    "Python.crud_requests_2.executor": "Run",
+    "Python.custom-dict.executor": "Run",
+    "Python.custom_to_json (1).executor": "Run",
+    "Python.custom_to_json.executor": "Run",
+    "Python.foo (1).executor": "Run",
+    "Python.foo.executor": "Run",
+    "Python.func_decor.executor": "Run",
+    "Python.get-weather.executor": "Run",
+    "Python.json-files.executor": "Run",
+    "Python.json-serialisation.executor": "Run",
+    "Python.live-request.executor": "Run",
+    "Python.logging-1.executor": "Run",
+    "Python.logging-2.executor": "Run",
+    "Python.practice (1).executor": "Run",
+    "Python.practice.executor": "Run",
+    "Python.regex-1 (1).executor": "Run",
+    "Python.regex-1.executor": "Run",
+    "Python.regex-2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/avm/Library/CloudStorage/Source/Tel-Ran/main@g160125-m-pt",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/avm/Projects/Work/starta/g160125-m-pt/Модуль 5. Docker",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Модуль 5. Docker" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Модуль 4. Django" />
+      <recent name="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python" />
+      <recent name="$PROJECT_DIR$/Модуль 3. Advanced Python" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Модуль 5. Docker/Урок 1. Введение в Docker. Работа с Docker контейнерами" />
+      <recent name="$PROJECT_DIR$/Модуль 4. Django" />
+      <recent name="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python" />
+      <recent name="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 15. Регулярные выражения в Python. Часть 2" />
+      <recent name="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.foo (1)">
+    <configuration name="foo (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="main@g160125-m-pt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/foo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="logging-1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="g160125-m-pt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding/logging-1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="logging-2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="g160125-m-pt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding/logging-2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="regex-1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="g160125-m-pt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 15. Регулярные выражения в Python. Часть 2/src/live-coding" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 15. Регулярные выражения в Python. Часть 2/src/live-coding/regex-1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="regex-2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="g160125-m-pt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1/src/live-coding" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1/src/live-coding/regex-2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.foo (1)" />
+      <item itemvalue="Python.logging-1" />
+      <item itemvalue="Python.logging-2" />
+      <item itemvalue="Python.regex-1 (1)" />
+      <item itemvalue="Python.regex-2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.foo (1)" />
+        <item itemvalue="Python.regex-2" />
+        <item itemvalue="Python.regex-1 (1)" />
+        <item itemvalue="Python.logging-2" />
+        <item itemvalue="Python.logging-1" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -41,18 +270,547 @@
       </set>
     </attachedChunks>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ae7fcdd5-6903-4050-9630-cef89166932d" name="Changes" comment="" />
-      <created>1746097116874</created>
+      <changelist id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="" />
+      <created>1740557112480</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1746097116874</updated>
-      <workItem from="1746097119179" duration="99000" />
+      <updated>1740557112480</updated>
+      <workItem from="1740557115585" duration="5786000" />
+      <workItem from="1740644227424" duration="4161000" />
+      <workItem from="1740730373317" duration="1900000" />
+      <workItem from="1740737021501" duration="962000" />
+      <workItem from="1740988801197" duration="3496000" />
+      <workItem from="1741075442521" duration="8374000" />
+      <workItem from="1741110981900" duration="59000" />
+      <workItem from="1741163954542" duration="5422000" />
+      <workItem from="1741248651236" duration="7668000" />
+      <workItem from="1741334406751" duration="804000" />
+      <workItem from="1741340555623" duration="5336000" />
+      <workItem from="1741399238537" duration="2000" />
+      <workItem from="1741399243772" duration="2000" />
+      <workItem from="1741433584080" duration="256000" />
+      <workItem from="1741594006727" duration="860000" />
+      <workItem from="1741595950944" duration="4544000" />
+      <workItem from="1741680505691" duration="3069000" />
+      <workItem from="1741766516316" duration="3665000" />
+      <workItem from="1741773050458" duration="603000" />
+      <workItem from="1741853239380" duration="7601000" />
+      <workItem from="1741939628604" duration="8272000" />
+      <workItem from="1742198807502" duration="4588000" />
+      <workItem from="1742286476254" duration="701000" />
+      <workItem from="1742287233027" duration="4577000" />
+      <workItem from="1742804668998" duration="2801000" />
+      <workItem from="1742890326913" duration="5292000" />
+      <workItem from="1742976944150" duration="4001000" />
+      <workItem from="1743063480042" duration="638000" />
+      <workItem from="1743154114225" duration="633000" />
+      <workItem from="1743405062658" duration="4769000" />
+      <workItem from="1743491697362" duration="3937000" />
+      <workItem from="1743578290308" duration="130000" />
+      <workItem from="1743578434090" duration="1054000" />
+      <workItem from="1743591010775" duration="834000" />
+      <workItem from="1743663690140" duration="9147000" />
+      <workItem from="1744009467775" duration="4702000" />
+      <workItem from="1744096350369" duration="3830000" />
+      <workItem from="1744182962696" duration="1282000" />
+      <workItem from="1744185124472" duration="1895000" />
+      <workItem from="1744269717604" duration="5470000" />
+      <workItem from="1744614252273" duration="723000" />
+      <workItem from="1744700516899" duration="1570000" />
+      <workItem from="1744787116978" duration="1951000" />
+      <workItem from="1744873403586" duration="1222000" />
+      <workItem from="1745911700564" duration="1281000" />
+      <workItem from="1746170549499" duration="3351000" />
+      <workItem from="1746429000576" duration="11763000" />
     </task>
+    <task id="LOCAL-00004" summary="Generating commit message...">
+      <option name="closed" value="true" />
+      <created>1740988937146</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740988937146</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: добавление классов для проверки иерархий наследования и методов">
+      <option name="closed" value="true" />
+      <created>1741075582890</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741075582890</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: добавление абстрактных классов и иерархий для животных, машин и устройств">
+      <option name="closed" value="true" />
+      <created>1741163975303</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741163975303</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: добавление абстрактных классов и иерархий для животных, машин и устройств">
+      <option name="closed" value="true" />
+      <created>1741249099282</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741249099282</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: добавление абстрактных классов и иерархий для животных, машин и устройств">
+      <option name="closed" value="true" />
+      <created>1741249109521</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1741249109521</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: добавление абстрактных классов и иерархий для животных, машин и устройств">
+      <option name="closed" value="true" />
+      <created>1741249113642</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1741249113642</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: добавление абстрактных классов и иерархий для животных, машин и устройств">
+      <option name="closed" value="true" />
+      <created>1741249117228</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1741249117228</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: добавление абстрактных классов и иерархий для животных, машин и устройств">
+      <option name="closed" value="true" />
+      <created>1741257809408</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1741257809408</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: добавление абстрактных классов и иерархий для животных, машин и устройств">
+      <option name="closed" value="true" />
+      <created>1741258985495</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1741258985495</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: добавление скриптов для получения данных о погоде и текущих координатах МКС">
+      <option name="closed" value="true" />
+      <created>1741334605773</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1741334605773</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: добавление классов и функций для сериализации объектов в формат JSON">
+      <option name="closed" value="true" />
+      <created>1741596137484</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741596137484</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: добавление классов и функций для сериализации объектов в формат JSON">
+      <option name="closed" value="true" />
+      <created>1741598033341</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1741598033341</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat: добавление классов и функций для валидации и сериализации данных с использованием Pydantic">
+      <option name="closed" value="true" />
+      <created>1741683542383</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1741683542383</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat: добавление классов и функций для валидации и сериализации данных с использованием Pydantic">
+      <option name="closed" value="true" />
+      <created>1741767012235</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1741767012235</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat: обновление зависимостей и добавление FastAPI и Uvicorn в проект">
+      <option name="closed" value="true" />
+      <created>1741853400370</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1741853400370</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: обновление зависимостей и добавление FastAPI и Uvicorn в проект">
+      <option name="closed" value="true" />
+      <created>1741939758617</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1741939758617</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: обновление зависимостей и добавление FastAPI и Uvicorn в проект">
+      <option name="closed" value="true" />
+      <created>1741944705135</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1741944705135</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat: обновление зависимостей и добавление FastAPI и Uvicorn в проект">
+      <option name="closed" value="true" />
+      <created>1741944709183</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1741944709183</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat: добавление файлов для логирования и улучшение обработки регулярных выражений">
+      <option name="closed" value="true" />
+      <created>1742199068197</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1742199068197</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat: добавление класса Book с методами для инициализации и валидации, а также создание логгера в новом файле">
+      <option name="closed" value="true" />
+      <created>1742804771053</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1742804771053</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feat: добавление класса Book с методами для инициализации и валидации, а также создание логгера в новом файле">
+      <option name="closed" value="true" />
+      <created>1742892580450</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1742892580450</updated>
+    </task>
+    <task id="LOCAL-00025" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
+      <option name="closed" value="true" />
+      <created>1742977018548</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1742977018548</updated>
+    </task>
+    <task id="LOCAL-00026" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
+      <option name="closed" value="true" />
+      <created>1743154126564</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1743154126564</updated>
+    </task>
+    <task id="LOCAL-00027" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
+      <option name="closed" value="true" />
+      <created>1743406012104</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1743406012104</updated>
+    </task>
+    <task id="LOCAL-00028" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
+      <option name="closed" value="true" />
+      <created>1743491745324</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1743491745324</updated>
+    </task>
+    <task id="LOCAL-00029" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
+      <option name="closed" value="true" />
+      <created>1743578383060</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1743578383060</updated>
+    </task>
+    <task id="LOCAL-00030" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
+      <option name="closed" value="true" />
+      <created>1743578389151</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1743578389151</updated>
+    </task>
+    <task id="LOCAL-00031" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
+      <option name="closed" value="true" />
+      <created>1743578415929</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1743578415929</updated>
+    </task>
+    <task id="LOCAL-00032" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
+      <option name="closed" value="true" />
+      <created>1743578486815</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1743578486815</updated>
+    </task>
+    <task id="LOCAL-00033" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
+      <option name="closed" value="true" />
+      <created>1743665708068</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1743665708068</updated>
+    </task>
+    <task id="LOCAL-00034" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
+      <option name="closed" value="true" />
+      <created>1743750261440</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1743750261440</updated>
+    </task>
+    <task id="LOCAL-00035" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
+      <option name="closed" value="true" />
+      <created>1744009512951</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1744009512951</updated>
+    </task>
+    <task id="LOCAL-00036" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
+      <option name="closed" value="true" />
+      <created>1744098739669</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1744098739669</updated>
+    </task>
+    <task id="LOCAL-00037" summary="feat: добавление материалов для урока по админ-панели Django, включая создание суперпользователя, регистрацию моделей и настройку отображения">
+      <option name="closed" value="true" />
+      <created>1744182995917</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1744182995917</updated>
+    </task>
+    <task id="LOCAL-00038" summary="feat: добавление материалов для урока по админ-панели Django, включая создание суперпользователя, регистрацию моделей и настройку отображения">
+      <option name="closed" value="true" />
+      <created>1744270024974</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1744270024975</updated>
+    </task>
+    <task id="LOCAL-00039" summary="feat: добавление материалов для урока по админ-панели Django, включая создание суперпользователя, регистрацию моделей и настройку отображения">
+      <option name="closed" value="true" />
+      <created>1744270051020</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1744270051021</updated>
+    </task>
+    <task id="LOCAL-00040" summary="feat: добавление материалов для урока по админ-панели Django, включая создание суперпользователя, регистрацию моделей и настройку отображения">
+      <option name="closed" value="true" />
+      <created>1744355990923</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1744355990923</updated>
+    </task>
+    <task id="LOCAL-00041" summary="feat: добавление материалов для урока по админ-панели Django, включая создание суперпользователя, регистрацию моделей и настройку отображения">
+      <option name="closed" value="true" />
+      <created>1744614315051</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1744614315051</updated>
+    </task>
+    <task id="LOCAL-00042" summary="feat: добавление материалов для урока по админ-панели Django, включая создание суперпользователя, регистрацию моделей и настройку отображения">
+      <option name="closed" value="true" />
+      <created>1744614333822</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1744614333822</updated>
+    </task>
+    <task id="LOCAL-00043" summary="feat: добавление материалов для урока по админ-панели Django, включая создание суперпользователя, регистрацию моделей и настройку отображения">
+      <option name="closed" value="true" />
+      <created>1744700566666</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1744700566666</updated>
+    </task>
+    <task id="LOCAL-00044" summary="feat: добавление материалов для урока по админ-панели Django, включая создание суперпользователя, регистрацию моделей и настройку отображения">
+      <option name="closed" value="true" />
+      <created>1744787201668</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1744787201668</updated>
+    </task>
+    <task id="LOCAL-00045" summary="feat: добавление материалов для урока по админ-панели Django, включая создание суперпользователя, регистрацию моделей и настройку отображения">
+      <option name="closed" value="true" />
+      <created>1744787229555</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1744787229555</updated>
+    </task>
+    <task id="LOCAL-00046" summary="feat: добавление материалов для урока по админ-панели Django, включая создание суперпользователя, регистрацию моделей и настройку отображения">
+      <option name="closed" value="true" />
+      <created>1744873434258</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1744873434259</updated>
+    </task>
+    <task id="LOCAL-00047" summary="feat: добавили возможность загрузки и редактирования статей из JSON-файла с валидацией данных">
+      <option name="closed" value="true" />
+      <created>1746170600880</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1746170600880</updated>
+    </task>
+    <task id="LOCAL-00048" summary="feat: добавлены классовые представления для обработки новостей и статей, включая ListView, DetailView и FormView">
+      <option name="closed" value="true" />
+      <created>1746429071471</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1746429071471</updated>
+    </task>
+    <task id="LOCAL-00049" summary="feat: добавлены классовые представления для обработки новостей и статей, включая ListView, DetailView и FormView">
+      <option name="closed" value="true" />
+      <created>1746429094230</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1746429094230</updated>
+    </task>
+    <task id="LOCAL-00050" summary="feat: добавлены классовые представления для обработки новостей и статей, включая TemplateView, ListView и FormView">
+      <option name="closed" value="true" />
+      <created>1746515139851</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1746515139851</updated>
+    </task>
+    <task id="LOCAL-00051" summary="feat: добавлены новые файлы для приложения users, включая представления и формы для аутентификации">
+      <option name="closed" value="true" />
+      <created>1746602197795</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1746602197796</updated>
+    </task>
+    <task id="LOCAL-00052" summary="feat: добавлены новые файлы для приложения users, включая представления, формы и маршруты для аутентификации и регистрации">
+      <option name="closed" value="true" />
+      <created>1746774820665</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1746774820665</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add getter and setter implementations for Person, Rectangle, Student, and BankAccount classes" />
+    <MESSAGE value="feat: добавление новых функций и улучшение кода&#10;&#10;Добавлены новые файлы и классы для демонстрации магических методов.&#10;Созданы классы EnhancedList и AdvancedCalculator с расширенной функциональностью.&#10;Добавлены функторы и декораторы для логирования операций и времени выполнения функций.&#10;Изменены существующие файлы для улучшения инкапсуляции и использования дескрипторов." />
+    <MESSAGE value="feat: добавление класса BankAccount с инкапсуляцией и магическими методами" />
+    <MESSAGE value="Generating commit message..." />
+    <MESSAGE value="feat: добавление классов для проверки иерархий наследования и методов" />
+    <MESSAGE value="feat: добавление абстрактных классов и иерархий для животных, машин и устройств" />
+    <MESSAGE value="feat: добавление скриптов для получения данных о погоде и текущих координатах МКС" />
+    <MESSAGE value="feat: добавление классов и функций для сериализации объектов в формат JSON" />
+    <MESSAGE value="feat: добавление классов и функций для валидации и сериализации данных с использованием Pydantic" />
+    <MESSAGE value="feat: обновление зависимостей и добавление FastAPI и Uvicorn в проект" />
+    <MESSAGE value="feat: добавление файлов для логирования и улучшение обработки регулярных выражений" />
+    <MESSAGE value="feat: добавление класса Book с методами для инициализации и валидации, а также создание логгера в новом файле" />
+    <MESSAGE value="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных" />
+    <MESSAGE value="feat: добавление материалов для урока по админ-панели Django, включая создание суперпользователя, регистрацию моделей и настройку отображения" />
+    <MESSAGE value="feat: добавили возможность загрузки и редактирования статей из JSON-файла с валидацией данных" />
+    <MESSAGE value="feat: добавлены классовые представления для обработки новостей и статей, включая ListView, DetailView и FormView" />
+    <MESSAGE value="feat: добавлены классовые представления для обработки новостей и статей, включая TemplateView, ListView и FormView" />
+    <MESSAGE value="feat: добавлены новые файлы для приложения users, включая представления и формы для аутентификации" />
+    <MESSAGE value="feat: добавлены новые файлы для приложения users, включая представления, формы и маршруты для аутентификации и регистрации" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: добавлены новые файлы для приложения users, включая представления, формы и маршруты для аутентификации и регистрации" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 4. Магические методы классов. Часть 1/src/live-coding/func_decor.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/live-coding/Private-protected.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 10. Основы работы с сетью. Библиотека Request/src/live-coding/live-request.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 12. Проектный урок. Написание Task Tracker. Часть 2/foo.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1/src/live-coding/regex-1.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/g160125_m_pt$custom_to_json.coverage" NAME="custom_to_json Coverage Results" MODIFIED="1741600323871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 11. Библиотека JSON/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$get_weather.coverage" NAME="get-weather Coverage Results" MODIFIED="1741342610297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 10. Основы работы с сетью. Библиотека Request/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$Slots_collection.coverage" NAME="Slots_collection Coverage Results" MODIFIED="1741167325204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 8. Полиморфизм. Множественное наследованние/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$Extended_dict.coverage" NAME="Extended-dict Coverage Results" MODIFIED="1741084763355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/Exercises" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$crud_requests_1.coverage" NAME="crud_requests_1 Coverage Results" MODIFIED="1741768442889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 13. Написание CRUD-запросов/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$Abstract_class_method.coverage" NAME="Abstract_class_method Coverage Results" MODIFIED="1741164051002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 8. Полиморфизм. Множественное наследованние/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$Extended_dict_solve.coverage" NAME="Extended-dict-solve Coverage Results" MODIFIED="1741084694925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/Exercises" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$regex_2.coverage" NAME="regex-2 Coverage Results" MODIFIED="1741859598041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$Complex_solve.coverage" NAME="Complex-solve Coverage Results" MODIFIED="1740737145933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 5. Магические методы классов. Часть 2/src/Exercises" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$func_decor.coverage" NAME="func_decor Coverage Results" MODIFIED="1740646347453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 4. Магические методы классов. Часть 1/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$count_down.coverage" NAME="count-down Coverage Results" MODIFIED="1740990507064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 6. Магические методы классов. Часть 3/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$Check_inheritance.coverage" NAME="Check-inheritance Coverage Results" MODIFIED="1741079789103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$foo.coverage" NAME="foo Coverage Results" MODIFIED="1742204847512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$logging_1.coverage" NAME="logging-1 Coverage Results" MODIFIED="1742201300187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$foo__1_.coverage" NAME="foo (1) Coverage Results" MODIFIED="1746558505075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$custom_dict.coverage" NAME="custom-dict Coverage Results" MODIFIED="1740989853777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 6. Магические методы классов. Часть 3/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$02_Property_live_coding.coverage" NAME="02-Property_live-coding Coverage Results" MODIFIED="1740559907924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 3. Инкапсуляция/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$comparision.coverage" NAME="comparision Coverage Results" MODIFIED="1740730985527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 5. Магические методы классов. Часть 2/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$Extended_list_solve.coverage" NAME="Extended-list-solve Coverage Results" MODIFIED="1741083714183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/Exercises" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$Multi_inheritance.coverage" NAME="Multi-inheritance Coverage Results" MODIFIED="1741077042741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$Private_protected.coverage" NAME="Private-protected Coverage Results" MODIFIED="1741082426802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$regex_1.coverage" NAME="regex-1 Coverage Results" MODIFIED="1741854815097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$custom_to_json__1_.coverage" NAME="custom_to_json (1) Coverage Results" MODIFIED="1741601286824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 11. Библиотека JSON/src/Exercises" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$List_inheritance.coverage" NAME="List-inheritance Coverage Results" MODIFIED="1741079823879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$json_files.coverage" NAME="json-files Coverage Results" MODIFIED="1741597991629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 11. Библиотека JSON/src/Exercises" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$01_Getter_Setter_live_coding.coverage" NAME="01-Getter_Setter_live-coding Coverage Results" MODIFIED="1740558556215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 3. Инкапсуляция/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$regex_1__1_.coverage" NAME="regex-1 (1) Coverage Results" MODIFIED="1741942108734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 15. Регулярные выражения в Python. Часть 2/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$attr.coverage" NAME="attr Coverage Results" MODIFIED="1740644798119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 4. Магические методы классов. Часть 1/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$live_request.coverage" NAME="live-request Coverage Results" MODIFIED="1741342105277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 10. Основы работы с сетью. Библиотека Request/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$json_serialisation.coverage" NAME="json-serialisation Coverage Results" MODIFIED="1741596079685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 11. Библиотека JSON/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$practice.coverage" NAME="practice Coverage Results" MODIFIED="1740649345411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 4. Магические методы классов. Часть 1/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$practice__1_.coverage" NAME="practice (1) Coverage Results" MODIFIED="1740730854489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 5. Магические методы классов. Часть 2/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$logging_2.coverage" NAME="logging-2 Coverage Results" MODIFIED="1742203749025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$crud_requests_2.coverage" NAME="crud_requests_2 Coverage Results" MODIFIED="1741768521032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 13. Написание CRUD-запросов/src/live-coding" />
   </component>
 </project>
