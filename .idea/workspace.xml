@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены новые файлы для приложения users, включая представления, формы и маршруты для аутентификации и регистрации" />
+    <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены новые файлы для приложения users, включая представления, формы и маршруты для аутентификации и регистрации">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -323,14 +325,7 @@
       <workItem from="1746170549499" duration="3351000" />
       <workItem from="1746429000576" duration="19287000" />
       <workItem from="1747207102464" duration="1893000" />
-    </task>
-    <task id="LOCAL-00009" summary="feat: добавление абстрактных классов и иерархий для животных, машин и устройств">
-      <option name="closed" value="true" />
-      <created>1741249113642</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1741249113642</updated>
+      <workItem from="1747293057618" duration="1266000" />
     </task>
     <task id="LOCAL-00010" summary="feat: добавление абстрактных классов и иерархий для животных, машин и устройств">
       <option name="closed" value="true" />
@@ -716,7 +711,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747207150690</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="feat: добавлены новые файлы для приложения users, включая представления, формы и маршруты для аутентификации и регистрации">
+      <option name="closed" value="true" />
+      <created>1747293110883</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1747293110884</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
