@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены новые файлы для аутентификации через GitHub с использованием django-allauth и распределения прав доступа">
-      <change beforePath="$PROJECT_DIR$/foo.py" beforeDir="false" afterPath="$PROJECT_DIR$/foo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,8 +264,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.122" />
-        <option value="bundled-python-sdk-880ecab49056-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.122" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
+        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
       </set>
     </attachedChunks>
   </component>
@@ -327,14 +327,7 @@
       <workItem from="1747207102464" duration="1893000" />
       <workItem from="1747293057618" duration="1266000" />
       <workItem from="1747378918451" duration="3667000" />
-    </task>
-    <task id="LOCAL-00011" summary="feat: добавление абстрактных классов и иерархий для животных, машин и устройств">
-      <option name="closed" value="true" />
-      <created>1741257809408</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1741257809408</updated>
+      <workItem from="1747638939858" duration="1405000" />
     </task>
     <task id="LOCAL-00012" summary="feat: добавление абстрактных классов и иерархий для животных, машин и устройств">
       <option name="closed" value="true" />
@@ -720,7 +713,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747378998282</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="feat: добавлены новые файлы для аутентификации через GitHub с использованием django-allauth и распределения прав доступа">
+      <option name="closed" value="true" />
+      <created>1747639035757</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1747639035758</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
