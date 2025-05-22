@@ -1,11 +1,6 @@
-from socketserver import TCPServer, StreamRequestHandler
-
-
-server_address = ('localhost', 9999)
-class MyRequestHandler(StreamRequestHandler):
-    def handle(self):
-        self.wfile.write(b"Hello, world!\n")
-
-if __name__ == "__main__":
-    with TCPServer(server_address, MyRequestHandler) as httpd:
-        httpd.serve_forever()
+{
+    "name": "foo",
+    "version": "0.1",
+    "description": "A simple example package",
+    'payload': "foo" + "0.1" + "A simple example package"
+}
