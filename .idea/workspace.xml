@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены новые файлы для аутентификации через GitHub с использованием django-allauth и распределения прав доступа">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +53,10 @@
     <selected>-1</selected>
     <servers />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -66,6 +68,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Docker.Модуль 5. Docker/docker-compose.yaml.mysql: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Модуль 5. Docker/docker-compose.yaml: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python.01-Getter_Setter_live-coding.executor&quot;: &quot;Run&quot;,
     &quot;Python.02-Property_live-coding.executor&quot;: &quot;Run&quot;,
@@ -105,7 +109,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHELLCHECK.PATH&quot;: &quot;/Users/avm/Library/Application Support/JetBrains/PyCharm2025.1/plugins/Shell Script/shellcheck&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/avm/Projects/Work/starta/g160125-m-pt/Модуль 4. Django&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/avm/Projects/Work/starta/g160125-m-pt/Модуль 5. Docker/Урок 5. Логирование и мониторинг и Deploy&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -117,11 +121,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Модуль 4. Django" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/Модуль 5. Docker/Урок 2. Создание Docker образов" />
+      <recent name="$PROJECT_DIR$/Модуль 5. Docker/Урок 5. Логирование и мониторинг и Deploy" />
       <recent name="$PROJECT_DIR$/Модуль 5. Docker" />
-      <recent name="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python" />
+      <recent name="$PROJECT_DIR$/Модуль 5. Docker/Урок 4. Основы Docker Compose" />
+      <recent name="$PROJECT_DIR$/Модуль 5. Docker/Урок 3. Работа с базами данных и Django" />
+      <recent name="$PROJECT_DIR$/Модуль 4. Django" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Модуль 5. Docker/Урок 1. Введение в Docker. Работа с Docker контейнерами" />
@@ -131,7 +135,7 @@
       <recent name="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.foo (1)">
+  <component name="RunManager" selected="Docker.Модуль 5. Docker/docker-compose.yaml: Compose Deployment">
     <configuration name="foo (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main@g160125-m-pt" />
       <option name="ENV_FILES" value="" />
@@ -147,52 +151,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/foo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="logging-1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="g160125-m-pt" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding/logging-1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="logging-2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="g160125-m-pt" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding/logging-2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -247,20 +205,47 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Модуль 5. Docker/docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="Модуль 5. Docker/docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Модуль 5. Docker/docker-compose.yaml.mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mysql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="Модуль 5. Docker/docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml.mysql: Compose Deployment" />
+      <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml: Compose Deployment" />
       <item itemvalue="Python.foo (1)" />
-      <item itemvalue="Python.logging-1" />
-      <item itemvalue="Python.logging-2" />
       <item itemvalue="Python.regex-1 (1)" />
       <item itemvalue="Python.regex-2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml.mysql: Compose Deployment" />
         <item itemvalue="Python.foo (1)" />
         <item itemvalue="Python.regex-2" />
         <item itemvalue="Python.regex-1 (1)" />
-        <item itemvalue="Python.logging-2" />
-        <item itemvalue="Python.logging-1" />
       </list>
     </recent_temporary>
   </component>
@@ -333,30 +318,9 @@
       <workItem from="1747638939858" duration="1405000" />
       <workItem from="1747726043924" duration="901000" />
       <workItem from="1747816667153" duration="202000" />
-    </task>
-    <task id="LOCAL-00013" summary="feat: добавление скриптов для получения данных о погоде и текущих координатах МКС">
-      <option name="closed" value="true" />
-      <created>1741334605773</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1741334605773</updated>
-    </task>
-    <task id="LOCAL-00014" summary="feat: добавление классов и функций для сериализации объектов в формат JSON">
-      <option name="closed" value="true" />
-      <created>1741596137484</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1741596137484</updated>
-    </task>
-    <task id="LOCAL-00015" summary="feat: добавление классов и функций для сериализации объектов в формат JSON">
-      <option name="closed" value="true" />
-      <created>1741598033341</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1741598033341</updated>
+      <workItem from="1747898588316" duration="1293000" />
+      <workItem from="1747984011183" duration="766000" />
+      <workItem from="1748244216549" duration="4524000" />
     </task>
     <task id="LOCAL-00016" summary="feat: добавление классов и функций для валидации и сериализации данных с использованием Pydantic">
       <option name="closed" value="true" />
@@ -726,7 +690,31 @@
       <option name="project" value="LOCAL" />
       <updated>1747726091851</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="feat: добавлены новые файлы для аутентификации через GitHub с использованием django-allauth и распределения прав доступа">
+      <option name="closed" value="true" />
+      <created>1747898639143</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1747898639143</updated>
+    </task>
+    <task id="LOCAL-00063" summary="feat: добавлены новые файлы для аутентификации через GitHub с использованием django-allauth и распределения прав доступа">
+      <option name="closed" value="true" />
+      <created>1747984043945</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1747984043945</updated>
+    </task>
+    <task id="LOCAL-00064" summary="feat: добавлены новые файлы для аутентификации через GitHub с использованием django-allauth и распределения прав доступа">
+      <option name="closed" value="true" />
+      <created>1748246079567</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1748246079568</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
