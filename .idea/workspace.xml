@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены новые файлы для аутентификации через GitHub с использованием django-allauth и распределения прав доступа">
-      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 2. Введение в FastAPI/2. Введение в FastAPI.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 2. Введение в FastAPI/2. Введение в FastAPI.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 2. Введение в FastAPI/exercises/exercise_1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 2. Введение в FastAPI/exercises/exercise_2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 2. Введение в FastAPI/live-coding/live-coding-1/app/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 2. Введение в FastAPI/live-coding/live-coding-1/app/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 2. Введение в FastAPI/live-coding/live-coding-2/app/live-codding-2.postman_collection.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 2. Введение в FastAPI/live-coding/live-coding-2/app/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 2. Введение в FastAPI/live-coding/live-coding-2/app/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 2. Введение в FastAPI/Импорт и экспорт в Postman.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Модуль 5. Docker/docker-compose.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Модуль 5. Docker/my.cnf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,11 +233,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml.mysql: Compose Deployment" />
-      <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml: Compose Deployment" />
       <item itemvalue="Python.foo (1)" />
       <item itemvalue="Python.regex-1 (1)" />
       <item itemvalue="Python.regex-2" />
+      <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml.mysql: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
@@ -336,15 +323,8 @@
       <workItem from="1748244216549" duration="4524000" />
       <workItem from="1748330490293" duration="939000" />
       <workItem from="1748336715787" duration="971000" />
-      <workItem from="1748416972981" duration="626000" />
-    </task>
-    <task id="LOCAL-00017" summary="feat: добавление классов и функций для валидации и сериализации данных с использованием Pydantic">
-      <option name="closed" value="true" />
-      <created>1741767012235</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1741767012235</updated>
+      <workItem from="1748416972981" duration="1892000" />
+      <workItem from="1748451599853" duration="605000" />
     </task>
     <task id="LOCAL-00018" summary="feat: обновление зависимостей и добавление FastAPI и Uvicorn в проект">
       <option name="closed" value="true" />
@@ -730,7 +710,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748330574996</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="feat: добавлены новые файлы для аутентификации через GitHub с использованием django-allauth и распределения прав доступа">
+      <option name="closed" value="true" />
+      <created>1748417623141</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1748417623141</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
