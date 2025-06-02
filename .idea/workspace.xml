@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены новые файлы для аутентификации через GitHub с использованием django-allauth и распределения прав доступа">
+      <change afterPath="$PROJECT_DIR$/projects/fastapi/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -100,6 +101,7 @@
     &quot;Python.live-request.executor&quot;: &quot;Run&quot;,
     &quot;Python.logging-1.executor&quot;: &quot;Run&quot;,
     &quot;Python.logging-2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;Python.practice (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.practice.executor&quot;: &quot;Run&quot;,
     &quot;Python.regex-1 (1).executor&quot;: &quot;Run&quot;,
@@ -135,7 +137,7 @@
       <recent name="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Модуль 5. Docker/docker-compose.yaml: Compose Deployment">
+  <component name="RunManager" selected="Python.main">
     <configuration name="foo (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main@g160125-m-pt" />
       <option name="ENV_FILES" value="" />
@@ -159,8 +161,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="regex-1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="g160125-m-pt" />
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="main@g160125-m-pt" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -168,12 +170,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 15. Регулярные выражения в Python. Часть 2/src/live-coding" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/projects/fastapi" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 15. Регулярные выражения в Python. Часть 2/src/live-coding/regex-1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/projects/fastapi/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -233,19 +235,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.foo (1)" />
-      <item itemvalue="Python.regex-1 (1)" />
-      <item itemvalue="Python.regex-2" />
-      <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml: Compose Deployment" />
       <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml.mysql: Compose Deployment" />
+      <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.foo (1)" />
+      <item itemvalue="Python.regex-2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml: Compose Deployment" />
         <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml.mysql: Compose Deployment" />
         <item itemvalue="Python.foo (1)" />
         <item itemvalue="Python.regex-2" />
-        <item itemvalue="Python.regex-1 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -325,14 +327,8 @@
       <workItem from="1748336715787" duration="971000" />
       <workItem from="1748416972981" duration="1892000" />
       <workItem from="1748451599853" duration="605000" />
-    </task>
-    <task id="LOCAL-00018" summary="feat: обновление зависимостей и добавление FastAPI и Uvicorn в проект">
-      <option name="closed" value="true" />
-      <created>1741853400370</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1741853400370</updated>
+      <workItem from="1748588639784" duration="6208000" />
+      <workItem from="1748624598559" duration="610000" />
     </task>
     <task id="LOCAL-00019" summary="feat: обновление зависимостей и добавление FastAPI и Uvicorn в проект">
       <option name="closed" value="true" />
@@ -718,7 +714,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748417623141</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="feat: добавлены новые файлы для аутентификации через GitHub с использованием django-allauth и распределения прав доступа">
+      <option name="closed" value="true" />
+      <created>1748588717654</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1748588717654</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -809,6 +813,7 @@
     <SUITE FILE_PATH="coverage/g160125_m_pt$attr.coverage" NAME="attr Coverage Results" MODIFIED="1740644798119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 4. Магические методы классов. Часть 1/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$live_request.coverage" NAME="live-request Coverage Results" MODIFIED="1741342105277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 10. Основы работы с сетью. Библиотека Request/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$json_serialisation.coverage" NAME="json-serialisation Coverage Results" MODIFIED="1741596079685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 11. Библиотека JSON/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$main.coverage" NAME="main Coverage Results" MODIFIED="1748594990813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projects/fastapi" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$practice.coverage" NAME="practice Coverage Results" MODIFIED="1740649345411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 4. Магические методы классов. Часть 1/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$practice__1_.coverage" NAME="practice (1) Coverage Results" MODIFIED="1740730854489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 5. Магические методы классов. Часть 2/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$logging_2.coverage" NAME="logging-2 Coverage Results" MODIFIED="1742203749025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding" />
