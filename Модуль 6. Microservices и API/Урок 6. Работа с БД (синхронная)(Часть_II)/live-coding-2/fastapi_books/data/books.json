@@ -1,0 +1,1574 @@
+{
+  "authors": [
+    {
+      "id": 1,
+      "name": "William Shakespeare"
+    },
+    {
+      "id": 2,
+      "name": "Leo Tolstoy"
+    },
+    {
+      "id": 3,
+      "name": "Fyodor Dostoevsky"
+    },
+    {
+      "id": 4,
+      "name": "Jane Austen"
+    },
+    {
+      "id": 5,
+      "name": "Homer"
+    },
+    {
+      "id": 6,
+      "name": "Charles Dickens"
+    },
+    {
+      "id": 7,
+      "name": "Mark Twain"
+    },
+    {
+      "id": 8,
+      "name": "Franz Kafka"
+    },
+    {
+      "id": 9,
+      "name": "Gabriel Garcia Marquez"
+    },
+    {
+      "id": 10,
+      "name": "Haruki Murakami"
+    },
+    {
+      "id": 11,
+      "name": "George Orwell"
+    },
+    {
+      "id": 12,
+      "name": "J.R.R. Tolkien"
+    },
+    {
+      "id": 13,
+      "name": "Virginia Woolf"
+    },
+    {
+      "id": 14,
+      "name": "Herman Melville"
+    },
+    {
+      "id": 15,
+      "name": "James Joyce"
+    },
+    {
+      "id": 16,
+      "name": "Miguel de Cervantes"
+    },
+    {
+      "id": 17,
+      "name": "Albert Camus"
+    },
+    {
+      "id": 18,
+      "name": "Oscar Wilde"
+    },
+    {
+      "id": 19,
+      "name": "Dante Alighieri"
+    },
+    {
+      "id": 20,
+      "name": "H.P. Lovecraft"
+    },
+    {
+      "id": 21,
+      "name": "Taras Shevchenko"
+    },
+    {
+      "id": 22,
+      "name": "Ivan Franko"
+    },
+    {
+      "id": 23,
+      "name": "Nikolai Gogol"
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "Classic"
+    },
+    {
+      "id": 2,
+      "name": "Poetry"
+    },
+    {
+      "id": 3,
+      "name": "Drama"
+    },
+    {
+      "id": 4,
+      "name": "Novel"
+    },
+    {
+      "id": 5,
+      "name": "Short Story"
+    },
+    {
+      "id": 6,
+      "name": "Fantasy"
+    },
+    {
+      "id": 7,
+      "name": "Science Fiction"
+    },
+    {
+      "id": 8,
+      "name": "Historical Fiction"
+    },
+    {
+      "id": 9,
+      "name": "Mystery"
+    },
+    {
+      "id": 10,
+      "name": "Philosophy"
+    },
+    {
+      "id": 11,
+      "name": "Horror"
+    },
+    {
+      "id": 12,
+      "name": "Romance"
+    },
+    {
+      "id": 13,
+      "name": "Adventure"
+    },
+    {
+      "id": 14,
+      "name": "Satire"
+    },
+    {
+      "id": 15,
+      "name": "Mythology"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "Romeo and Juliet",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        12
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Hamlet",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        10
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Macbeth",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        10
+      ]
+    },
+    {
+      "id": 4,
+      "title": "King Lear",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        10
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Othello",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        10
+      ]
+    },
+    {
+      "id": 6,
+      "title": "The Merchant of Venice",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Julius Caesar",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        8
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Much Ado About Nothing",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 9,
+      "title": "The Taming of the Shrew",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 10,
+      "title": "The Tempest",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Twelfth Night",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 12,
+      "title": "A Midsummer Night's Dream",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Henry IV, Part 1",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        8
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Henry V",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        8
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Richard III",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        8
+      ]
+    },
+    {
+      "id": 16,
+      "title": "The Winter's Tale",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 17,
+      "title": "As You Like It",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Antony and Cleopatra",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        10
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Coriolanus",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        10
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Timon of Athens",
+      "author_id": 1,
+      "tag_ids": [
+        3,
+        10
+      ]
+    },
+    {
+      "id": 21,
+      "title": "War and Peace",
+      "author_id": 2,
+      "tag_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Anna Karenina",
+      "author_id": 2,
+      "tag_ids": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": 23,
+      "title": "The Death of Ivan Ilych",
+      "author_id": 2,
+      "tag_ids": [
+        5
+      ]
+    },
+    {
+      "id": 24,
+      "title": "The Kreutzer Sonata",
+      "author_id": 2,
+      "tag_ids": [
+        5
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Resurrection",
+      "author_id": 2,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 26,
+      "title": "The Kingdom of God Is Within You",
+      "author_id": 2,
+      "tag_ids": [
+        10
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Family Happiness",
+      "author_id": 2,
+      "tag_ids": [
+        5
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Hadji Murat",
+      "author_id": 2,
+      "tag_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "id": 29,
+      "title": "The Cossacks",
+      "author_id": 2,
+      "tag_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Sevastopol",
+      "author_id": 2,
+      "tag_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Crime and Punishment",
+      "author_id": 3,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 32,
+      "title": "The Idiot",
+      "author_id": 3,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 33,
+      "title": "The Brothers Karamazov",
+      "author_id": 3,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Demons",
+      "author_id": 3,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Notes from Underground",
+      "author_id": 3,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 36,
+      "title": "The Gambler",
+      "author_id": 3,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 37,
+      "title": "The Double",
+      "author_id": 3,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Poor Folk",
+      "author_id": 3,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 39,
+      "title": "The Insulted and Injured",
+      "author_id": 3,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 40,
+      "title": "The House of the Dead",
+      "author_id": 3,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Pride and Prejudice",
+      "author_id": 4,
+      "tag_ids": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Sense and Sensibility",
+      "author_id": 4,
+      "tag_ids": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": 43,
+      "title": "Emma",
+      "author_id": 4,
+      "tag_ids": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Mansfield Park",
+      "author_id": 4,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 45,
+      "title": "Persuasion",
+      "author_id": 4,
+      "tag_ids": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": 46,
+      "title": "Northanger Abbey",
+      "author_id": 4,
+      "tag_ids": [
+        4,
+        14
+      ]
+    },
+    {
+      "id": 47,
+      "title": "Lady Susan",
+      "author_id": 4,
+      "tag_ids": [
+        5
+      ]
+    },
+    {
+      "id": 48,
+      "title": "Sanditon",
+      "author_id": 4,
+      "tag_ids": [
+        5
+      ]
+    },
+    {
+      "id": 51,
+      "title": "The Iliad",
+      "author_id": 5,
+      "tag_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": 52,
+      "title": "The Odyssey",
+      "author_id": 5,
+      "tag_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": 53,
+      "title": "Homeric Hymns",
+      "author_id": 5,
+      "tag_ids": [
+        2
+      ]
+    },
+    {
+      "id": 54,
+      "title": "The Battle of the Frogs and Mice",
+      "author_id": 5,
+      "tag_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": 61,
+      "title": "Oliver Twist",
+      "author_id": 6,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 62,
+      "title": "A Tale of Two Cities",
+      "author_id": 6,
+      "tag_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "id": 63,
+      "title": "Great Expectations",
+      "author_id": 6,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 64,
+      "title": "David Copperfield",
+      "author_id": 6,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 65,
+      "title": "A Christmas Carol",
+      "author_id": 6,
+      "tag_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": 66,
+      "title": "Bleak House",
+      "author_id": 6,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 67,
+      "title": "Hard Times",
+      "author_id": 6,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 68,
+      "title": "Nicholas Nickleby",
+      "author_id": 6,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 71,
+      "title": "Adventures of Huckleberry Finn",
+      "author_id": 7,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 72,
+      "title": "The Adventures of Tom Sawyer",
+      "author_id": 7,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 73,
+      "title": "The Gilded Age",
+      "author_id": 7,
+      "tag_ids": [
+        4,
+        14
+      ]
+    },
+    {
+      "id": 74,
+      "title": "A Connecticut Yankee in King Arthur's Court",
+      "author_id": 7,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 75,
+      "title": "The Innocents Abroad",
+      "author_id": 7,
+      "tag_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "id": 76,
+      "title": "Roughing It",
+      "author_id": 7,
+      "tag_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "id": 77,
+      "title": "The Notorious Jumping Frog of Calaveras County",
+      "author_id": 7,
+      "tag_ids": [
+        5
+      ]
+    },
+    {
+      "id": 78,
+      "title": "Pudd'nhead Wilson",
+      "author_id": 7,
+      "tag_ids": [
+        4,
+        9
+      ]
+    },
+    {
+      "id": 81,
+      "title": "The Metamorphosis",
+      "author_id": 8,
+      "tag_ids": [
+        5
+      ]
+    },
+    {
+      "id": 82,
+      "title": "The Trial",
+      "author_id": 8,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 83,
+      "title": "The Castle",
+      "author_id": 8,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 84,
+      "title": "The Hunger Artist",
+      "author_id": 8,
+      "tag_ids": [
+        5
+      ]
+    },
+    {
+      "id": 85,
+      "title": "In the Penal Colony",
+      "author_id": 8,
+      "tag_ids": [
+        5
+      ]
+    },
+    {
+      "id": 86,
+      "title": "A Country Doctor",
+      "author_id": 8,
+      "tag_ids": [
+        5
+      ]
+    },
+    {
+      "id": 87,
+      "title": "Amerika",
+      "author_id": 8,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 91,
+      "title": "One Hundred Years of Solitude",
+      "author_id": 9,
+      "tag_ids": [
+        4,
+        13
+      ]
+    },
+    {
+      "id": 92,
+      "title": "Love in the Time of Cholera",
+      "author_id": 9,
+      "tag_ids": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": 93,
+      "title": "The Autumn of the Patriarch",
+      "author_id": 9,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 94,
+      "title": "Chronicle of a Death Foretold",
+      "author_id": 9,
+      "tag_ids": [
+        4,
+        9
+      ]
+    },
+    {
+      "id": 95,
+      "title": "The General in His Labyrinth",
+      "author_id": 9,
+      "tag_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "id": 96,
+      "title": "No One Writes to the Colonel",
+      "author_id": 9,
+      "tag_ids": [
+        5
+      ]
+    },
+    {
+      "id": 97,
+      "title": "In Evil Hour",
+      "author_id": 9,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 98,
+      "title": "Leaf Storm",
+      "author_id": 9,
+      "tag_ids": [
+        5
+      ]
+    },
+    {
+      "id": 99,
+      "title": "Memories of My Melancholy Whores",
+      "author_id": 9,
+      "tag_ids": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": 100,
+      "title": "Of Love and Other Demons",
+      "author_id": 9,
+      "tag_ids": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": 101,
+      "title": "The Story of a Shipwrecked Sailor",
+      "author_id": 9,
+      "tag_ids": [
+        5,
+        13
+      ]
+    },
+    {
+      "id": 102,
+      "title": "Norwegian Wood",
+      "author_id": 10,
+      "tag_ids": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": 103,
+      "title": "Kafka on the Shore",
+      "author_id": 10,
+      "tag_ids": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": 104,
+      "title": "The Wind-Up Bird Chronicle",
+      "author_id": 10,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 105,
+      "title": "1Q84",
+      "author_id": 10,
+      "tag_ids": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": 106,
+      "title": "Hard-Boiled Wonderland and the End of the World",
+      "author_id": 10,
+      "tag_ids": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": 107,
+      "title": "Sputnik Sweetheart",
+      "author_id": 10,
+      "tag_ids": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": 108,
+      "title": "Dance Dance Dance",
+      "author_id": 10,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 109,
+      "title": "South of the Border, West of the Sun",
+      "author_id": 10,
+      "tag_ids": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": 110,
+      "title": "After Dark",
+      "author_id": 10,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 111,
+      "title": "Colorless Tsukuru Tazaki and His Years of Pilgrimage",
+      "author_id": 10,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 112,
+      "title": "Men Without Women",
+      "author_id": 10,
+      "tag_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "id": 113,
+      "title": "1984",
+      "author_id": 11,
+      "tag_ids": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": 114,
+      "title": "Animal Farm",
+      "author_id": 11,
+      "tag_ids": [
+        4,
+        14
+      ]
+    },
+    {
+      "id": 115,
+      "title": "Down and Out in Paris and London",
+      "author_id": 11,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 116,
+      "title": "The Road to Wigan Pier",
+      "author_id": 11,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 117,
+      "title": "Homage to Catalonia",
+      "author_id": 11,
+      "tag_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "id": 118,
+      "title": "Keep the Aspidistra Flying",
+      "author_id": 11,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 119,
+      "title": "Coming Up for Air",
+      "author_id": 11,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 120,
+      "title": "The Hobbit",
+      "author_id": 12,
+      "tag_ids": [
+        4,
+        13
+      ]
+    },
+    {
+      "id": 121,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "author_id": 12,
+      "tag_ids": [
+        4,
+        6
+      ]
+    },
+    {
+      "id": 122,
+      "title": "The Lord of the Rings: The Two Towers",
+      "author_id": 12,
+      "tag_ids": [
+        4,
+        6
+      ]
+    },
+    {
+      "id": 123,
+      "title": "The Lord of the Rings: The Return of the King",
+      "author_id": 12,
+      "tag_ids": [
+        4,
+        6
+      ]
+    },
+    {
+      "id": 124,
+      "title": "The Silmarillion",
+      "author_id": 12,
+      "tag_ids": [
+        4,
+        15
+      ]
+    },
+    {
+      "id": 126,
+      "title": "Unfinished Tales",
+      "author_id": 12,
+      "tag_ids": [
+        4,
+        15
+      ]
+    },
+    {
+      "id": 127,
+      "title": "Mrs. Dalloway",
+      "author_id": 13,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 128,
+      "title": "To the Lighthouse",
+      "author_id": 13,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 129,
+      "title": "Orlando",
+      "author_id": 13,
+      "tag_ids": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": 130,
+      "title": "A Room of One's Own",
+      "author_id": 13,
+      "tag_ids": [
+        10
+      ]
+    },
+    {
+      "id": 131,
+      "title": "The Waves",
+      "author_id": 13,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 132,
+      "title": "Jacob's Room",
+      "author_id": 13,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 133,
+      "title": "Moby-Dick",
+      "author_id": 14,
+      "tag_ids": [
+        4,
+        13
+      ]
+    },
+    {
+      "id": 134,
+      "title": "Bartleby, the Scrivener",
+      "author_id": 14,
+      "tag_ids": [
+        5
+      ]
+    },
+    {
+      "id": 135,
+      "title": "Typee",
+      "author_id": 14,
+      "tag_ids": [
+        4,
+        13
+      ]
+    },
+    {
+      "id": 136,
+      "title": "Omoo",
+      "author_id": 14,
+      "tag_ids": [
+        4,
+        13
+      ]
+    },
+    {
+      "id": 137,
+      "title": "Billy Budd, Sailor",
+      "author_id": 14,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 138,
+      "title": "The Confidence-Man",
+      "author_id": 14,
+      "tag_ids": [
+        4,
+        14
+      ]
+    },
+    {
+      "id": 139,
+      "title": "Ulysses",
+      "author_id": 15,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 140,
+      "title": "A Portrait of the Artist as a Young Man",
+      "author_id": 15,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 141,
+      "title": "Dubliners",
+      "author_id": 15,
+      "tag_ids": [
+        5
+      ]
+    },
+    {
+      "id": 142,
+      "title": "Finnegans Wake",
+      "author_id": 15,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 144,
+      "title": "Don Quixote",
+      "author_id": 16,
+      "tag_ids": [
+        4,
+        14
+      ]
+    },
+    {
+      "id": 145,
+      "title": "Novelas ejemplares",
+      "author_id": 16,
+      "tag_ids": [
+        4
+      ]
+    },
+    {
+      "id": 147,
+      "title": "The Stranger",
+      "author_id": 17,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 148,
+      "title": "The Plague",
+      "author_id": 17,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 149,
+      "title": "The Fall",
+      "author_id": 17,
+      "tag_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 151,
+      "title": "The Picture of Dorian Gray",
+      "author_id": 18,
+      "tag_ids": [
+        4,
+        14
+      ]
+    },
+    {
+      "id": 152,
+      "title": "The Importance of Being Earnest",
+      "author_id": 18,
+      "tag_ids": [
+        3
+      ]
+    },
+    {
+      "id": 153,
+      "title": "An Ideal Husband",
+      "author_id": 18,
+      "tag_ids": [
+        3
+      ]
+    },
+    {
+      "id": 154,
+      "title": "Lady Windermere's Fan",
+      "author_id": 18,
+      "tag_ids": [
+        3
+      ]
+    },
+    {
+      "id": 155,
+      "title": "Salome",
+      "author_id": 18,
+      "tag_ids": [
+        3
+      ]
+    },
+    {
+      "id": 156,
+      "title": "De Profundis",
+      "author_id": 18,
+      "tag_ids": [
+        10
+      ]
+    },
+    {
+      "id": 157,
+      "title": "The Happy Prince and Other Tales",
+      "author_id": 18,
+      "tag_ids": [
+        5
+      ]
+    },
+    {
+      "id": 158,
+      "title": "A Woman of No Importance",
+      "author_id": 18,
+      "tag_ids": [
+        3
+      ]
+    },
+    {
+      "id": 159,
+      "title": "The Divine Comedy",
+      "author_id": 19,
+      "tag_ids": [
+        2,
+        15
+      ]
+    },
+    {
+      "id": 160,
+      "title": "Inferno",
+      "author_id": 19,
+      "tag_ids": [
+        2,
+        15
+      ]
+    },
+    {
+      "id": 161,
+      "title": "Purgatorio",
+      "author_id": 19,
+      "tag_ids": [
+        2,
+        15
+      ]
+    },
+    {
+      "id": 162,
+      "title": "Paradiso",
+      "author_id": 19,
+      "tag_ids": [
+        2,
+        15
+      ]
+    },
+    {
+      "id": 163,
+      "title": "La Vita Nuova",
+      "author_id": 19,
+      "tag_ids": [
+        2
+      ]
+    },
+    {
+      "id": 164,
+      "title": "Convivio",
+      "author_id": 19,
+      "tag_ids": [
+        10
+      ]
+    },
+    {
+      "id": 165,
+      "title": "The Call of Cthulhu",
+      "author_id": 20,
+      "tag_ids": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": 166,
+      "title": "At the Mountains of Madness",
+      "author_id": 20,
+      "tag_ids": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": 167,
+      "title": "The Shadow over Innsmouth",
+      "author_id": 20,
+      "tag_ids": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": 168,
+      "title": "The Dunwich Horror",
+      "author_id": 20,
+      "tag_ids": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": 169,
+      "title": "The Colour Out of Space",
+      "author_id": 20,
+      "tag_ids": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": 170,
+      "title": "The Shadow Out of Time",
+      "author_id": 20,
+      "tag_ids": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": 171,
+      "title": "The Whisperer in Darkness",
+      "author_id": 20,
+      "tag_ids": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": 172,
+      "title": "The Case of Charles Dexter Ward",
+      "author_id": 20,
+      "tag_ids": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": 173,
+      "title": "The Haunter of the Dark",
+      "author_id": 20,
+      "tag_ids": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": 174,
+      "title": "The Dreams in the Witch House",
+      "author_id": 20,
+      "tag_ids": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": 180,
+      "title": "Kobzar",
+      "author_id": 21,
+      "tag_ids": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 181,
+      "title": "Zakhar Berkut",
+      "author_id": 22,
+      "tag_ids": [
+        4,
+        8,
+        13
+      ]
+    },
+    {
+      "id": 182,
+      "title": "The Stone Host",
+      "author_id": 22,
+      "tag_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 183,
+      "title": "Dead Souls",
+      "author_id": 23,
+      "tag_ids": [
+        4,
+        14
+      ]
+    },
+    {
+      "id": 184,
+      "title": "The Overcoat",
+      "author_id": 23,
+      "tag_ids": [
+        5,
+        9
+      ]
+    },
+    {
+      "id": 185,
+      "title": "Viy",
+      "author_id": 23,
+      "tag_ids": [
+        11,
+        15
+      ]
+    },
+    {
+      "id": 186,
+      "title": "Taras Bulba",
+      "author_id": 23,
+      "tag_ids": [
+        8,
+        13
+      ]
+    },
+    {
+      "id": 187,
+      "title": "Evenings on a Farm Near Dikanka",
+      "author_id": 23,
+      "tag_ids": [
+        5,
+        15
+      ]
+    }
+  ]
+}
+

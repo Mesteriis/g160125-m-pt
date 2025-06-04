@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Модуль 6. Microservices и API/Урок 5. Работа с БД (синхронная) (Часть_I)/live-coding/live-coding-1/fastapi_books" isTestSource="false" />
+    </content>
     <orderEntry type="jdk" jdkName="Poetry (main@g160125-m-pt)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

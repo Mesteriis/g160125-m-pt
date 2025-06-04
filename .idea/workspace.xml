@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены новые файлы для аутентификации через GitHub с использованием django-allauth и распределения прав доступа">
-      <change afterPath="$PROJECT_DIR$/projects/fastapi/main.py" afterDir="false" />
+    <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены модели, маршруты и CRUD-операции для работы с книгами в FastAPI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 5. Работа с БД (синхронная) (Часть_I)/live-coding/live-coding-1/fastapi_books/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 5. Работа с БД (синхронная) (Часть_I)/live-coding/live-coding-1/fastapi_books/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 5. Работа с БД (синхронная) (Часть_I)/live-coding/live-coding-1/fastapi_books/routers/books.py" beforeDir="false" afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 5. Работа с БД (синхронная) (Часть_I)/live-coding/live-coding-1/fastapi_books/routers/books.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 5. Работа с БД (синхронная) (Часть_I)/live-coding/live-coding-1/fastapi_books/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 5. Работа с БД (синхронная) (Часть_I)/live-coding/live-coding-1/fastapi_books/schemas.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +105,7 @@
     &quot;Python.live-request.executor&quot;: &quot;Run&quot;,
     &quot;Python.logging-1.executor&quot;: &quot;Run&quot;,
     &quot;Python.logging-2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;Python.practice (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.practice.executor&quot;: &quot;Run&quot;,
@@ -137,7 +142,7 @@
       <recent name="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.main (1)">
     <configuration name="foo (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main@g160125-m-pt" />
       <option name="ENV_FILES" value="" />
@@ -161,6 +166,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="main@g160125-m-pt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 4. Маршрутизация и зависимости в FastAPI/live-coding/live-coding-1/my_fastapi_app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 4. Маршрутизация и зависимости в FastAPI/live-coding/live-coding-1/my_fastapi_app/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="main@g160125-m-pt" />
       <option name="ENV_FILES" value="" />
@@ -176,29 +204,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/projects/fastapi/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="regex-2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="g160125-m-pt" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1/src/live-coding" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1/src/live-coding/regex-2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -237,17 +242,17 @@
     <list>
       <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml.mysql: Compose Deployment" />
       <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="Python.main (1)" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.foo (1)" />
-      <item itemvalue="Python.regex-2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
         <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml: Compose Deployment" />
         <item itemvalue="Docker.Модуль 5. Docker/docker-compose.yaml.mysql: Compose Deployment" />
         <item itemvalue="Python.foo (1)" />
-        <item itemvalue="Python.regex-2" />
       </list>
     </recent_temporary>
   </component>
@@ -329,22 +334,7 @@
       <workItem from="1748451599853" duration="605000" />
       <workItem from="1748588639784" duration="6208000" />
       <workItem from="1748624598559" duration="610000" />
-    </task>
-    <task id="LOCAL-00019" summary="feat: обновление зависимостей и добавление FastAPI и Uvicorn в проект">
-      <option name="closed" value="true" />
-      <created>1741939758617</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1741939758617</updated>
-    </task>
-    <task id="LOCAL-00020" summary="feat: обновление зависимостей и добавление FastAPI и Uvicorn в проект">
-      <option name="closed" value="true" />
-      <created>1741944705135</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1741944705135</updated>
+      <workItem from="1748848339684" duration="6771000" />
     </task>
     <task id="LOCAL-00021" summary="feat: обновление зависимостей и добавление FastAPI и Uvicorn в проект">
       <option name="closed" value="true" />
@@ -722,7 +712,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748588717654</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="feat: добавлены новые файлы для управления зависимостями и маршрутизацией в FastAPI">
+      <option name="closed" value="true" />
+      <created>1748848479693</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1748848479693</updated>
+    </task>
+    <task id="LOCAL-00069" summary="feat: добавлены модели, маршруты и CRUD-операции для работы с книгами в FastAPI">
+      <option name="closed" value="true" />
+      <created>1748934865795</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1748934865795</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -749,7 +755,9 @@
     <MESSAGE value="feat: добавлены новые файлы для приложения users, включая представления и формы для аутентификации" />
     <MESSAGE value="feat: добавлены новые файлы для приложения users, включая представления, формы и маршруты для аутентификации и регистрации" />
     <MESSAGE value="feat: добавлены новые файлы для аутентификации через GitHub с использованием django-allauth и распределения прав доступа" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: добавлены новые файлы для аутентификации через GitHub с использованием django-allauth и распределения прав доступа" />
+    <MESSAGE value="feat: добавлены новые файлы для управления зависимостями и маршрутизацией в FastAPI" />
+    <MESSAGE value="feat: добавлены модели, маршруты и CRUD-операции для работы с книгами в FastAPI" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: добавлены модели, маршруты и CRUD-операции для работы с книгами в FastAPI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -808,6 +816,7 @@
     <SUITE FILE_PATH="coverage/g160125_m_pt$custom_to_json__1_.coverage" NAME="custom_to_json (1) Coverage Results" MODIFIED="1741601286824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 11. Библиотека JSON/src/Exercises" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$List_inheritance.coverage" NAME="List-inheritance Coverage Results" MODIFIED="1741079823879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$json_files.coverage" NAME="json-files Coverage Results" MODIFIED="1741597991629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 11. Библиотека JSON/src/Exercises" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1748849176348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 4. Маршрутизация и зависимости в FastAPI/live-coding/live-coding-1/my_fastapi_app" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$01_Getter_Setter_live_coding.coverage" NAME="01-Getter_Setter_live-coding Coverage Results" MODIFIED="1740558556215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 3. Инкапсуляция/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$regex_1__1_.coverage" NAME="regex-1 (1) Coverage Results" MODIFIED="1741942108734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 15. Регулярные выражения в Python. Часть 2/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$attr.coverage" NAME="attr Coverage Results" MODIFIED="1740644798119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 4. Магические методы классов. Часть 1/src/live-coding" />

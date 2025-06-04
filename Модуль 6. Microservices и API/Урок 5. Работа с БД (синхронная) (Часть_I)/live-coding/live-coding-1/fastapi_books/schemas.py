@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 
 class BookCreate(BaseModel):
@@ -7,7 +7,5 @@ class BookCreate(BaseModel):
 
 
 class BookResponse(BookCreate):
+    model_config = ConfigDict(from_attributes=True)
     id: int
-
-    class Config:
-        orm_mode = True

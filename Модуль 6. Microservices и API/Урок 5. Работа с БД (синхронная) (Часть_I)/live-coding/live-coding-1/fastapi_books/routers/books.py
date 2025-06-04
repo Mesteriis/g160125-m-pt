@@ -10,7 +10,7 @@ router = APIRouter()
 
 @router.post("/", response_model=BookResponse)
 def create_book(book: BookCreate, db: Session = Depends(get_db)):
-    db_book = BookDB(**book.dict())
+    db_book = BookDB(**book.model_dump())
     db.add(db_book)
     db.commit()
     db.refresh(db_book)
