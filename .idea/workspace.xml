@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены модели, маршруты и CRUD-операции для работы с книгами в FastAPI">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 5. Работа с БД (синхронная) (Часть_I)/live-coding/live-coding-1/fastapi_books/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 5. Работа с БД (синхронная) (Часть_I)/live-coding/live-coding-1/fastapi_books/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 5. Работа с БД (синхронная) (Часть_I)/live-coding/live-coding-1/fastapi_books/routers/books.py" beforeDir="false" afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 5. Работа с БД (синхронная) (Часть_I)/live-coding/live-coding-1/fastapi_books/routers/books.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 5. Работа с БД (синхронная) (Часть_I)/live-coding/live-coding-1/fastapi_books/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 5. Работа с БД (синхронная) (Часть_I)/live-coding/live-coding-1/fastapi_books/schemas.py" afterDir="false" />
+    <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены модели, маршруты и CRUD-операции для работы с книгами, авторами и тегами в FastAPI">
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 6. Работа с БД (синхронная)(Часть_II)/live-coding-1/fastapi_books/alembic/versions/a718b23eaea0_add_authors_and_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 6. Работа с БД (синхронная)(Часть_II)/live-coding-1/fastapi_books/alembic/versions/a718b23eaea0_add_authors_and_tags.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,14 +331,7 @@
       <workItem from="1748588639784" duration="6208000" />
       <workItem from="1748624598559" duration="610000" />
       <workItem from="1748848339684" duration="6771000" />
-    </task>
-    <task id="LOCAL-00021" summary="feat: обновление зависимостей и добавление FastAPI и Uvicorn в проект">
-      <option name="closed" value="true" />
-      <created>1741944709183</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1741944709183</updated>
+      <workItem from="1749021512909" duration="1939000" />
     </task>
     <task id="LOCAL-00022" summary="feat: добавление файлов для логирования и улучшение обработки регулярных выражений">
       <option name="closed" value="true" />
@@ -728,7 +717,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748934865795</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="feat: добавлены модели, маршруты и CRUD-операции для работы с книгами, авторами и тегами в FastAPI">
+      <option name="closed" value="true" />
+      <created>1749021653185</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1749021653185</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -757,7 +754,8 @@
     <MESSAGE value="feat: добавлены новые файлы для аутентификации через GitHub с использованием django-allauth и распределения прав доступа" />
     <MESSAGE value="feat: добавлены новые файлы для управления зависимостями и маршрутизацией в FastAPI" />
     <MESSAGE value="feat: добавлены модели, маршруты и CRUD-операции для работы с книгами в FastAPI" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: добавлены модели, маршруты и CRUD-операции для работы с книгами в FastAPI" />
+    <MESSAGE value="feat: добавлены модели, маршруты и CRUD-операции для работы с книгами, авторами и тегами в FastAPI" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: добавлены модели, маршруты и CRUD-операции для работы с книгами, авторами и тегами в FastAPI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
