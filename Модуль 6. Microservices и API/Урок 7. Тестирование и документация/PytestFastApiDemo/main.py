@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+from starlette.responses import Response
 
 app = FastAPI()
 
@@ -38,4 +39,6 @@ def update_item(item_id: int, item: Item):
 @app.delete("/items/{item_id}")
 def delete_item(item_id: int):
     # TODO: напишите реализацию метода
+    return Response(status_code=204, deteil='')  # Удаление элемента не возвращает содержимого
     raise NotImplemented("Method not implemented")
+    ApiEcxception(status_code=404, detail="Item not found")  # Если элемент не найден, возвращаем 404

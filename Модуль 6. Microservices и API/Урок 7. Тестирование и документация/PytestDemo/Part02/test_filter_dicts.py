@@ -1,7 +1,7 @@
 import pytest
 from filter_dicts import filter_dicts  # Замените your_module на имя вашего модуля
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def sample_data():
     """Создает список словарей для тестирования."""
     return [
