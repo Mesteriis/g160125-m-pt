@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены новые функции и тесты для работы с авторизацией, фильтрацией данных и математическими операциями">
-      <change beforePath="$PROJECT_DIR$/.idea/main@g160125-m-pt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/main@g160125-m-pt.iml" afterDir="false" />
+    <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены асинхронные функции для отправки HTTP-запросов с использованием aiohttp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestDemo/Part01/test_is_prime.py" beforeDir="false" afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestDemo/Part01/test_is_prime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestDemo/Part02/test_filter_dicts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestDemo/Part02/test_filter_dicts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestFastApiDemo/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestFastApiDemo/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestFastApiDemo/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestFastApiDemo/test_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +91,9 @@
     &quot;Python.Slots_collection.executor&quot;: &quot;Run&quot;,
     &quot;Python.attr.executor&quot;: &quot;Run&quot;,
     &quot;Python.comparision.executor&quot;: &quot;Run&quot;,
+    &quot;Python.corutine.executor&quot;: &quot;Run&quot;,
     &quot;Python.count-down.executor&quot;: &quot;Run&quot;,
+    &quot;Python.create_task_01.executor&quot;: &quot;Run&quot;,
     &quot;Python.crud_requests_1.executor&quot;: &quot;Run&quot;,
     &quot;Python.crud_requests_2.executor&quot;: &quot;Run&quot;,
     &quot;Python.custom-dict.executor&quot;: &quot;Run&quot;,
@@ -110,6 +105,7 @@
     &quot;Python.get-weather.executor&quot;: &quot;Run&quot;,
     &quot;Python.json-files.executor&quot;: &quot;Run&quot;,
     &quot;Python.json-serialisation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.knock_knock_Kanye.executor&quot;: &quot;Run&quot;,
     &quot;Python.live-request.executor&quot;: &quot;Run&quot;,
     &quot;Python.logging-1.executor&quot;: &quot;Run&quot;,
     &quot;Python.logging-2.executor&quot;: &quot;Run&quot;,
@@ -120,6 +116,14 @@
     &quot;Python.regex-1 (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.regex-1.executor&quot;: &quot;Run&quot;,
     &quot;Python.regex-2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.requests_async.executor&quot;: &quot;Run&quot;,
+    &quot;Python.requests_sync.executor&quot;: &quot;Run&quot;,
+    &quot;Python.simple_async.executor&quot;: &quot;Run&quot;,
+    &quot;Python.simple_async2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.simple_sync.executor&quot;: &quot;Run&quot;,
+    &quot;Python.task06.executor&quot;: &quot;Run&quot;,
+    &quot;Python.task_cancelled.executor&quot;: &quot;Run&quot;,
+    &quot;Python.task_done.executor&quot;: &quot;Run&quot;,
     &quot;Python.test_is_prime.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -151,107 +155,142 @@
       <recent name="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_api.py">
+  <component name="RunManager" selected="Python.task06">
+    <configuration name="requests_async" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="main@g160125-m-pt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part02" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part02/requests_async.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="requests_sync" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="main@g160125-m-pt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part02" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part02/requests_sync.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="task06" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="main@g160125-m-pt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/tasks" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/tasks/task06.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="task_cancelled" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="main@g160125-m-pt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part02" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part02/task_cancelled.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="task_done" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="main@g160125-m-pt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part02" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part02/task_done.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_add.test_add" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="main@g160125-m-pt" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestDemo/Part01" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_add.test_add&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_param_add.test_add_with_param" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="main@g160125-m-pt" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestDemo/Part02" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_param_add.test_add_with_param&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in test_api.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="main@g160125-m-pt" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestFastApiDemo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestFastApiDemo/test_api.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in test_calculate_discount.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="main@g160125-m-pt" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestDemo/Part01" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestDemo/Part01/test_calculate_discount.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in test_filter_dicts.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="main@g160125-m-pt" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestDemo/Part02" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestDemo/Part02/test_filter_dicts.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python tests.Python tests for test_param_add.test_add_with_param" />
-      <item itemvalue="Python tests.Python tests in test_api.py" />
-      <item itemvalue="Python tests.Python tests in test_filter_dicts.py" />
-      <item itemvalue="Python tests.Python tests for test_add.test_add" />
-      <item itemvalue="Python tests.Python tests in test_calculate_discount.py" />
+      <item itemvalue="Python.requests_async" />
+      <item itemvalue="Python.requests_sync" />
+      <item itemvalue="Python.task06" />
+      <item itemvalue="Python.task_cancelled" />
+      <item itemvalue="Python.task_done" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test_api.py" />
-        <item itemvalue="Python tests.Python tests in test_filter_dicts.py" />
-        <item itemvalue="Python tests.Python tests for test_param_add.test_add_with_param" />
-        <item itemvalue="Python tests.Python tests for test_add.test_add" />
-        <item itemvalue="Python tests.Python tests in test_calculate_discount.py" />
+        <item itemvalue="Python.task06" />
+        <item itemvalue="Python.requests_sync" />
+        <item itemvalue="Python.task_done" />
+        <item itemvalue="Python.task_cancelled" />
+        <item itemvalue="Python.requests_async" />
       </list>
     </recent_temporary>
   </component>
@@ -338,22 +377,9 @@
       <workItem from="1749107826372" duration="1769000" />
       <workItem from="1749113270154" duration="2123000" />
       <workItem from="1749142044292" duration="602000" />
-    </task>
-    <task id="LOCAL-00023" summary="feat: добавление класса Book с методами для инициализации и валидации, а также создание логгера в новом файле">
-      <option name="closed" value="true" />
-      <created>1742804771053</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1742804771053</updated>
-    </task>
-    <task id="LOCAL-00024" summary="feat: добавление класса Book с методами для инициализации и валидации, а также создание логгера в новом файле">
-      <option name="closed" value="true" />
-      <created>1742892580450</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1742892580450</updated>
+      <workItem from="1749193824825" duration="7972000" />
+      <workItem from="1749229350329" duration="606000" />
+      <workItem from="1749238589981" duration="736000" />
     </task>
     <task id="LOCAL-00025" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
       <option name="closed" value="true" />
@@ -731,7 +757,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749107932945</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="feat: добавлены новые функции и тесты для работы с авторизацией, фильтрацией данных и математическими операциями">
+      <option name="closed" value="true" />
+      <created>1749193891598</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1749193891598</updated>
+    </task>
+    <task id="LOCAL-00073" summary="feat: добавлены асинхронные функции для отправки HTTP-запросов с использованием aiohttp">
+      <option name="closed" value="true" />
+      <created>1749201835150</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1749201835150</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -762,7 +804,8 @@
     <MESSAGE value="feat: добавлены модели, маршруты и CRUD-операции для работы с книгами в FastAPI" />
     <MESSAGE value="feat: добавлены модели, маршруты и CRUD-операции для работы с книгами, авторами и тегами в FastAPI" />
     <MESSAGE value="feat: добавлены новые функции и тесты для работы с авторизацией, фильтрацией данных и математическими операциями" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: добавлены новые функции и тесты для работы с авторизацией, фильтрацией данных и математическими операциями" />
+    <MESSAGE value="feat: добавлены асинхронные функции для отправки HTTP-запросов с использованием aiohttp" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: добавлены асинхронные функции для отправки HTTP-запросов с использованием aiohttp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -796,43 +839,54 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/g160125_m_pt$custom_to_json.coverage" NAME="custom_to_json Coverage Results" MODIFIED="1741600323871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 11. Библиотека JSON/src/live-coding" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$test_is_prime.coverage" NAME="test_is_prime Coverage Results" MODIFIED="1749109826484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestDemo/Part01" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$.coverage" NAME=" Coverage Results" MODIFIED="1749114007801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestFastApiDemo" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$simple_async2.coverage" NAME="simple_async2 Coverage Results" MODIFIED="1749195504244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part01" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$get_weather.coverage" NAME="get-weather Coverage Results" MODIFIED="1741342610297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 10. Основы работы с сетью. Библиотека Request/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$Slots_collection.coverage" NAME="Slots_collection Coverage Results" MODIFIED="1741167325204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 8. Полиморфизм. Множественное наследованние/src/live-coding" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$Extended_dict.coverage" NAME="Extended-dict Coverage Results" MODIFIED="1741084763355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/Exercises" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$crud_requests_1.coverage" NAME="crud_requests_1 Coverage Results" MODIFIED="1741768442889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 13. Написание CRUD-запросов/src/live-coding" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$Abstract_class_method.coverage" NAME="Abstract_class_method Coverage Results" MODIFIED="1741164051002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 8. Полиморфизм. Множественное наследованние/src/live-coding" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$Extended_dict_solve.coverage" NAME="Extended-dict-solve Coverage Results" MODIFIED="1741084694925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/Exercises" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$regex_2.coverage" NAME="regex-2 Coverage Results" MODIFIED="1741859598041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$Complex_solve.coverage" NAME="Complex-solve Coverage Results" MODIFIED="1740737145933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 5. Магические методы классов. Часть 2/src/Exercises" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$func_decor.coverage" NAME="func_decor Coverage Results" MODIFIED="1740646347453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 4. Магические методы классов. Часть 1/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$count_down.coverage" NAME="count-down Coverage Results" MODIFIED="1740990507064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 6. Магические методы классов. Часть 3/src/live-coding" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$Check_inheritance.coverage" NAME="Check-inheritance Coverage Results" MODIFIED="1741079789103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$foo.coverage" NAME="foo Coverage Results" MODIFIED="1742204847512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$logging_1.coverage" NAME="logging-1 Coverage Results" MODIFIED="1742201300187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$foo__1_.coverage" NAME="foo (1) Coverage Results" MODIFIED="1746558505075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$custom_dict.coverage" NAME="custom-dict Coverage Results" MODIFIED="1740989853777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 6. Магические методы классов. Часть 3/src/live-coding" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$02_Property_live_coding.coverage" NAME="02-Property_live-coding Coverage Results" MODIFIED="1740559907924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 3. Инкапсуляция/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$comparision.coverage" NAME="comparision Coverage Results" MODIFIED="1740730985527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 5. Магические методы классов. Часть 2/src/live-coding" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$Extended_list_solve.coverage" NAME="Extended-list-solve Coverage Results" MODIFIED="1741083714183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/Exercises" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$task_done.coverage" NAME="task_done Coverage Results" MODIFIED="1749196221377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part02" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$Multi_inheritance.coverage" NAME="Multi-inheritance Coverage Results" MODIFIED="1741077042741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$simple_sync.coverage" NAME="simple_sync Coverage Results" MODIFIED="1749195568040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part01" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$Private_protected.coverage" NAME="Private-protected Coverage Results" MODIFIED="1741082426802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/live-coding" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$regex_1.coverage" NAME="regex-1 Coverage Results" MODIFIED="1741854815097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$custom_to_json__1_.coverage" NAME="custom_to_json (1) Coverage Results" MODIFIED="1741601286824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 11. Библиотека JSON/src/Exercises" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$List_inheritance.coverage" NAME="List-inheritance Coverage Results" MODIFIED="1741079823879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/live-coding" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$json_files.coverage" NAME="json-files Coverage Results" MODIFIED="1741597991629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 11. Библиотека JSON/src/Exercises" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1748849176348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 4. Маршрутизация и зависимости в FastAPI/live-coding/live-coding-1/my_fastapi_app" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$01_Getter_Setter_live_coding.coverage" NAME="01-Getter_Setter_live-coding Coverage Results" MODIFIED="1740558556215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 3. Инкапсуляция/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$regex_1__1_.coverage" NAME="regex-1 (1) Coverage Results" MODIFIED="1741942108734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 15. Регулярные выражения в Python. Часть 2/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$attr.coverage" NAME="attr Coverage Results" MODIFIED="1740644798119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 4. Магические методы классов. Часть 1/src/live-coding" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$live_request.coverage" NAME="live-request Coverage Results" MODIFIED="1741342105277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 10. Основы работы с сетью. Библиотека Request/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$requests_sync.coverage" NAME="requests_sync Coverage Results" MODIFIED="1749201145752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part02" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$json_serialisation.coverage" NAME="json-serialisation Coverage Results" MODIFIED="1741596079685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 11. Библиотека JSON/src/live-coding" />
-    <SUITE FILE_PATH="coverage/g160125_m_pt$main.coverage" NAME="main Coverage Results" MODIFIED="1748594990813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projects/fastapi" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$practice.coverage" NAME="practice Coverage Results" MODIFIED="1740649345411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 4. Магические методы классов. Часть 1/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$practice__1_.coverage" NAME="practice (1) Coverage Results" MODIFIED="1740730854489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 5. Магические методы классов. Часть 2/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$logging_2.coverage" NAME="logging-2 Coverage Results" MODIFIED="1742203749025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding" />
     <SUITE FILE_PATH="coverage/g160125_m_pt$crud_requests_2.coverage" NAME="crud_requests_2 Coverage Results" MODIFIED="1741768521032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 13. Написание CRUD-запросов/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$test_is_prime.coverage" NAME="test_is_prime Coverage Results" MODIFIED="1749109826484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 7. Тестирование и документация/PytestDemo/Part01" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$custom_to_json.coverage" NAME="custom_to_json Coverage Results" MODIFIED="1741600323871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 11. Библиотека JSON/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$Extended_dict.coverage" NAME="Extended-dict Coverage Results" MODIFIED="1741084763355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/Exercises" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$crud_requests_1.coverage" NAME="crud_requests_1 Coverage Results" MODIFIED="1741768442889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 13. Написание CRUD-запросов/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$Abstract_class_method.coverage" NAME="Abstract_class_method Coverage Results" MODIFIED="1741164051002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 8. Полиморфизм. Множественное наследованние/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$Extended_dict_solve.coverage" NAME="Extended-dict-solve Coverage Results" MODIFIED="1741084694925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/Exercises" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$task06.coverage" NAME="task06 Coverage Results" MODIFIED="1749202849420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/tasks" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$regex_2.coverage" NAME="regex-2 Coverage Results" MODIFIED="1741859598041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$func_decor.coverage" NAME="func_decor Coverage Results" MODIFIED="1740646347453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 4. Магические методы классов. Часть 1/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$Check_inheritance.coverage" NAME="Check-inheritance Coverage Results" MODIFIED="1741079789103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$simple_async.coverage" NAME="simple_async Coverage Results" MODIFIED="1749195453313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part01" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$logging_1.coverage" NAME="logging-1 Coverage Results" MODIFIED="1742201300187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 16. Логирование в Python/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$foo__1_.coverage" NAME="foo (1) Coverage Results" MODIFIED="1746558505075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$02_Property_live_coding.coverage" NAME="02-Property_live-coding Coverage Results" MODIFIED="1740559907924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 3. Инкапсуляция/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$Extended_list_solve.coverage" NAME="Extended-list-solve Coverage Results" MODIFIED="1741083714183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/Exercises" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$corutine.coverage" NAME="corutine Coverage Results" MODIFIED="1749195413608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part01" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$regex_1.coverage" NAME="regex-1 Coverage Results" MODIFIED="1741854815097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 14. Регулярные выражения в Python. Часть 1/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$List_inheritance.coverage" NAME="List-inheritance Coverage Results" MODIFIED="1741079823879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 7. Наследование/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$requests_async.coverage" NAME="requests_async Coverage Results" MODIFIED="1749196180000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part02" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$json_files.coverage" NAME="json-files Coverage Results" MODIFIED="1741597991629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 11. Библиотека JSON/src/Exercises" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$knock_knock_Kanye.coverage" NAME="knock_knock_Kanye Coverage Results" MODIFIED="1749196101145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part02" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$live_request.coverage" NAME="live-request Coverage Results" MODIFIED="1741342105277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 3. Advanced Python/Урок 10. Основы работы с сетью. Библиотека Request/src/live-coding" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$main.coverage" NAME="main Coverage Results" MODIFIED="1748594990813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projects/fastapi" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$create_task_01.coverage" NAME="create_task_01 Coverage Results" MODIFIED="1749196003941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part02" />
+    <SUITE FILE_PATH="coverage/g160125_m_pt$task_cancelled.coverage" NAME="task_cancelled Coverage Results" MODIFIED="1749196216021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 8. Основы асинхронности (часть I)/Part02" />
   </component>
 </project>
