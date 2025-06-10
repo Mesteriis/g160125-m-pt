@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены асинхронные функции для отправки HTTP-запросов с использованием aiohttp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 9. Основы асинхронности (часть_II)/Tasks/task02.py" beforeDir="false" afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 9. Основы асинхронности (часть_II)/Tasks/task02.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -380,14 +381,7 @@
       <workItem from="1749193824825" duration="7972000" />
       <workItem from="1749229350329" duration="606000" />
       <workItem from="1749238589981" duration="736000" />
-    </task>
-    <task id="LOCAL-00025" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
-      <option name="closed" value="true" />
-      <created>1742977018548</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1742977018548</updated>
+      <workItem from="1749452760733" duration="6473000" />
     </task>
     <task id="LOCAL-00026" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
       <option name="closed" value="true" />
@@ -773,7 +767,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749201835150</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="feat: добавлены асинхронные функции для отправки HTTP-запросов с использованием aiohttp">
+      <option name="closed" value="true" />
+      <created>1749453001401</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1749453001401</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
