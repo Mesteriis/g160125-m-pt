@@ -18,8 +18,35 @@ async def create_found_item(item: schemas.FoundItemCreate, db: AsyncSession = De
 
 
 @router.get("/", response_model=list[schemas.FoundItem])
-async def read_found_items(db: AsyncSession = Depends(get_db)):
-    result = await db.execute(select(models.FoundItem))
+async def read_found_items(
+        limit: int = 100,
+        offset: int = 0,
+        name: str = None,
+        description: str = None,
+        found_date: str = None,
+        location: str = None,
+        sort_by: str = None,
+        sort_order: str = "asc",
+        db: AsyncSession = Depends(get_db)
+):
+    query = select(models.FoundItem).limit(limit).offset(offset)
+
+    if name:
+        query = query.where(models.FoundItem.name.ilike(f"%{name}%"))
+    if description:
+        query = query.where(models.FoundItem.description.ilike(f"%{description}%"))
+    if found_date:
+        query = query.where(models.FoundItem.found_date == found_date)
+    if location:
+        query = query.where(models.FoundItem.location.ilike(f"%{location}%"))
+
+    if sort_by:
+        if sort_order == "asc":
+            query = query.order_by(getattr(models.FoundItem, sort_by).asc())
+        else:
+            query = query.order_by(getattr(models.FoundItem, sort_by).desc())
+
+    result = await db.execute(query)
     items = result.scalars().all()
     return items
 
