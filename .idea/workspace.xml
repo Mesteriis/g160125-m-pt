@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены модели, маршруты и настройки для работы с потерянными и найденными предметами">
-      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 12. Пагинация фильтрация сортировка/12. Пагинация, фильтрация, сортировка.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 12. Пагинация фильтрация сортировка/12. Пагинация, фильтрация, сортировка.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/main@g160125-m-pt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/main@g160125-m-pt.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 10. проект Lost and Found/LostAndFound_template/routers/found_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 10. проект Lost and Found/LostAndFound_template/routers/found_items.py" afterDir="false" />
-    </list>
+    <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены модели, маршруты и настройки для работы с потерянными и найденными предметами" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -390,14 +384,7 @@
       <workItem from="1749625705278" duration="2675000" />
       <workItem from="1749712727460" duration="2275000" />
       <workItem from="1749747490223" duration="27000" />
-    </task>
-    <task id="LOCAL-00030" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
-      <option name="closed" value="true" />
-      <created>1743578389151</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1743578389151</updated>
+      <workItem from="1749798369910" duration="3673000" />
     </task>
     <task id="LOCAL-00031" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
       <option name="closed" value="true" />
@@ -783,7 +770,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749626188559</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="feat: добавлены модели, маршруты и настройки для работы с потерянными и найденными предметами">
+      <option name="closed" value="true" />
+      <created>1749798415731</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1749798415731</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
