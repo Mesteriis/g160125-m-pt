@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены модели, маршруты и настройки для работы с потерянными и найденными предметами" />
+    <list default="true" id="83d1cf72-9ed5-4cb3-a987-24dd041c5f3d" name="Changes" comment="feat: добавлены модели, маршруты и настройки для работы с потерянными и найденными предметами">
+      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 15. Архитектура микросервисов/15. Архитектура микросервисов.pptx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 15. Архитектура микросервисов/15.Архитектура микросервисов.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 15. Архитектура микросервисов/exercise.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Модуль 6. Microservices и API/Урок 15. Архитектура микросервисов/инструкция.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -385,14 +391,8 @@
       <workItem from="1749712727460" duration="2275000" />
       <workItem from="1749747490223" duration="27000" />
       <workItem from="1749798369910" duration="3673000" />
-    </task>
-    <task id="LOCAL-00031" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
-      <option name="closed" value="true" />
-      <created>1743578415929</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1743578415929</updated>
+      <workItem from="1750058515482" duration="4206000" />
+      <workItem from="1750144176396" duration="686000" />
     </task>
     <task id="LOCAL-00032" summary="feat: добавление материалов для урока по шаблонам Django, включая базовый шаблон, навигационное меню и динамическую вставку данных">
       <option name="closed" value="true" />
@@ -778,7 +778,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749798415731</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="feat: добавлены модели, маршруты и настройки для работы с потерянными и найденными предметами">
+      <option name="closed" value="true" />
+      <created>1750058553054</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1750058553054</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
